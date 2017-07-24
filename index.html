@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visit Groningen</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+	<div class="nav" id="nav">
+		<span class="hide-info" id="js-hide-info"><span id="js-hide-triangle">&#x25BC;</span> <span id="js-hide-txt">hide</span></span>
+		<h1>Visit Groningen</h1>
+  		<i>Click on one of the markers to view location information</i>
+  		<div class="location-info" id="location-info">
+  			
+  		</div>
+  		<div class="options-button-holder">
+  			<button id="optionsBtn">Options</button>
+		</div>
+
+  		<div class="options" id="options">
+  			<h2>Options:</h2>
+  			<div class="options-wrapper">
+  				<span class="first">
+	  				<input id="hideShops" type=radio name="hideShops" value="">
+					<label for="hideShops"><nobr>Hide shops</nobr></label>
+				</span>
+				<span class="first">
+			  		<input id="showShops" type=radio name="showShops" value="" checked="checked">
+			  		<label for="showShops"><nobr>Show shops</nobr></label>
+		  		</span>
+  			</div>
+  			<div class="options-wrapper">
+  				<span class="first">
+	  				<input id="hideRestaurants" type=radio name="hideRestaurants" value="">
+	  				<label for="hideRestaurants"><nobr>Hide restaurants</nobr></label>
+	  			</span>
+	  			<span class="first">
+	  				<input id="showRestaurants" type=radio name="showRestaurants" value="" checked="checked">
+	  				<label for="showRestaurants"><nobr>Show restaurants</nobr></label>
+	  			</span>
+  			</div>
+  			<div class="options-wrapper">
+  				<span class="first">
+					<input id="showSights" type=radio name="showSights" value="">
+	  				<label for="showSights"><nobr>Show sights</nobr></label>
+  				</span>
+  				<span class="first">
+	  				<input id="hideSights" type=radio name="hideSights" value="" checked="checked">
+	  				<label for="hideSights"><nobr>Hide sights</nobr></label>
+  				</span>
+  			</div>
+  		</div>
+	</div>
+	<div id="map"></div>
+
+	<script src="js/script.js"></script>
+	<script async defer 
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxVkuGj1zGj45HkMDQt-sUEaCN7GLkrwE&callback=initMap">
+	</script>
+</body>
+
+</html>
