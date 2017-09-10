@@ -624,12 +624,9 @@ function initMap() {
 			zoom: 15,
 			center: new google.maps.LatLng(53.2197605, 6.555695),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			mapTypeControl: true,
-	        mapTypeControlOptions: {
-	            position: google.maps.ControlPosition.RIGHT_TOP,
-	            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-	                    'styled_map']
-	        }
+			mapTypeControl: false,
+			fullscreenControl: false,
+			streetViewControl: false
 		});	
 	} else {
 		var map = new google.maps.Map(document.getElementById('map'), {
@@ -639,7 +636,7 @@ function initMap() {
 			mapTypeControl: false,
 			zoomControl: true,
           	zoomControlOptions: {
-              position: google.maps.ControlPosition.RIGHT_TOP
+              position: google.maps.ControlPosition.LEFT_TOP
           	},
           	streetViewControl: false,
 	        fullscreenControl: false

@@ -11,55 +11,79 @@
 </head>
 
 <body>
+	<section class="top">
+		<h1>Visit Groningen</h1>	
+		<span class="main-menu-toggle" id="js-main-menu-toggle">Menu</span>
+		<nav class="main-nav">
+			<ul class="nav-list">
+				<li class="nav-list-item">Info</li>
+				<li class="nav-list-item">Advertise</li>
+				<li class="nav-list-item">contact</li>
+			</ul>
+		</nav>
+	</section>
+	<div class="map-holder section">
+		<div id="map"></div>
+		<div class="nav" id="nav">
+			<div class="info-toggle-holder"><span><h1>Visit Groningen</h1></span>
+				<span class="hide-info" id="js-hide-info"><span id="js-hide-triangle">&#x25BC;</span> <span id="js-hide-txt">hide</span></span>
+			</div>
+	  		<i>Click on one of the markers to view location information</i>
+	  		<div class="location-info" id="location-info"></div>
+	  		<div class="options-button-holder">
+	  			<button id="optionsBtn">Options</button>
+			</div>
 
-	<div class="nav" id="nav">
-		<div class="info-toggle-holder">
-			<span class="hide-info" id="js-hide-info"><span id="js-hide-triangle">&#x25BC;</span> <span id="js-hide-txt">hide</span></span>
+	  		<div class="options" id="options">
+	  			<h2>Options:</h2>
+	  			<div class="options-wrapper">
+	  				<span class="first">
+		  				<input id="hideShops" type=radio name="hideShops" value="">
+						<label for="hideShops"><nobr>Hide shops</nobr></label>
+					</span>
+					<span class="first">
+				  		<input id="showShops" type=radio name="showShops" value="" checked="checked">
+				  		<label for="showShops"><nobr>Show shops</nobr></label>
+			  		</span>
+	  			</div>
+	  			<div class="options-wrapper">
+	  				<span class="first">
+		  				<input id="hideRestaurants" type=radio name="hideRestaurants" value="">
+		  				<label for="hideRestaurants"><nobr>Hide restaurants</nobr></label>
+		  			</span>
+		  			<span class="first">
+		  				<input id="showRestaurants" type=radio name="showRestaurants" value="" checked="checked">
+		  				<label for="showRestaurants"><nobr>Show restaurants</nobr></label>
+		  			</span>
+	  			</div>
+	  			<div class="options-wrapper">
+	  				<span class="first">
+						<input id="showSights" type=radio name="showSights" value="">
+		  				<label for="showSights"><nobr>Show sights</nobr></label>
+	  				</span>
+	  				<span class="first">
+		  				<input id="hideSights" type=radio name="hideSights" value="" checked="checked">
+		  				<label for="hideSights"><nobr>Hide sights</nobr></label>
+	  				</span>
+	  			</div>
+	  		</div>
 		</div>
-		<h1>Visit Groningen</h1>
-  		<i>Click on one of the markers to view location information</i>
-  		<div class="location-info" id="location-info">
-  			
-  		</div>
-  		<div class="options-button-holder">
-  			<button id="optionsBtn">Options</button>
-		</div>
-
-  		<div class="options" id="options">
-  			<h2>Options:</h2>
-  			<div class="options-wrapper">
-  				<span class="first">
-	  				<input id="hideShops" type=radio name="hideShops" value="">
-					<label for="hideShops"><nobr>Hide shops</nobr></label>
-				</span>
-				<span class="first">
-			  		<input id="showShops" type=radio name="showShops" value="" checked="checked">
-			  		<label for="showShops"><nobr>Show shops</nobr></label>
-		  		</span>
-  			</div>
-  			<div class="options-wrapper">
-  				<span class="first">
-	  				<input id="hideRestaurants" type=radio name="hideRestaurants" value="">
-	  				<label for="hideRestaurants"><nobr>Hide restaurants</nobr></label>
-	  			</span>
-	  			<span class="first">
-	  				<input id="showRestaurants" type=radio name="showRestaurants" value="" checked="checked">
-	  				<label for="showRestaurants"><nobr>Show restaurants</nobr></label>
-	  			</span>
-  			</div>
-  			<div class="options-wrapper">
-  				<span class="first">
-					<input id="showSights" type=radio name="showSights" value="">
-	  				<label for="showSights"><nobr>Show sights</nobr></label>
-  				</span>
-  				<span class="first">
-	  				<input id="hideSights" type=radio name="hideSights" value="" checked="checked">
-	  				<label for="hideSights"><nobr>Hide sights</nobr></label>
-  				</span>
-  			</div>
-  		</div>
 	</div>
-	<div id="map"></div>
+	<div class="ads-space section"></div>
+	<div class="info section">
+		
+	</div>
+	<div class="tips section">
+		
+	</div>
+	<div class="links section">
+		
+	</div>
+	<footer class="footer section">
+		
+	</footer>
+	
+
 
 	<script src="js/script.js"></script>
 	<script async defer 

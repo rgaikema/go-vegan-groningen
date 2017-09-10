@@ -12,21 +12,56 @@ body {
 
 h1 {
   font-size: 24px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
 }
 
 h2 {
   font-size: 16px;
 }
 
+.section {
+  width: 100%;
+  min-height: 30vh;
+}
+
+.section:nth-of-type(even){
+  background: #eee;
+}
+
+.section.map-holder {
+  height: 0;
+  min-height: 0;
+  position: relative;
+  padding-top: 53%;
+}
+
+.section.footer {
+  background: #333;
+  color: #fff;
+}
+
 #map {
   position: absolute;
+  top: 0;
   height: 100%;
   width:100%;
 }
 
+.top {
+  padding: 10px 20px;
+  background: #33ab33;
+}
+
+.main-nav {
+  display: none;
+}
+
 .nav {
+  top: 0;
   margin: 20px;
-  position: fixed;
+  position: absolute;
   width: 25vw;
   min-height: 30vh;
   z-index: 2;
@@ -93,6 +128,16 @@ a {
   min-width: 160px;
 }
 
+.ads-space {
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  display: none;
+}
+
 @media only screen 
     and (max-device-width: 1220px) {
 
@@ -122,6 +167,10 @@ a {
 
         h1 {
             font-size: 18px;
+        }
+
+        .top {
+          display: none;
         }
 
         .nav {
@@ -200,6 +249,10 @@ a {
 
         .options-wrapper span.first {
             max-width: 150px;
+        }
+
+        .ads-space {
+          display: none;
         }
 
 }
