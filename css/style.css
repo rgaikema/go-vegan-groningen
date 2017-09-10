@@ -129,9 +129,19 @@ a {
             position: fixed;
             width: calc(100% - 20px);
             min-height: 160px;
-            padding: 10px;
+            padding: 0 10px 10px;
             border: 1px solid #ebebeb;
             bottom: 0;
+            transition: all .3s ease-in-out;
+        }
+        .info-toggle-holder {
+          display: block;
+          width:calc(100% + 20px);
+          margin-left: -10px;
+          margin-right: -10px;
+          padding: 5px 0px;
+          height: 25px;
+          background: #33AB31;
         }
 
         .hide-info {
@@ -140,8 +150,13 @@ a {
           right: 10px;
         }
 
+        .hide-info span {
+          color: #fff;
+        }
+
         .nav.hidden {
           transform: translateY(88%);
+          transition: all .3s ease-in-out;
         }
         .nav .hide-info #js-hide-triangle {
           display: inline-block;

@@ -623,7 +623,6 @@ function initMap() {
 		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 15,
 			center: new google.maps.LatLng(53.2197605, 6.555695),
-			//center: new google.maps.LatLng(53.1752246, 6.0483945),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			mapTypeControl: true,
 	        mapTypeControlOptions: {
@@ -636,9 +635,14 @@ function initMap() {
 		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 13,
 			center: new google.maps.LatLng(53.2090769, 6.5645437),
-			//center: new google.maps.LatLng(53.1752246, 6.0483945),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			mapTypeControl: false
+			mapTypeControl: false,
+			zoomControl: true,
+          	zoomControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_TOP
+          	},
+          	streetViewControl: false,
+	        fullscreenControl: false
 		});
 	}
 
@@ -796,34 +800,13 @@ function initMap() {
 		}, false);
 	}
 
-/*
-	if(!!navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(position) {
-	        var geolocate = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-	        
-	        var infowindow = new google.maps.InfoWindow({
-	            map: map,
-	            position: geolocate,
-	            content:
-	                '<h4>You are here!</h4>'
-	        });
-	        
-	        map.setCenter(geolocate);
-	        
-	    });
-	} else {
-		console.log("no geolocation");
-        document.getElementById('google_canvas').innerHTML = 'No Geolocation Support.';
-    }
-*/
-
 
 	//Show current Location
 	var myloc = new google.maps.Marker({
 	     clickable: false,
 	     icon: {
              path: google.maps.SymbolPath.CIRCLE,
-             strokeColor: 'blue',
+             strokeColor: '#33AB31',
              scale: 10
          },
 	     shadow: null,
@@ -860,7 +843,7 @@ hideInfo.addEventListener('click',function(){
 	if ( infoPanel.classList.contains("hidden") ) {
 		hideTxt.innerHTML="show";
 	} else {
-		console.log("doenst has hidden");
+		hideTxt.innerHTML="hide";
 	}
 	
 }, false);
