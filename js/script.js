@@ -796,6 +796,48 @@ function initMap() {
 		}, false);
 	}
 
+/*
+	if(!!navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+	        var geolocate = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	        
+	        var infowindow = new google.maps.InfoWindow({
+	            map: map,
+	            position: geolocate,
+	            content:
+	                '<h4>You are here!</h4>'
+	        });
+	        
+	        map.setCenter(geolocate);
+	        
+	    });
+	} else {
+		console.log("no geolocation");
+        document.getElementById('google_canvas').innerHTML = 'No Geolocation Support.';
+    }
+*/
+
+
+	//Show current Location
+	var myloc = new google.maps.Marker({
+	     clickable: false,
+	     icon: {
+             path: google.maps.SymbolPath.CIRCLE,
+             strokeColor: 'blue',
+             scale: 10
+         },
+	     shadow: null,
+	     zIndex: 999,
+	     map: map
+	 });
+
+	 if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
+	     var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+	     myloc.setPosition(me);
+	 }, function(error) {
+	     console.log("doesnt work")
+	 });
+
 }
 
 //Show-hide Sights
@@ -818,10 +860,13 @@ hideInfo.addEventListener('click',function(){
 	if ( infoPanel.classList.contains("hidden") ) {
 		hideTxt.innerHTML="show";
 	} else {
-		hideTxt.innerHTML="hide";
+		console.log("doenst has hidden");
 	}
 	
 }, false);
+
+
+
 
 
 
