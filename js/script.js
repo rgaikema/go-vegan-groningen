@@ -621,8 +621,8 @@ function initMap() {
 
 	if (window.screen.width >= 860) {
 		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 15,
-			center: new google.maps.LatLng(53.2197605, 6.555695),
+			zoom: 13,
+			center: new google.maps.LatLng(53.2158925, 6.5665613),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			mapTypeControl: false,
 			fullscreenControl: false,

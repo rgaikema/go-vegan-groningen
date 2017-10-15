@@ -81,7 +81,7 @@ input[type="radio"]:checked + label {
 	height: 0;
 	min-height: 0;
 	position: relative;
-	padding-top: 53%;
+	padding-top: 40%;
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -110,11 +110,11 @@ input[type="radio"]:checked + label {
 }
 
 .logo {
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 10px;
 	z-index: 2;
 }
 
@@ -234,6 +234,19 @@ input[type="radio"]:checked + label {
 	display: none;
 }
 
+.link_list {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	float: left;
+	width: calc(100% / 3);
+}
+
+.link_list_holder {
+	display: inline-block;
+	width: 100%;
+}
+
 @media only screen and (max-device-width: 1220px) {
 
 	.info-box {
@@ -242,6 +255,12 @@ input[type="radio"]:checked + label {
 
 }
 
+@media only screen and (min-device-width: 768px) {
+	.content-holder {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}
 
 @media only screen and (max-device-width: 767px) {
 
