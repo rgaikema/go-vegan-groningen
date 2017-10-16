@@ -250,7 +250,7 @@ function initMap() {
       [achterwerk.info, achterwerk.lat, achterwerk.long, achterwerk.breakfast, achterwerk.lunch, achterwerk.dinner, achterwerk.coffee, 14],
       [palermo.info, palermo.lat, palermo.long, palermo.breakfast, palermo.lunch, palermo.dinner, palermo.coffee, 15],
       [frietvanpiet.info, frietvanpiet.lat, frietvanpiet.long, frietvanpiet.breakfast, frietvanpiet.lunch, frietvanpiet.dinner, frietvanpiet.coffee, 16],
-      [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, 16],
+      [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, 17],
     ];
 
 
@@ -650,7 +650,13 @@ function initMap() {
 	// Add Location markers
 	var infowindow_l = new google.maps.InfoWindow({}),
 		infoBox = document.getElementById("info-box"),
-		marker_l, i;
+		marker_l, i,
+		normalIcon = {
+  				url: "img/vegan.svg"
+  			},
+  		activeIcon = {
+		url: "img/vegan_active.svg"
+	};
 
 	for (i = 0; i < locations.length; i++) {
 
@@ -664,8 +670,8 @@ function initMap() {
         
 
 		marker_l = new google.maps.Marker({
-			position: new google.maps.LatLng(locations[i][1], locations[i][2], locations[i][3], locations[i][4], locations[i][5], locations[i][6], locations[i][7], locations[i][8], locations[i][9], locations[i][10], locations[i][11], locations[i][12], locations[i][13]),
-			icon: 'img/vegan.svg',
+			position: new google.maps.LatLng(locations[i][1], locations[i][2], locations[i][3], locations[i][4], locations[i][5], locations[i][6], locations[i][7], locations[i][8], locations[i][9], locations[i][10], locations[i][11], locations[i][12], locations[i][13], locations[i][14], locations[i][15], locations[i][16]),
+			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
 			lunch: lunchCheck,
@@ -674,10 +680,12 @@ function initMap() {
 		});
 
 		google.maps.event.addListener(marker_l, 'click', (function (marker_l, i) {
+
 			return function () {
+
+				this.setIcon(activeIcon);
 				locationInfo.classList.add('active');
-				infowindow_l.setContent(locations[i][0]);
-				marker_l.set("class", "clicked");
+				infowindow_l.setContent(locations[i][0]);  
 				infoBoxInfo.style.display = "none";
 
 				if (window.screen.width < 600) {
@@ -767,21 +775,32 @@ function initMap() {
 
 
 	//Show current Location
+	var geoIcon = {
+	    url: "img/geo-icon.gif",
+	    //state your size parameters in terms of pixels
+	    size: new google.maps.Size(30, 30),
+	    scaledSize: new google.maps.Size(30, 30),
+	    origin: new google.maps.Point(0,0)
+	}
 	var myloc = new google.maps.Marker({
-	     clickable: false,
-	     icon: {
-             path: google.maps.SymbolPath.CIRCLE,
-             strokeColor: '#33AB31',
-             scale: 10
-         },
-	     shadow: null,
-	     zIndex: 999,
-	     map: map
-	 });
+	    clickable: false,
+      	icon: geoIcon ,
+      	optimized: false,
+	    shadow: null,
+	    zIndex: 999,
+	    map: map
+	});
 
 	 if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
 	     var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 	     myloc.setPosition(me);
+
+	    var myoverlay = new google.maps.OverlayView();
+		    myoverlay.draw = function () {
+		        this.getPanes().markerLayer.id='geoMarkerLayer';
+		    };
+		myoverlay.setMap(map);
+
 	 }, function(error) {
 	     console.log("Your Geo location could nog be found.")
 	 });
