@@ -669,8 +669,24 @@ function initMap() {
         	infoBoxInfo = document.getElementById("js-info-box-info");
         
 
-		marker_l = new google.maps.Marker({
-			position: new google.maps.LatLng(locations[i][1], locations[i][2], locations[i][3], locations[i][4], locations[i][5], locations[i][6], locations[i][7], locations[i][8], locations[i][9], locations[i][10], locations[i][11], locations[i][12], locations[i][13], locations[i][14], locations[i][15], locations[i][16]),
+		var marker_l = new google.maps.Marker({
+			position: new google.maps.LatLng(
+				locations[i][1], 
+				locations[i][2], 
+				locations[i][3], 
+				locations[i][4], 
+				locations[i][5], 
+				locations[i][6], 
+				locations[i][7], 
+				locations[i][8], 
+				locations[i][9], 
+				locations[i][10], 
+				locations[i][11], 
+				locations[i][12], 
+				locations[i][13], 
+				locations[i][14], 
+				locations[i][15], 
+				locations[i][16]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
@@ -678,12 +694,16 @@ function initMap() {
 			dinner: dinnerCheck,
 			coffee: coffeeCheck
 		});
-
+	
+		
 		google.maps.event.addListener(marker_l, 'click', (function (marker_l, i) {
 
 			return function () {
-
-				this.setIcon(activeIcon);
+				
+				setAllMarkersIcon(normalIcon)
+				marker_l.setIcon(activeIcon);
+				
+				
 				locationInfo.classList.add('active');
 				infowindow_l.setContent(locations[i][0]);  
 				infoBoxInfo.style.display = "none";
@@ -699,7 +719,25 @@ function initMap() {
 			}
 		})(marker_l, i));
 
+	
+		
 		locationMarkers.push(marker_l);
+	}
+	
+	function setAllMarkersIcon(iconUrl){
+		
+		for(var i in locationMarkers) {
+			
+			if(locationMarkers.hasOwnProperty(i)) {
+				
+				marker_l = locationMarkers[i]
+								
+				marker_l.setIcon(iconUrl);
+				
+			}
+			
+		}
+		
 	}
 
 

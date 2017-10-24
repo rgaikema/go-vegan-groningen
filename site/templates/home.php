@@ -208,30 +208,29 @@
 			</div>
 		</section> <!-- Closes map holder -->
 
-		<nav class="filter-nav" id=js-filter-nav>
-			<div class="options" id="options">
-	  			<div class="options-wrapper">
-	  				<input class="filter" id="showBreakfast" type=radio name="filter" value="breakfast">
-	  				<label for="showBreakfast"><nobr>Breakfast</nobr></label>
-	  			</div>
-	  			<div class="options-wrapper">
-	  				<input class="filter" id="showLunch" type=radio name="filter" value="lunch">
-	  				<label for="showLunch"><nobr>Lunch</nobr></label>
-	  			</div>
-	  			<div class="options-wrapper">
-	  				<input class="filter" id="showCoffee" type=radio name="filter" value="coffe">
-	  				<label for="showCoffee"><nobr>Coffee</nobr></label>
-	  			</div>
-	  			<div class="options-wrapper">
-	  				<input class="filter" id="showDinner" type=radio name="filter" value="dinner">
-	  				<label for="showDinner"><nobr>Dinner</nobr></label>
-	  			</div>
-	  			<div class="options-wrapper">
-	  				<input class="filter" id="showAll" type=radio name="filter" value="all" checked>
-	  				<label for="showAll"><nobr>All</nobr></label>
-	  			</div>
-	  		</div>
-		</nav>
+		<?php 
+	
+			$savedLanguage = $user->language;
+
+			foreach($languages as $language) {
+
+				if($language->id == $savedLanguage->id) continue;
+
+				if(!$page->viewable($language)) continue;
+
+				$user->language = $language;
+
+			}
+
+			$user->language = $savedLanguage;
+
+			if ($savedLanguage->title !== "NL") {
+				include 'filter_en.inc';
+			} else {
+				include 'filter.inc';
+			}
+
+		?>
 
 		<section class="ads-space section"></section>
 
@@ -325,7 +324,7 @@
 
 		$user->language = $savedLanguage;
 
-		if ($savedLanguage->title !== "Nederlands") {
+		if ($savedLanguage->title !== "NL") {
 			echo '<script src="' . $config->urls->templates . 'js/script_en.js"></script>';
 		} else {
 			echo '<script src="' . $config->urls->templates . 'js/script.js"></script>';
