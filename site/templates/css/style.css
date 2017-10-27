@@ -484,4 +484,8 @@ input[type="radio"]:checked + label {
 			transform: translateY(84%);
 		}
 
+		.language_switcher {
+			right: 10px;
+		}
+
 }
