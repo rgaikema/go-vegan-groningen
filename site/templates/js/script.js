@@ -5,7 +5,7 @@ function initMap() {
 
 	var herbivoor = {
 		info: '<strong>De Herbivoor</strong><br>\r\
-				Gedempte Zuiderdiep 59<br> Lunch & koffie, avondeten alleen op donderdag<br>\
+				Gedempte Zuiderdiep 59<br> Lunch & taart, avondeten alleen op donderdag<br>\
 				100% vegan<br>\
 				<a href="https://www.google.nl/maps/dir//De+Herbivoor,+Gedempte+Zuiderdiep+59,+9711+HC+Groningen/@53.2148417,6.5646821,17z/data=!4m15!1m6!3m5!1s0x47c9cd53e69aba2f:0xbb2363f021445f29!2sDe+Herbivoor!8m2!3d53.2148385!4d6.5668708!4m7!1m0!1m5!1m1!1s0x47c9cd53e69aba2f:0xbb2363f021445f29!2m2!1d6.5668708!2d53.2148385">Get Directions</a>',
 		lat: 53.2148385,
@@ -18,7 +18,7 @@ function initMap() {
 
 	var anat = {
 		info: '<strong>ANAT</strong><br>\r\
-				Verlengde Grachtstraat 1<br> Lunch & koffie<br>\
+				Verlengde Grachtstraat 1<br> Ontbijt, lunch & taart<br>\
 				100% vegan<br>\
 				<a href="https://www.google.nl/maps/dir//ANAT,+Verlengde+Grachtstraat+1,+9717+GD+Groningen/@53.2236257,6.5511642,17z/data=!4m15!1m6!3m5!1s0x47c9cd4651a598c9:0x7796b31dd2a8ac2f!2sANAT!8m2!3d53.2236225!4d6.5533529!4m7!1m0!1m5!1m1!1s0x47c9cd4651a598c9:0x7796b31dd2a8ac2f!2m2!1d6.5533529!2d53.2236225">Get Directions</a>',
 		lat: 53.2236225,
@@ -31,8 +31,8 @@ function initMap() {
 
 	var mechoui = {
 		info: '<strong>Mechoui</strong><br>\r\
-				Folkingestraat 38<br> North African dishes<br>\
-				Several kind of mezzes, just ask for the vegan options<br>\
+				Folkingestraat 38<br> Noord-Afrikaanse gerechten<br>\
+				Vraag even welke vegan zijn.<br>\
 				<a href="https://www.google.nl/maps/dir//Mechoui,+Folkingestraat+38,+9711+JX+Groningen/@53.2155363,6.5628875,17z/data=!4m15!1m6!3m5!1s0x47c9cd517fc5950d:0x8fe9e487533540f3!2sMechoui!8m2!3d53.2155331!4d6.5650762!4m7!1m0!1m5!1m1!1s0x47c9cd517fc5950d:0x8fe9e487533540f3!2m2!1d6.5650762!2d53.2155331">Get Directions</a>',
 		lat: 53.2155331,
 		long: 6.5650762,
@@ -44,8 +44,8 @@ function initMap() {
 
 	var moghul = {
 		info: '<strong>Kleine Moghul</strong><br>\r\
-				Nieuwe Boteringestraat 62<br> Indian food<br>\
-				They have several vegan dishes and you can ask them to veganize some more.<br>\
+				Nieuwe Boteringestraat 62<br> Indiaas eten<br>\
+				Vraag naar de vegan gerechten<br>\
 				<a href="https://www.google.nl/maps/dir//De+Kleine+Moghul,+Nieuwe+Boteringestraat+62,+9712+PP+Groningen/@53.2240498,6.556989,17z/data=!4m15!1m6!3m5!1s0x47c9cd44523f4fd5:0xcbe5e9b813239f8b!2sDe+Kleine+Moghul!8m2!3d53.2240498!4d6.559183!4m7!1m0!1m5!1m1!1s0x47c9cd44523f4fd5:0xcbe5e9b813239f8b!2m2!1d6.559183!2d53.2240498">Get Directions</a>',
 		lat: 53.2240498,
 		long: 6.559183,
@@ -58,7 +58,7 @@ function initMap() {
 	var buurman = {
 		info: '<strong>Buurman & Buurman</strong><br>\r\
 				Rodeweg 6<br> Pizza <br>\r\
-				Choose one of the two veggie pizza\'s and aks if they to veganize them</br>\
+				Kies één van de vegetarische pizza\'s en vraag of ze deze vegan willen maken</br>\
 				<a href="https://www.google.nl/maps/dir//Eetwinkel+Buurman+%26+Buurman+Groningen,+Rodeweg+6,+9715+AW+Groningen/@53.2273517,6.5592295,17z/data=!4m15!1m6!3m5!1s0x47c9cd43713cee77:0x1f057e46b756b4db!2sEetwinkel+Buurman+%26+Buurman+Groningen!8m2!3d53.2273517!4d6.5614235!4m7!1m0!1m5!1m1!1s0x47c9cd43713cee77:0x1f057e46b756b4db!2m2!1d6.5614235!2d53.2273517">Get Directions</a>',
 		lat:53.2273517,
 		long:6.5614235,
@@ -70,8 +70,8 @@ function initMap() {
 
 	var semarang = {
 		info: '<strong>Toko Semarang</strong><br>\r\
-				Gedempte Zuiderdiep 119<br> Indonesian buffet & takeaway<br>\
-				They have one dish: ask for Nasi Rames Vegetarian without egg<br>\
+				Gedempte Zuiderdiep 119<br> Indonesisch (afhaal)buffet<br>\
+				Ze hebben één gerecht: Nasi Rames, vegetarisch. Bestel zonder ei<br>\
 				<a href="https://www.google.nl/maps/dir//Toko+%22Semarang%22,+Gedempte+Zuiderdiep+119,+9711+HE+Groningen/@53.2147378,6.56118,17z/data=!4m15!1m6!3m5!1s0x47c9cd523b6131e7:0xd3bf9bc95c329c91!2sToko+%22Semarang%22!8m2!3d53.2147378!4d6.563374!4m7!1m0!1m5!1m1!1s0x47c9cd523b6131e7:0xd3bf9bc95c329c91!2m2!1d6.563374!2d53.2147378">Get Directions</a>',
 		lat: 53.2147378,
 		long: 6.563374,
@@ -83,8 +83,8 @@ function initMap() {
 
 	var toetpannekoek = {
 		info: '<strong>Toet Pannekoek</strong><br>\r\
-				Gedempte Zuiderdiep 85<br> Pancakes<br>\
-				Most of the time they have one vegan cake, just ask<br>\
+				Gedempte Zuiderdiep 85<br>Pannenkoeken<br>\
+				Serveren een aantal vegan pannenkoeken<br>\
 				<a href="https://www.google.nl/maps/place/Toet+Pannekoek/@53.2146463,6.5632301,17z/data=!4m13!1m7!3m6!1s0x47c9cd53cfc39507:0x2071fc7312e391c1!2sGedempte+Zuiderdiep+85,+9711+HC+Groningen!3b1!8m2!3d53.2146463!4d6.5654241!3m4!1s0x47c9cd53cfc39505:0xde11f93e058ae59!8m2!3d53.2146463!4d6.5654241">Get Directions</a>',
 		lat: 53.2146463,
 		long: 6.5654241,
@@ -96,8 +96,8 @@ function initMap() {
 
 	var toet = {
 		info: '<strong>Toet</strong><br>\r\
-				Ubbo Emmiusstraat 19<br> Coffee, cake<br>\
-				Most of the time they have one vegan cake, just ask<br>\
+				Ubbo Emmiusstraat 19<br>Taart<br>\
+				Ze hebben meestal één vegan taart<br>\
 				<a href="https://www.google.nl/maps/dir//TOET+het+TOETjesparadijs,+Ubbo+Emmiusstraat+19,+9711+CA+Groningen/@53.2131239,6.5655698,17z/data=!4m15!1m6!3m5!1s0x47c9cd53cfc23367:0x510a079c67041c9c!2sTOET+het+TOETjesparadijs!8m2!3d53.2131239!4d6.5655697!4m7!1m0!1m5!1m1!1s0x47c9cd53cfc23367:0x510a079c67041c9c!2m2!1d6.5655697!2d53.2131239">Get Directions</a>',
 		lat: 53.2131239,
 		long: 6.5655697,
@@ -109,8 +109,8 @@ function initMap() {
 
 	var soepwinkel = {
 		info: '<strong>De Soepwinkel</strong><br>\r\
-				Oude Kijk in Het Jatstraat 12<br> Soup<br>\
-				Most of the time they have one vegan soup, just ask<br>\
+				Oude Kijk in Het Jatstraat 12<br>Soep<br>\
+				Meestal is één soep vegan<br>\
 				<a href="https://www.google.nl/maps/dir//De+Soepwinkel,+Oude+Kijk+in+Het+Jatstraat+12,+9712+EG+Groningen/@53.2186361,6.5602621,17z/data=!4m15!1m6!3m5!1s0x47c9cd502942e4f5:0xa24a465b8195b5af!2sDe+Soepwinkel!8m2!3d53.2186361!4d6.5624561!4m7!1m0!1m5!1m1!1s0x47c9cd502942e4f5:0xa24a465b8195b5af!2m2!1d6.5624561!2d53.2186361">Get Directions</a>',
 		lat: 53.2186361,
 		long: 6.5624561,
@@ -122,8 +122,8 @@ function initMap() {
 
 	var feelgood = {
 		info: '<strong>Feel Good</strong><br>\r\
-				Oude Kijk in Het Jatstraat 29<br> Lunch, coffee, dinner<br>\
-				They have a daily dinner meal. Check their <a href="https://www.facebook.com/feelgoodgroningen" target:"_blank">Facebook page</a> if it\'s is vegan.<br>\
+				Oude Kijk in Het Jatstraat 29<br>Ontbijt, lunch, taart & diner<br>\
+				Standaard vegan opties op de kaart. Bekijk hun <a href="https://www.facebook.com/feelgoodgroningen" target:"_blank">Facebook pagina</a> of de daghap vegan is.<br>\
 				<a href="https://www.google.nl/maps/dir//Feel+Good,+Oude+Kijk+in+Het+Jatstraat+29,+9712+EB+Groningen/@53.2191437,6.5599756,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fd89a2d49:0x6c944d6249cc96fa!2sFeel+Good!8m2!3d53.2191437!4d6.5621696!4m7!1m0!1m5!1m1!1s0x47c9cd4fd89a2d49:0x6c944d6249cc96fa!2m2!1d6.5621696!2d53.2191437">Get Directions</a>',
 		lat: 53.2191437,
 		long: 6.5621696,
@@ -134,8 +134,8 @@ function initMap() {
 	};
 	var fatoush = {
 		info: '<strong>Fatoush</strong><br>\r\
-				Damsterdiep 15<br> Libanese dishes<br>\
-				They have about 8 mezzes, just ask for the vegan options<br>\
+				Damsterdiep 15<br> Libanese gerechten<br>\
+				Vraag naar de vegan mezzes en gerechten<br>\
 				<a href="https://www.google.nl/maps/dir//Fatoush,+Damsterdiep+15,+9711+SG+Groningen/@53.2170444,6.5733835,17z/data=!4m15!1m6!3m5!1s0x47c9cd56290c49af:0x5c9c9f7235152eb6!2sFatoush!8m2!3d53.2170412!4d6.5755722!4m7!1m0!1m5!1m1!1s0x47c9cd56290c49af:0x5c9c9f7235152eb6!2m2!1d6.5755722!2d53.2170412">Get Directions</a>',
 		lat: 53.2170412,
 		long: 6.5755722,
@@ -147,8 +147,8 @@ function initMap() {
 
 	var bagelsbeans = {
 		info: '<strong>Bagels & Beans</strong><br>\r\
-				Zwanestraat 30<br> Lunch / Bagels<br>\
-				They have 4 vegan options : Vegan chicken (warm), Dutch Weedburger (warm), Humus (cold), Banana (cold) <br>\
+				Zwanestraat 30<br>Ontbijt & lunch<br>\
+				Verschillende vegan bagels<br>\
 				<a href="https://www.google.nl/maps/dir//Bagels+%26+Beans,+Zwanestraat+30,+9712+CN+Groningen/@53.2179907,6.5633714,20z/data=!4m15!1m6!3m5!1s0x0:0x7339c9a03f9c3668!2sBagels+%26+Beans!8m2!3d53.2181003!4d6.5634754!4m7!1m0!1m5!1m1!1s0x47c9cd51cb25052f:0x7339c9a03f9c3668!2m2!1d6.5634757!2d53.2181004">Get Directions</a>',
 		lat: 53.2181004,
 		long: 6.5634757,
@@ -159,8 +159,8 @@ function initMap() {
 	};
 	var pernikkel = {
 		info: '<strong>Pernikkel</strong><br>\r\
-				Aweg 2<br> Lunch / Diner<br>\
-				They have a couple of vegan dishes, i.e. a curry.<br>\
+				Aweg 2<br>Lunch & diner<br>\
+				Serveren een paar vegan opties, waaronder een borrelplank/<br>\
 				<a href="https://www.google.nl/maps/dir//Pernikkel,+Aweg+2,+9718+CS+Groningen/@53.2164047,6.5549666,17z/data=!4m15!1m6!3m5!1s0x0:0xa7fdb917d17115b3!2sPernikkel!8m2!3d53.2164047!4d6.5571608!4m7!1m0!1m5!1m1!1s0x47c9cd4e854af69d:0xa7fdb917d17115b3!2m2!1d6.5571606!2d53.2164047">Get Directions</a>',
 		lat: 53.2164047,
 		long: 6.5571606,
@@ -171,8 +171,8 @@ function initMap() {
 	};
 	var gasfabriek = {
 		info: '<strong>De Oude Gasfabriek</strong><br>\r\
-				Langestraat 66<br> Lunch / Diner<br>\
-				Quite some options: several sandwiches and vegan dishes, even a vegan desert.<br>\
+				Langestraat 66<br>Lunch & diner<br>\
+				Verschillende gerechten en zelfs een compleet driegangen vegan menu<br>\
 				<a href="https://www.google.nl/maps/dir//Grand+Caf%C3%A9+-+Restaurant+%22De+Oude+Gasfabriek%22,+Langestraat+66,+9712+LT+Groningen/@53.223837,6.5631848,18z/data=!4m15!1m6!3m5!1s0x0:0xd251fa01edd2d9e0!2sGrand+Caf%C3%A9+-+Restaurant+%22De+Oude+Gasfabriek%22!8m2!3d53.2243325!4d6.5657245!4m7!1m0!1m5!1m1!1s0x47c9cd5b1128572d:0xd251fa01edd2d9e0!2m2!1d6.5657247!2d53.2243323">Get Directions</a>',
 		lat: 53.2243323,
 		long: 6.5657247,
@@ -183,8 +183,8 @@ function initMap() {
 	};
 	var achterwerk = {
 		info: '<strong>Achterwerk</strong><br>\r\
-				Oosterstraat 13A<br>Dinner & drinks<br>\
-				Mostly plantbased food. Tasty menu with a lot of special dishes.<br>\
+				Oosterstraat 13A<br>Diner<br>\
+				Bijna volledig vegan, waaronder een driegangen menu<br>\
 				<a href="https://www.google.nl/maps/dir//OOST,+Oosterstraat+13A,+9711+NN+Groningen/@53.2178776,6.5689349,21z/data=!4m15!1m6!3m5!1s0x0:0xaa9d4d24e0bab65f!2sOOST!8m2!3d53.2178422!4d6.5691718!4m7!1m0!1m5!1m1!1s0x47c9cd56d57845d5:0xaa9d4d24e0bab65f!2m2!1d6.5691718!2d53.2178422">Get Directions</a>',
 		lat: 53.2178422,
 		long: 6.5691718,
@@ -196,7 +196,7 @@ function initMap() {
 	var palermo = {
 		info: '<strong>Pizzeria Palermo</strong><br>\r\
 				Werumeus Buningstraat 22<br>Pizzeria<br>\
-				They have two pizza\'s with vegan cheese, pasta\'s, vegan shoarma and vegan tiramisu<br>\
+				Pizza\'s met vegan kaas, pasta\'s, vegan shoarma en vegan tiramisu<br>\
 				<a href="https://www.google.nl/maps/dir//Pizzeria+Palermo,+Werumeus+Buningstraat+22,+9721+JA+Groningen/@53.1980705,6.5685008,17z/data=!4m15!1m6!3m5!1s0x47c832a7fa02f907:0x941f4573fc570e0e!2sPizzeria+Palermo!8m2!3d53.1980705!4d6.5706948!4m7!1m0!1m5!1m1!1s0x47c832a7fa02f907:0x941f4573fc570e0e!2m2!1d6.5706948!2d53.1980705">Get Directions</a>',
 		lat: 53.1980705,
 		long: 6.5706948,
@@ -208,7 +208,7 @@ function initMap() {
 	var frietvanpiet = {
 		info: '<strong>Friet van Piet</strong><br>\r\
 				Meeuwerderweg 112<br>Snackbar<br>\
-				Vegan kapsalon, vegan burgers and several other vegan snacks<br>\
+				Vegan kapsalon, vegan burgers en andere vegan snacks<br>\
 				<a href="https://www.google.nl/maps/dir//Friet+van+Piet,+Meeuwerderweg+112,+9724+EX+Groningen/@53.2107344,6.5772415,17z/data=!4m15!1m6!3m5!1s0x47c9d2ab149748ff:0xf29b454dc73b9238!2sFriet+van+Piet!8m2!3d53.2108389!4d6.579459!4m7!1m0!1m5!1m1!1s0x47c9d2ab149748ff:0xf29b454dc73b9238!2m2!1d6.579459!2d53.2108389">Get Directions</a>',
 		lat: 53.2108389,
 		long: 6.579459,
@@ -220,8 +220,8 @@ function initMap() {
 
 	var zevendehemel = {
 		info: '<strong>De Zevende Hemel</strong><br>\r\
-				Zuiderkerkstraat 7<br>Dinner<br>\
-				They have one vegan menu (starter, main course, dessert)<br>\
+				Zuiderkerkstraat 7<br>Diner<br>\
+				Serveren één driegangen vegan menu<br>\
 				<a href="https://www.google.nl/maps/dir//Rest.+De+Zevende+Hemel,+Zuiderkerkstraat+7,+9712+PZ+Groningen/@53.2233308,6.5607941,17z/data=!4m15!1m6!3m5!1s0x47c9cd452bed49cb:0xf0b794238c7eb00f!2sRest.+De+Zevende+Hemel!8m2!3d53.2233308!4d6.5629881!4m7!1m0!1m5!1m1!1s0x47c9cd452bed49cb:0xf0b794238c7eb00f!2m2!1d6.5629881!2d53.2233308">Get Directions</a>',
 		lat: 53.2233308,
 		long: 6.5629881,
@@ -229,6 +229,32 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false
+	};
+
+	var kult = {
+		info: '<strong>Kult</strong><br>\r\
+				Steentilstraat 36-1<br>Diner & snacks<br>\
+				Serveren een aantal vegan optties zoals de vegan kaasfondue<br>\
+				<a href="https://www.google.nl/maps/dir//Kult,+Steentilstraat+36-1,+9711+GN+Groningen/@53.2166442,6.5706985,17.07z/data=!4m15!1m6!3m5!1s0x47c9cd565c0e3a2b:0x86963fc469d5818f!2sKult!8m2!3d53.2166302!4d6.5727019!4m7!1m0!1m5!1m1!1s0x47c9cd565c0e3a2b:0x86963fc469d5818f!2m2!1d6.5727019!2d53.2166302">Get Directions</a>',
+		lat: 53.2166302,
+		long: 6.5727019,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: true
+	};
+
+	var ps = {
+		info: '<strong>P.S.</strong><br>\r\
+				Oude Kijk in Het Jatstraat 24<br>Taart<br>\
+				Serveren één vegan fruittaart<br>\
+				<a href="https://www.google.nl/maps/dir//P.S.+koffie,+thee+%26+taart,+Oude+Kijk+in+Het+Jatstraat+24,+9712+EJ+Groningen/@53.2189821,6.5599463,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fd0e7e7d3:0xed345a47a1c3062f!2sP.S.+koffie,+thee+%26+taart!8m2!3d53.2189821!4d6.562135!4m7!1m0!1m5!1m1!1s0x47c9cd4fd0e7e7d3:0xed345a47a1c3062f!2m2!1d6.562135!2d53.2189821">Get Directions</a>',
+		lat: 53.2189821,
+		long: 6.562135,
+		breakfast: false,
+		lunch: false,
+		dinner: false,
+		coffee: true
 	};
 
 
@@ -251,6 +277,8 @@ function initMap() {
       [palermo.info, palermo.lat, palermo.long, palermo.breakfast, palermo.lunch, palermo.dinner, palermo.coffee, 15],
       [frietvanpiet.info, frietvanpiet.lat, frietvanpiet.long, frietvanpiet.breakfast, frietvanpiet.lunch, frietvanpiet.dinner, frietvanpiet.coffee, 16],
       [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, 17],
+      [kult.info, kult.lat, kult.long, kult.breakfast, kult.lunch, kult.dinner, kult.coffee, 18],
+      [ps.info, ps.lat, ps.long, ps.breakfast, ps.lunch, ps.dinner, ps.coffee, 19],
     ];
 
 
@@ -687,7 +715,10 @@ function initMap() {
 				locations[i][13], 
 				locations[i][14], 
 				locations[i][15], 
-				locations[i][16]),
+				locations[i][16],
+				locations[i][17],
+				locations[i][18],
+				locations[i][19]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
@@ -709,7 +740,7 @@ function initMap() {
 				infowindow_l.setContent(locations[i][0]);  
 				infoBoxInfo.style.display = "none";
 
-				if (window.screen.width < 600) {
+				if (window.screen.width < 768) {
 					infoBox.classList.remove("small");
 					hideTxt.innerHTML="hide";
 				} else {
@@ -841,7 +872,7 @@ function initMap() {
 		myoverlay.setMap(map);
 
 	 }, function(error) {
-	     console.log("Your Geo location could nog be found.")
+	     console.log("Geo location could nog be found.")
 	 });
 
 }
@@ -858,17 +889,17 @@ hideInfo.addEventListener('click',function(){
 		infoBox.classList.toggle("small");
 
 		if ( infoBox.classList.contains("small") ) {
-			hideTxt.innerHTML="show info";
+			hideTxt.innerHTML="bekijk info";
 		} else {
-			hideTxt.innerHTML="hide info";
+			hideTxt.innerHTML="verberg info";
 		}
 	} else {
 		infoBox.classList.toggle("side");
 
 		if ( infoBox.classList.contains("side") ) {
-			hideTxt.innerHTML="show info";
+			hideTxt.innerHTML="bekijk info";
 		} else {
-			hideTxt.innerHTML="hide info";
+			hideTxt.innerHTML="verberg info";
 		}
 	}
 	
@@ -880,7 +911,7 @@ function adjustDynamicElements() {
 		// Set the info panel to bottom
 		infoBox.classList.remove("side");
 		infoBox.classList.add("small");
-		hideTxt.innerHTML="show info";
+		hideTxt.innerHTML="bekijk info";
 
 		function ToggleMobileMenu() {
 			var sections = document.getElementById("js-sections"),
@@ -892,10 +923,8 @@ function adjustDynamicElements() {
 		function ToggleMenuItems() {
 			var menuItem1 = document.getElementById("js-mobile-nav-1"),
 				menuItem2 = document.getElementById("js-mobile-nav-2"),
-				menuItem3 = document.getElementById("js-mobile-nav-3"),
 				tabItem1 = document.getElementById("js-mobile-tab-1"),
 				tabItem2 = document.getElementById("js-mobile-tab-2"),
-				tabItem3 = document.getElementById("js-mobile-tab-3"),
 				body = document.getElementsByTagName("body")[0],
 				closeTab = document.getElementById("js-info-section-close"),
 				sections = document.getElementById("js-sections");
@@ -906,7 +935,6 @@ function adjustDynamicElements() {
 				sections.classList.remove("show");
 				tabItem1.classList.remove("active");
 				tabItem2.classList.remove("active");
-				tabItem3.classList.remove("active");
 
 				tabItem1.classList.add("active");
 				sections.classList.add("show");
@@ -920,7 +948,6 @@ function adjustDynamicElements() {
 				sections.classList.remove("show");
 				tabItem1.classList.remove("active");
 				tabItem2.classList.remove("active");
-				tabItem3.classList.remove("active");
 
 				tabItem2.classList.add("active");
 				sections.classList.add("show");
@@ -928,21 +955,6 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem2.style.height = bodyHeight + "px";
-			}
-			menuItem3.onclick = function() {
-				// Remove active classes
-				sections.classList.remove("show");
-				tabItem1.classList.remove("active");
-				tabItem2.classList.remove("active");
-				tabItem3.classList.remove("active");
-
-				tabItem3.classList.add("active");
-				sections.classList.add("show");
-				// mobileNav.classList.toggle("show");
-
-				// Set height for overflow scroll
-				var bodyHeight = body.offsetHeight;
-				tabItem3.style.height = bodyHeight + "px";
 			}
 
 			// Close the tab
@@ -955,8 +967,6 @@ function adjustDynamicElements() {
 					tabItem1.style.height = "auto";
 					tabItem2.classList.remove("active");
 					tabItem2.style.height = "auto";
-					tabItem3.classList.remove("active");
-					tabItem3.style.height = "auto";
 				}, 100);
 			}
 
@@ -967,7 +977,7 @@ function adjustDynamicElements() {
 	} else {
 		infoBox.classList.remove("small");
 		infoBox.classList.add("side");
-		hideTxt.innerHTML="show info";
+		hideTxt.innerHTML="bekijk info";
 	}
 
 }
