@@ -2,7 +2,7 @@
 <html lang="nl">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<title>Go Vegan Groningen</title>
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -187,8 +187,30 @@
 				<div class="table-cell mobile-only fourty">
 					<nav class="mobile-nav" id="js-mobile-nav">
 						<ul class="mobile-nav-list">
-							<li class="mobile-nav-list-item" id="js-mobile-nav-1">About</li>
-							<li class="mobile-nav-list-item" id="js-mobile-nav-2">Contact</li>
+							<?php 
+	
+								$savedLanguage = $user->language;
+
+								foreach($languages as $language) {
+
+									if($language->id == $savedLanguage->id) continue;
+
+									if(!$page->viewable($language)) continue;
+
+									$user->language = $language;
+
+								}
+
+								$user->language = $savedLanguage;
+
+								if ($savedLanguage->title !== "NL") {
+									echo '<li class="mobile-nav-list-item" id="js-mobile-nav-1">About</li>';
+									echo '<li class="mobile-nav-list-item" id="js-mobile-nav-2">Contact</li>';
+								} else {
+									echo '<li class="mobile-nav-list-item" id="js-mobile-nav-1">Over</li>';
+									echo '<li class="mobile-nav-list-item" id="js-mobile-nav-2">Contact</li>';
+								}
+							?>
 						</ul>
 					</nav>
 				</div>
@@ -465,8 +487,7 @@
 		<section class="contact section" id="js-mobile-tab-2">
 			<div class="content-holder">
 				<h2>Contact</h2>
-				<p>Heb je een nieuwe plek gespot waar je spontaan vegan kunt eten?</p>
-				<p>Laat het ons weten en stuur een mailtje naar <a href="mailto:tip@go-vegan-groningen.nl" target="_blank">tip@go-vegan-groningen.nl</a>. <br>We zullen de locatie dan zo snel mogelijk op de kaart bijvoegen.</p>
+				<?php echo $page->contact_text; ?>
 			</div>
 		</section>
 	</section><!-- Closes Sections -->
