@@ -13,7 +13,7 @@ function initMap() {
 		breakfast: false,
 		lunch: true,
 		dinner: true,
-		coffee: true
+		coffee: true,
 	};
 
 	var anat = {
@@ -26,7 +26,7 @@ function initMap() {
 		breakfast: true,
 		lunch: true,
 		dinner: false,
-		coffee: true
+		coffee: true,
 	};
 
 	var mechoui = {
@@ -735,10 +735,20 @@ function initMap() {
 		google.maps.event.addListener(marker_l, 'click', (function (marker_l, i) {
 
 			return function () {
+
+				// Get name of location clicked
+				var matches = [];
+				var text = locations[i][0];
+				text.replace(/<strong>(.*?)<\/strong>/g, function () {
+				    //arguments[0] is the entire match
+				    matches.push(arguments[1]);
+				});
+				var locationName = matches[0];
+
+				ga('send', 'event', 'Location', 'click', locationName);
 				
 				setAllMarkersIcon(normalIcon)
 				marker_l.setIcon(activeIcon);
-				
 				
 				locationInfo.classList.add('active');
 				infowindow_l.setContent(locations[i][0]);  

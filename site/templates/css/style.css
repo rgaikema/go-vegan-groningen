@@ -403,6 +403,30 @@ select {
 	    width: 100%;
 	    position: relative;
 	}
+
+	.info-toggle-holder {
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    width: 20px;
+	}
+
+	.info-toggle-holder > span:first-of-type {
+		display: none;
+	}
+
+	.location-info {
+		padding-top: 0;
+    	position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+	}
+
+	.info-box-info {
+		display: inline-block;
+		padding-top: 3vw;
+	}
 }
 
 @media only screen and (max-device-width: 767px) {
