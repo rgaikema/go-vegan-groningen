@@ -92,6 +92,34 @@ select {
 	line-height: 1.5;
 }
 
+.language_switcher {
+	display: inline-block;
+	position: relative;
+	margin-right: 0;
+	background: #fff;
+	height: 30px;
+	width: 50px;
+}
+
+.language_switcher select:focus {
+    outline: none;
+}
+
+.language_switcher select {
+	position: absolute;
+	left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6b6b6b;
+	height: 30px;
+	border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 .table {
 	display: table;
 	width: 100%;
@@ -115,7 +143,7 @@ select {
 
 .top-items-holder .table-cell:last-of-type {
 	text-align: right;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .mobile-nav {
@@ -133,7 +161,10 @@ select {
 
 .mobile-nav-list-item {
 	float: left;
-	padding: 0 10px;
+	padding: 5px 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .mobile-nav-list-item:first-child {
@@ -470,8 +501,17 @@ select {
 	}
 
 	.language_switcher {
-		display: inline-block;
-		padding-top: 7px;
+		height: 20px;
+		width: 36px;
+		margin-top: 7px;
+		margin-right: 10px;
+	}
+
+
+	.language_switcher select {
+		left: 6px;
+		font-size: 10px;
+		height: 20px;
 	}
 
 	.bottom-curve {
@@ -713,8 +753,5 @@ select {
 			transform: translateY(84%);
 		}
 
-		.language_switcher {
-			right: 10px;
-		}
 
 }
