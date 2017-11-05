@@ -369,7 +369,7 @@ select {
 
 	.bottom-curve {
 		height: 10vw;
-		background-image: url('../../img/top-curve3.svg');
+		background-image: url('../../img/top-curve.svg');
     	background-repeat: no-repeat;
     	background-position: bottom;
     	background-size: cover;
