@@ -952,8 +952,10 @@ function adjustDynamicElements() {
 		function ToggleMenuItems() {
 			var menuItem1 = document.getElementById("js-mobile-nav-1"),
 				menuItem2 = document.getElementById("js-mobile-nav-2"),
+				menuItem3 = document.getElementById("js-mobile-nav-3"),
 				tabItem1 = document.getElementById("js-mobile-tab-1"),
 				tabItem2 = document.getElementById("js-mobile-tab-2"),
+				tabItem3 = document.getElementById("js-mobile-tab-3"),
 				body = document.getElementsByTagName("body")[0],
 				closeTab = document.getElementById("js-info-section-close"),
 				sections = document.getElementById("js-sections");
@@ -964,6 +966,7 @@ function adjustDynamicElements() {
 				sections.classList.remove("show");
 				tabItem1.classList.remove("active");
 				tabItem2.classList.remove("active");
+				tabItem3.classList.remove("active");
 
 				tabItem1.classList.add("active");
 				sections.classList.add("show");
@@ -977,6 +980,7 @@ function adjustDynamicElements() {
 				sections.classList.remove("show");
 				tabItem1.classList.remove("active");
 				tabItem2.classList.remove("active");
+				tabItem3.classList.remove("active");
 
 				tabItem2.classList.add("active");
 				sections.classList.add("show");
@@ -984,6 +988,21 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem2.style.height = bodyHeight + "px";
+			}
+
+			menuItem3.onclick = function() {
+				// Remove active classes
+				sections.classList.remove("show");
+				tabItem1.classList.remove("active");
+				tabItem2.classList.remove("active");
+				tabItem3.classList.remove("active");
+
+				tabItem3.classList.add("active");
+				sections.classList.add("show");
+
+				// Set height for overflow scroll
+				var bodyHeight = body.offsetHeight;
+				tabItem3.style.height = bodyHeight + "px";
 			}
 
 			// Close the tab
@@ -996,6 +1015,8 @@ function adjustDynamicElements() {
 					tabItem1.style.height = "auto";
 					tabItem2.classList.remove("active");
 					tabItem2.style.height = "auto";
+					tabItem3.classList.remove("active");
+					tabItem3.style.height = "auto";
 				}, 100);
 			}
 
