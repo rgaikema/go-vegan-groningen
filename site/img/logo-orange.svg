@@ -1,0 +1,39 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 808 810" style="enable-background:new 0 0 808 810;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:80;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#017F00;stroke-width:25;stroke-miterlimit:10;}
+	.st3{fill:#F7931E;}
+	.st4{fill:url(#SVGID_2_);stroke:#ED7532;stroke-width:15;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#ED7532;stroke-width:15;stroke-miterlimit:10;}
+</style>
+<g id="Layer_10_copy_2">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="722.1506" y1="502.8201" x2="92.0494" y2="310.5799" gradientTransform="matrix(1 0 0 -1 0 812)">
+		<stop  offset="0" style="stop-color:#8CC63F"/>
+		<stop  offset="1" style="stop-color:#009245"/>
+	</linearGradient>
+	<circle class="st0" cx="407.1" cy="405.3" r="329.3"/>
+</g>
+<g id="white_overlay_circle">
+	<circle class="st1" cx="404.7" cy="404.6" r="361.9"/>
+</g>
+<g id="inner_circle">
+	<circle class="st2" cx="404.7" cy="404.6" r="334"/>
+</g>
+<g id="Layer_8">
+	<g id="Group">
+		<path id="Shape" class="st3" d="M404.5,655.1C393,598.8,372.8,552,348.4,508.5c-18.1-32.2-39.1-62-58.6-93.1
+			c-6.5-10.4-12-21.4-18.3-32.2c-12.5-21.7-22.6-46.7-21.9-79.3c0.7-31.8,9.7-57.3,23-78.1c21.8-34.3,58.2-62.4,107.1-69.9
+			c39.9-6.1,77.4,4.2,104.1,19.8c21.7,12.7,38.6,29.8,51.3,49.8c13.4,21,22.5,45.6,23.3,77.8c0.4,16.5-2.3,31.8-6.1,44.5
+			c-3.8,12.9-10,23.6-15.6,35.1c-10.7,22.3-24.2,42.9-37.8,63.4C458.9,507.3,421,569.7,404.5,655.1L404.5,655.1z"/>
+	</g>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="475.5295" y1="275.7628" x2="336.93" y2="318.0488">
+		<stop  offset="0" style="stop-color:#8CC63F"/>
+		<stop  offset="1" style="stop-color:#009245"/>
+	</linearGradient>
+	<circle class="st4" cx="406.2" cy="296.9" r="72.4"/>
+	<circle class="st5" cx="406.2" cy="296.9" r="72.4"/>
+</g>
+</svg>
