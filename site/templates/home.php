@@ -372,8 +372,15 @@
 			<div class="content-holder">
 				<h2>Contact</h2>
 				<?php echo $page->contact_text; ?>
-				<img class="profile-pic" src="<?php echo $config->urls->root?>/site/img/remco.jpg" alt="remco">
-				<img class="profile-pic" src="<?php echo $config->urls->root?>/site/img/jani.jpg" alt="jani">
+				<figure class="profile-pic">
+					<img src="<?php echo $config->urls->root?>/site/img/remco.jpg" alt="remco">
+					<figcaption>Remco</figcaption>
+				</figure>
+				
+				<figure class="profile-pic">
+					<img src="<?php echo $config->urls->root?>/site/img/jani.jpg" alt="jani">
+					<figcaption>Jani</figcaption>
+				</figure>
 			</div>
 		</section>
 	</section><!-- Closes Sections -->
