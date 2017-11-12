@@ -4,6 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<title>Go Vegan Groningen</title>
+		<meta property="og:title" content="Go Vegan Groningen"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://go-vegan-groningen.nl/" />
+<!-- 		<meta property="og:image" content="https://go-vegan-groningen.nl/images/f-image.jpg"/> -->
+		<meta property="og:description" content="Find vegan food in Groningen" />
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="shortcut icon" href="favicon.ico">
@@ -18,6 +23,16 @@
 		</script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=146295529459606';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 
 	<section class="page-wrapper">
 
@@ -381,6 +396,9 @@
 					<img src="<?php echo $config->urls->root?>/site/img/jani.jpg" alt="jani">
 					<figcaption>Jani</figcaption>
 				</figure>
+				<div class="facebook-like-holder">
+					<div class="fb-like" data-href="https://go-vegan-groningen.nl/" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				</div>
 			</div>
 		</section>
 	</section><!-- Closes Sections -->

@@ -600,6 +600,7 @@ select {
 
 	.top-items-holder {
 		padding-left: 0;
+		width: calc(100% + 40px);
 	}
 
 	.mobile-nav-list {
@@ -638,7 +639,7 @@ select {
 	    background-position: top center;
 	    background-size: 100%;
 	    width: 101%;
-	    position: absolute;
+	    position: fixed;
 	    z-index: 98;
 	    top: 39px;
 	}
