@@ -270,6 +270,306 @@ function initMap() {
 		coffee: false
 	};
 
+	var blabla = {
+		info: '<strong>Bla Bla</strong><br>\r\
+				Nieuwe+Boteringestraat 9<br>Dinner<br>\
+				Main course and starter. More main courses possible, just ask.<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Restaurant+Bla+Bla,+Nieuwe+Boteringestraat+9,+9712+PE+Groningen/@53.222392,6.559391,17z/data=!4m15!1m6!3m5!1s0x47c9cd453f67f69d:0x97fb8ed4c866d28f!2sRestaurant+Bla+Bla!8m2!3d53.222392!4d6.561585!4m7!1m0!1m5!1m1!1s0x47c9cd453f67f69d:0x97fb8ed4c866d28f!2m2!1d6.561585!2d53.222392">Get Directions</a>',
+		lat: 53.222392,
+		long: 6.561585,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var beeren = {
+		info: '<strong>Beer&</strong><br>\r\
+				Rodeweg 1<br>Dinner<br>\
+				Starter, main course, side dishes and other vegan snacks\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Beer%26,+Rodeweg+1,+9715+AW+Groningen/@53.2271723,6.5594446,17z/data=!4m15!1m6!3m5!1s0x47c9cd436fbfe921:0x240884cf770ba046!2sBeer%26!8m2!3d53.2271723!4d6.5616386!4m7!1m0!1m5!1m1!1s0x47c9cd436fbfe921:0x240884cf770ba046!2m2!1d6.5616386!2d53.2271723">Get Directions</a>',
+		lat: 53.2271723,
+		long: 6.5616386,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var bijbritta = {
+		info: '<strong>Bij Britta</strong><br>\r\
+				Oude Kijk in ’t Jatstraat 27<br>Lunch & cake<br>\
+				Sandwich and cake<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Bij+Britta,+9712+EB+Groningen/@53.2190868,6.5600139,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fd8d0f8bd:0x652dfca6fdaa0279!2sBij+Britta!8m2!3d53.2190868!4d6.5622079!4m7!1m0!1m5!1m1!1s0x47c9cd4fd8d0f8bd:0x652dfca6fdaa0279!2m2!1d6.5622079!2d53.2190868">Get Directions</a>',
+		lat: 53.2190868,
+		long: 6.5622079,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var bodega = {
+		info: '<strong>Bodega y Tapas</strong><br>\r\
+				Damsterdiep 20<br>Dinner<br>\
+				Tapas (+/- 8 sorts) <br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Bodega+Y+Tapas,+Damsterdiep+20,+9711+SK+Groningen/@53.2175327,6.5729978,17z/data=!4m15!1m6!3m5!1s0x47c9cd562d33a45b:0x829d31f151a1d0e7!2sBodega+Y+Tapas!8m2!3d53.2175327!4d6.5751918!4m7!1m0!1m5!1m1!1s0x47c9cd562d33a45b:0x829d31f151a1d0e7!2m2!1d6.5751918!2d53.2175327">Get Directions</a>',
+		lat: 53.2175327,
+		long: 6.5751918,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var curryhuis = {
+		info: '<strong>Curry Huis</strong><br>\r\
+				Kerklaan 23<br>Dinner<br>\
+				About 5 different curries<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Curryhuis+restaurant:+Indiaas+Groningen,+Kerklaan+23,+9717+HA+Groningen/@53.2242538,6.5509214,17z/data=!4m15!1m6!3m5!1s0x47c9cd46fe340c85:0x245ba85574832298!2sCurryhuis+restaurant:+Indiaas+Groningen!8m2!3d53.2242538!4d6.5531154!4m7!1m0!1m5!1m1!1s0x47c9cd46fe340c85:0x245ba85574832298!2m2!1d6.5531154!2d53.2242538">Get Directions</a>',
+		lat: 53.2242538,
+		long: 6.5531154,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var dubbeljoe = {
+		info: '<strong>Dubbeljoe J</strong><br>\r\
+				Folkingestraat 49<br>Lunch<br>\
+				Salad, soup and vegan stew<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Dubbeljoe+J,+Folkingestraat+49,+9711+JV+Groningen/@53.2152714,6.562704,17z/data=!4m15!1m6!3m5!1s0x47c9cd53d524581f:0x381b96d307816595!2sDubbeljoe+J!8m2!3d53.2152714!4d6.564898!4m7!1m0!1m5!1m1!1s0x47c9cd53d524581f:0x381b96d307816595!2m2!1d6.564898!2d53.2152714">Get Directions</a>',
+		lat: 53.2152714,
+		long: 6.564898,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var gustatio = {
+		info: '<strong>Gustatio</strong><br>\r\
+				Oosterstraat 3<br>Dinner<br>\
+				One vegan main course (pasta)<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Gustatio,+Oosterstraat+3,+9711+NN+Groningen/@53.218197,6.5667042,17z/data=!4m15!1m6!3m5!1s0x47c82d4cdd3a86b9:0x6232e991fcb14037!2sGustatio!8m2!3d53.218197!4d6.5688982!4m7!1m0!1m5!1m1!1s0x47c82d4cdd3a86b9:0x6232e991fcb14037!2m2!1d6.5688982!2d53.218197">Get Directions</a>',
+		lat: 53.218197,
+		long: 6.5688982,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var bakkerscafe = {
+		info: '<strong>Het Bakkerscafé</strong><br>\r\
+				Zwanestraat 26<br>Lunch<br>\
+				Bread with several dips and grilled vegetables<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Het+Bakkerscaf%C3%A9,+Zwanestraat+26,+9712+CN+Groningen/@53.218139,6.5614923,17z/data=!4m15!1m6!3m5!1s0x47c9cd51caa6eab7:0xfbe5625896a7e6b0!2sHet+Bakkerscaf%C3%A9!8m2!3d53.218139!4d6.5636863!4m7!1m0!1m5!1m1!1s0x47c9cd51caa6eab7:0xfbe5625896a7e6b0!2m2!1d6.5636863!2d53.218139">Get Directions</a>',
+		lat: 53.218139,
+		long: 6.5636863,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var concerthuis = {
+		info: '<strong>Het Concerthuis</strong><br>\r\
+				Poelestraat 30<br>Breakfast, lunch & dinner<br>\
+				Vegan options all day long + foodsharing<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Het+Concerthuis,+Poelestraat+30,+9712+KB+Groningen/@53.218446,6.568325,17z/data=!4m15!1m6!3m5!1s0x47c9cd572337fe3b:0x8cb6708033a8417f!2sHet+Concerthuis!8m2!3d53.218446!4d6.570519!4m7!1m0!1m5!1m1!1s0x47c9cd572337fe3b:0x8cb6708033a8417f!2m2!1d6.570519!2d53.218446">Get Directions</a>',
+		lat: 53.218446,
+		long: 6.570519,
+		breakfast: true,
+		lunch: true,
+		dinner: true,
+		coffee: false
+	};
+
+	var holtbar = {
+		info: '<strong>Holtbar</strong><br>\r\
+				Oude Kijk in Het Jatstraat 20<br>Breakfast<br>\
+				Smoothie bowl + energybars<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//HOLTBAR+concept+store,+Oude+Kijk+in+Het+Jatstraat+20,+9712+EH+Groningen/@53.2188287,6.5599752,17z/data=!4m15!1m6!3m5!1s0x47c9cd5028444acf:0x389d31d2a40a712a!2sHOLTBAR+concept+store!8m2!3d53.2188287!4d6.5621692!4m7!1m0!1m5!1m1!1s0x47c9cd5028444acf:0x389d31d2a40a712a!2m2!1d6.5621692!2d53.2188287">Get Directions</a>',
+		lat: 53.2188287,
+		long: 6.5621692,
+		breakfast: true,
+		lunch: false,
+		dinner: false,
+		coffee: false
+	};
+
+	var javaans = {
+		info: '<strong>Javaans Eetcafé Groningen</strong><br>\r\
+				Schuitendiep 33<br>Dinner<br>\
+				Indonesian thali and main course with rice<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Javaans+Eetcafe+Groningen,+Schuitendiep+33,+9711+RA+Groningen/@53.2180179,6.570403,17z/data=!4m15!1m6!3m5!1s0x47c9cd57a98d8b6b:0x33883194d243417e!2sJavaans+Eetcafe+Groningen!8m2!3d53.2180179!4d6.572597!4m7!1m0!1m5!1m1!1s0x47c9cd57a98d8b6b:0x33883194d243417e!2m2!1d6.572597!2d53.2180179">Get Directions</a>',
+		lat: 53.2188287,
+		long: 6.5621692,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var opznkop = {
+		info: '<strong>Kattencafé Op z´n Kop</strong><br>\r\
+				Oude Ebbingestraat 57<br>Ontbijt en lunch<br>\
+				Sandwiches, soy yoghurt with fuit and vegan snacks.<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Kattencaf%C3%A9+Op+z\'n+Kop,+Oude+Ebbingestraat+57,+9712+HC+Groningen/@53.2207933,6.5641078,17z/data=!4m15!1m6!3m5!1s0x47c9cd5a7f8fa731:0x8a890c3dce4569e8!2sKattencaf%C3%A9+Op+z\'n+Kop!8m2!3d53.2207933!4d6.5663018!4m7!1m0!1m5!1m1!1s0x47c9cd5a7f8fa731:0x8a890c3dce4569e8!2m2!1d6.5663018!2d53.2207933">Get Directions</a>',
+		lat: 53.2207933,
+		long: 6.5663018,
+		breakfast: true,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var kokanje = {
+		info: '<strong>Land van Kokanje</strong><br>\r\
+				Oude Boteringestraat 9<br>Lunch<br>\
+				Dutch Weedburger<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Land+van+Kokanje,+Oude+Boteringestraat+9,+9712+GB+Groningen/@53.2190992,6.5628553,17z/data=!4m15!1m6!3m5!1s0x47c9cd505b485345:0x6ac4e9376e6f4d82!2sLand+van+Kokanje!8m2!3d53.2190992!4d6.5650493!4m7!1m0!1m5!1m1!1s0x47c9cd505b485345:0x6ac4e9376e6f4d82!2m2!1d6.5650493!2d53.2190992">Get Directions</a>',
+		lat: 53.2190992,
+		long: 6.5650493,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var txoko = {
+		info: '<strong>El Txoko</strong><br>\r\
+				Oude Kijk in ’t Jatstraat 53<br>Dinner<br>\
+				Several vegan tapas<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//El+Txoko,+Oude+Kijk+in+Het+Jatstraat+53,+9712+EC+Groningen/@53.2198641,6.559398,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2sEl+Txoko!8m2!3d53.2198641!4d6.561592!4m7!1m0!1m5!1m1!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2m2!1d6.561592!2d53.2198641">Get Directions</a>',
+		lat: 53.2190992,
+		long: 6.5650493,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var moro = {
+		info: '<strong>Moro</strong><br>\r\
+				Oude Kijk in ’t Jatstraat 53<br>Dinner<br>\
+				One vegan main course and several side dishes<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Moro,+Gedempte+Kattendiep+21,+9711+PL+Groningen/@53.2168661,6.5702302,17z/data=!4m15!1m6!3m5!1s0x47c9cd565848a15f:0x447f19a32a4ca1ab!2sMoro!8m2!3d53.2168661!4d6.5724242!4m7!1m0!1m5!1m1!1s0x47c9cd565848a15f:0x447f19a32a4ca1ab!2m2!1d6.5724242!2d53.2168661">Get Directions</a>',
+		lat: 53.2168661,
+		long: 6.5724242,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var pannekoekschip = {
+		info: '<strong>Pannekoekschip</strong><br>\r\
+				Schuitendiep 1017<br>Lunch<br>\
+				Vegan pancakes on request, or bring your own plantbased milk<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//\'t+Pannekoekschip,+Schuitendiep+1017,+9711+RB+Groningen\'/@53.217708,6.570957,17z/data=!4m15!1m6!3m5!1s0x47c9cd56528e13c9:0x7109ddf63bc75e93!2s\'t+Pannekoekschip!8m2!3d53.217708!4d6.573151!4m7!1m0!1m5!1m1!1s0x47c9cd56528e13c9:0x7109ddf63bc75e93!2m2!1d6.573151!2d53.217708">Get Directions</a>',
+		lat: 53.217708,
+		long: 6.573151,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false
+	};
+
+	var sumo = {
+		info: '<strong>Sumo</strong><br>\r\
+				Vismarkt 54<br>Dinner<br>\
+				Vegan sushi and salad<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Sumo,+Vismarkt+54,+9711+KV+Groningen/@53.2167414,6.5620675,17z/data=!4m15!1m6!3m5!1s0x47c9cd519803edb3:0x1c020820aff3fbcc!2sSumo!8m2!3d53.2167414!4d6.5642615!4m7!1m0!1m5!1m1!1s0x47c9cd519803edb3:0x1c020820aff3fbcc!2m2!1d6.5642615!2d53.2167414">Get Directions</a>',
+		lat: 53.2167414,
+		long: 6.5642615,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var tapasco = {
+		info: '<strong>Tapasco</strong><br>\r\
+				Haddingedwarsstraat 3<br>Dinner<br>\
+				Several vegan tapas<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Tapasco,+Haddingedwarsstraat+3,+9711+KA+Groningen/@53.2165537,6.5628448,17z/data=!4m15!1m6!3m5!1s0x47c9cd519e458f09:0x6584c4da99b63a2b!2sTapasco!8m2!3d53.2165537!4d6.5650388!4m7!1m0!1m5!1m1!1s0x47c9cd519e458f09:0x6584c4da99b63a2b!2m2!1d6.5650388!2d53.2165537">Get Directions</a>',
+		lat: 53.2165537,
+		long: 6.5650388,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var jasmine = {
+		info: '<strong>Thai Jasmine</strong><br>\r\
+				Gedempte Zuiderdiep 19<br>Dinner<br>\
+				Several vegan options, e.g. curries.<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Thai+Jasmine,+Gedempte+Zuiderdiep+19,+9711+HA+Groningen/@53.2155989,6.5674542,17z/data=!4m15!1m6!3m5!1s0x47c9cd57b4923135:0xe21ead1ebfb77815!2sThai+Jasmine!8m2!3d53.2155989!4d6.5696482!4m7!1m0!1m5!1m1!1s0x47c9cd57b4923135:0xe21ead1ebfb77815!2m2!1d6.5696482!2d53.2155989">Get Directions</a>',
+		lat: 53.2155989,
+		long: 6.5696482,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+
+	var toshka = {
+		info: '<strong>Toshka</strong><br>\r\
+				Vismarkt 20<br>Dinner<br>\
+				Two dishes with falafel<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//TOSHKA,+Vismarkt+20,+9711+KT+Groningen/@53.2173018,6.5637022,17z/data=!4m15!1m6!3m5!1s0x47c9cd51087d7931:0x3c25fb9089dcebc4!2sTOSHKA!8m2!3d53.2173018!4d6.5658962!4m7!1m0!1m5!1m1!1s0x47c9cd51087d7931:0x3c25fb9089dcebc4!2m2!1d6.5658962!2d53.2173018">Get Directions</a>',
+		lat: 53.2173018,
+		long: 6.5658962,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var uurwerker = {
+		info: '<strong>Uurwerker</strong><br>\r\
+				Uurwerkersplein 1<br>Dinner<br>\
+				Pizza and veggie burger, both can be veganized<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//De+Uurwerker,+Uurwerkersplein+1,+9712+EJ+Groningen/@53.2187676,6.5593196,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fd14e8a67:0x6b76e5a9d577cc7b!2sDe+Uurwerker!8m2!3d53.2187676!4d6.5615136!4m7!1m0!1m5!1m1!1s0x47c9cd4fd14e8a67:0x6b76e5a9d577cc7b!2m2!1d6.5615136!2d53.2187676">Get Directions</a>',
+		lat: 53.2187676,
+		long: 6.5615136,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var warung = {
+		info: '<strong>Warung Jawa</strong><br>\r\
+				Gedempte Zuiderdiep 110-112<br>Dinner<br>\
+				Vegan roti and bami + vegan sambal<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Warung+Jawa,+Gedempte+Zuiderdiep+110-112,+9711+HM+Groningen/@53.2144039,6.5620044,17z/data=!4m15!1m6!3m5!1s0x47c9cd5234119357:0x1467f02948ecd29a!2sWarung+Jawa!8m2!3d53.2144039!4d6.5641984!4m7!1m0!1m5!1m1!1s0x47c9cd5234119357:0x1467f02948ecd29a!2m2!1d6.5641984!2d53.2144039">Get Directions</a>',
+		lat: 53.2144039,
+		long: 6.5641984,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false
+	};
+
+	var wereldburgers = {
+		info: '<strong>Wereldburgers</strong><br>\r\
+				Akerkhof 43<br>Dinner<br>\
+				Two burgers and a vegan cake. Plus vegan icecream<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Wereldburgers,+Akerkhof+43,+9712+BC+Groningen/@53.2167865,6.5595674,17z/data=!4m15!1m6!3m5!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2sWereldburgers!8m2!3d53.2167865!4d6.5617614!4m7!1m0!1m5!1m1!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2m2!1d6.5617614!2d53.2167865">Get Directions</a>',
+		lat: 53.2167865,
+		long: 6.5617614,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: true
+	};
+
 
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, 0],
@@ -292,7 +592,29 @@ function initMap() {
       [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, 17],
       [kult.info, kult.lat, kult.long, kult.breakfast, kult.lunch, kult.dinner, kult.coffee, 18],
       [ps.info, ps.lat, ps.long, ps.breakfast, ps.lunch, ps.dinner, ps.coffee, 19],
-      [vegansuper.info, vegansuper.lat, vegansuper.long, vegansuper.breakfast, vegansuper.lunch, vegansuper.dinner, vegansuper.coffee, 20]
+      [vegansuper.info, vegansuper.lat, vegansuper.long, vegansuper.breakfast, vegansuper.lunch, vegansuper.dinner, vegansuper.coffee, 20],
+      [blabla.info, blabla.lat, blabla.long, blabla.breakfast, blabla.lunch, blabla.dinner, blabla.coffee, 21],
+      [beeren.info, beeren.lat, beeren.long, beeren.breakfast, beeren.lunch, beeren.dinner, beeren.coffee, 22],
+      [bijbritta.info, bijbritta.lat, bijbritta.long, bijbritta.breakfast, bijbritta.lunch, bijbritta.dinner, bijbritta.coffee, 23],
+      [bodega.info, bodega.lat, bodega.long, bodega.breakfast, bodega.lunch, bodega.dinner, bodega.coffee, 24],
+      [curryhuis.info, curryhuis.lat, curryhuis.long, curryhuis.breakfast, curryhuis.lunch, curryhuis.dinner, curryhuis.coffee, 25],
+      [dubbeljoe.info, dubbeljoe.lat, dubbeljoe.long, dubbeljoe.breakfast, dubbeljoe.lunch, dubbeljoe.dinner, dubbeljoe.coffee, 26],
+      [gustatio.info, gustatio.lat, gustatio.long, gustatio.breakfast, gustatio.lunch, gustatio.dinner, gustatio.coffee, 27],
+      [bakkerscafe.info, bakkerscafe.lat, bakkerscafe.long, bakkerscafe.breakfast, bakkerscafe.lunch, bakkerscafe.dinner, bakkerscafe.coffee, 28],
+      [concerthuis.info, concerthuis.lat, concerthuis.long, concerthuis.breakfast, concerthuis.lunch, concerthuis.dinner, concerthuis.coffee, 29],
+      [holtbar.info, holtbar.lat, holtbar.long, holtbar.breakfast, holtbar.lunch, holtbar.dinner, holtbar.coffee, 30],
+      [javaans.info, javaans.lat, javaans.long, javaans.breakfast, javaans.lunch, javaans.dinner, javaans.coffee, 31],
+      [opznkop.info, opznkop.lat, opznkop.long, opznkop.breakfast, opznkop.lunch, opznkop.dinner, opznkop.coffee, 32],
+      [kokanje.info, kokanje.lat, kokanje.long, kokanje.breakfast, kokanje.lunch, kokanje.dinner, kokanje.coffee, 33],
+      [txoko.info, txoko.lat, txoko.long, txoko.breakfast, txoko.lunch, txoko.dinner, txoko.coffee, 34],
+      [pannekoekschip.info, pannekoekschip.lat, pannekoekschip.long, pannekoekschip.breakfast, pannekoekschip.lunch, pannekoekschip.dinner, pannekoekschip.coffee, 35],
+      [sumo.info, sumo.lat, sumo.long, sumo.breakfast, sumo.lunch, sumo.dinner, sumo.coffee, 36],
+      [tapasco.info, tapasco.lat, tapasco.long, tapasco.breakfast, tapasco.lunch, tapasco.dinner, tapasco.coffee, 37],
+      [jasmine.info, jasmine.lat, jasmine.long, jasmine.breakfast, jasmine.lunch, jasmine.dinner, jasmine.coffee, 38],
+      [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, 39],
+      [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, 40],
+      [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, 41],
+      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, 42]
     ];
 
 

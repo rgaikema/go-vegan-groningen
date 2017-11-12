@@ -26,7 +26,7 @@ h1 {
 	color: #fff;
 	margin: 0;
 	display: inline-block;
-	padding-left: 110px;
+	padding-left: 100px;
 }
 
 h2 {
@@ -91,6 +91,18 @@ select {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
+}
+
+.image {
+	margin: 0;
+}
+
+.margin-right{
+	margin-right: 4%;
+}
+
+.margin-left{
+	margin-left: 4%;
 }
 
 .table-cell.v-align-top {
@@ -178,7 +190,7 @@ select {
 
 .mobile-nav-list-item {
 	float: left;
-	padding: 5px 8px;
+	padding: 5px 6px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 12px;
@@ -231,6 +243,11 @@ select {
 	min-height: 0;
 }
 
+.footer .content-holder {
+	display: table;
+	width: 100%;
+}
+
 #map {
 	position: absolute;
 	top: 0;
@@ -250,8 +267,8 @@ select {
 }
 
 .logo {
-	width: 100px;
-    height: 100px;
+	width: 90px;
+    height: 90px;
     position: absolute;
     top: 10px;
     left: 30px;
@@ -363,25 +380,59 @@ select {
 	display: none;
 }
 
-.link_list {
-	list-style-type: none;
-	margin-left: 0;
-	padding-left: 0;
-	float: left;
-	width: calc(100% / 3);
+
+.link_list_holder,
+.host_holder {
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
 }
 
 .link_list_holder {
-	display: inline-block;
-	width: 100%;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #c7c7c7;
+}
+
+.host_holder {
+	text-align: right;
+}
+
+.host_holder img {
+	max-width: 120px;
 }
 
 .profile-pic {
 	width: 80px;
 	height: 80px;
 	margin-right: 20px;
+	border-radius: 50%;
 }
 
+.image-text-holder {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.image-text-holder .text-holder,
+.image-text-holder .image {
+	float: left;
+}
+.image-text-holder .image {
+	width: 26%;
+}
+
+.image-text-holder .image img,
+.image-text-holder .image svg {
+	max-width: 180px;
+	width: 100%;
+}
+
+.image-text-holder .text-holder {
+	width: 70%;
+}
 
 @media only screen and (min-device-width: 1600px) {
 	.section.map-holder {
@@ -416,7 +467,7 @@ select {
 
 	.content-holder {
 		max-width: 900px;
-		margin: 0 auto;
+		margin: 0 auto 40px;
 	}
 
 	.bottom-curve-green {
@@ -808,6 +859,18 @@ select {
 		padding-bottom: 140px;
 	}
 
+	.image-text-holder {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image-text-holder.second .text-holder{
+		order: 1
+	}
+	.image-text-holder.second .image{
+		order: 0
+	}
+
 }
 
 
@@ -816,6 +879,35 @@ select {
 		.info-box.small {
 			transform: translateY(85%);
 		}
+}
 
+@media only screen and (max-device-width: 420px) {
+
+	.margin-left,
+	.margin-right {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.image-text-holder .text-holder,
+	.image-text-holder .image {
+		float: none;
+	}
+
+	.image-text-holder .image {
+		width: 100%;
+		text-align: center;
+	}
+
+	.image-text-holder .image img,
+	.image-text-holder .image svg {
+		max-width: 160px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.image-text-holder .text-holder {
+		width: 100%;
+	}
 
 }
