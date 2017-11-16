@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<title>Go Vegan Groningen</title>
+		<meta name="description" content="Op deze website zie je waar je vegan uit eten kunt in Groningen.">
 		<meta property="og:title" content="Go Vegan Groningen"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://go-vegan-groningen.nl/" />
-<!-- 		<meta property="og:image" content="https://go-vegan-groningen.nl/images/f-image.jpg"/> -->
-		<meta property="og:description" content="Find vegan food in Groningen" />
+		<meta property="og:image" content="https://go-vegan-groningen.nl/site/img/f-image.jpg"/>
+		<meta property="og:description" content="Vegan uit eten in Groningen" />
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="shortcut icon" href="favicon.ico">
@@ -110,9 +111,9 @@
 						$user->language = $savedLanguage;
 
 						if ($savedLanguage->title !== "NL") {
-							echo "<h1>Vegan food in Groningen</h1>";
+							echo "<h1>Vegan dining in Groningen</h1>";
 						} else {
-							echo "<h1>Vegan eten in Groningen</h1>";
+							echo "<h1>Vegan uit eten in Groningen</h1>";
 						}
 					?>
 				</div>
@@ -260,7 +261,7 @@
 		<section class="map-holder section">
 			<div id="map"></div>
 			<div class="info-box" id="info-box">
-				<div class="info-toggle-holder"><span><h1>Vegan hotspots in Groningen</h1></span>
+				<div class="info-toggle-holder"><span><h1>Vegan uit eten in Groningen</h1></span>
 					<span class="hide-info" id="js-hide-info"><span id="js-hide-triangle">&#x25BC;</span> <span id="js-hide-txt">hide info</span></span>
 				</div>
 				<?php 

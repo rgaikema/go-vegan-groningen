@@ -1019,10 +1019,12 @@ function initMap() {
 		infoBox = document.getElementById("info-box"),
 		marker_l, i,
 		normalIcon = {
-  				url: "site/img/vegan.svg"
+  				url: "site/img/vegan.png",
+  				scaledSize: new google.maps.Size(27, 44)
   			},
   		activeIcon = {
-		url: "site/img/vegan_active.svg"
+		url: "site/img/vegan_active.png",
+		scaledSize: new google.maps.Size(27, 44)
 	};
 
 
@@ -1057,8 +1059,29 @@ function initMap() {
 				locations[i][16],
 				locations[i][17],
 				locations[i][18],
-				locations[i][19],
-				locations[i][20]),
+				locations[i][20],
+				locations[i][21],
+				locations[i][22],
+				locations[i][23],
+				locations[i][24],
+				locations[i][25],
+				locations[i][26],
+				locations[i][27],
+				locations[i][28],
+				locations[i][29],
+				locations[i][30],
+				locations[i][31],
+				locations[i][32],
+				locations[i][33],
+				locations[i][34],
+				locations[i][35],
+				locations[i][36],
+				locations[i][37],
+				locations[i][38],
+				locations[i][39],
+				locations[i][40],
+				locations[i][41],
+				locations[i][42]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
