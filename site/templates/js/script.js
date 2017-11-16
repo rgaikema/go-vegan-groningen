@@ -259,7 +259,7 @@ function initMap() {
 
 	var vegansuper = {
 		info: '<strong>Vegansuper</strong><br>\r\
-				Nieuwe Ebbingestraat 87<br>Lunch<br>\
+				Nieuwe Ebbingestraat 87<br>Ontbijt, lunch & taart<br>\
 				Broodje hamburger, smoothies, croissants, pudding broodjes, taart & sandwiches<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Vegansuper,+Nieuwe+Ebbingestraat+87,+9712+NG+Groningen/@53.2250471,6.560053,17z/data=!4m15!1m6!3m5!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2sVegansuper!8m2!3d53.2250439!4d6.5622417!4m7!1m0!1m5!1m1!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2m2!1d6.5622417!2d53.2250439">Bekijk Route</a>',
 		lat: 53.2250439,
@@ -570,6 +570,19 @@ function initMap() {
 		coffee: true
 	};
 
+	var poeslief = {
+		info: '<strong>Kattencafé Poeslief</strong><br>\r\
+				Nieuweweg 14<br>Lunch & taart<br>\
+				Vegan cake, tosti\'s & wraps<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Kattencaf%C3%A9+Poeslief,+Nieuweweg+14,+9711+TD+Groningen/@53.2184559,6.5721802,17z/data=!4m15!1m6!3m5!1s0x47c9cd57b8816391:0x55af840e7cbbe581!2sKattencaf%C3%A9+Poeslief!8m2!3d53.2184559!4d6.5743689!4m7!1m0!1m5!1m1!1s0x47c9cd57b8816391:0x55af840e7cbbe581!2m2!1d6.5743689!2d53.2184559">Bekijk Route</a>',
+		lat: 53.2184559,
+		long: 6.5743689,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: true
+	};
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, 0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, 1],
@@ -613,7 +626,8 @@ function initMap() {
       [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, 39],
       [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, 40],
       [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, 41],
-      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, 42]
+      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, 42],
+      [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, 43],
     ];
 
 
