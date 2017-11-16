@@ -260,14 +260,14 @@ function initMap() {
 	var vegansuper = {
 		info: '<strong>Vegansuper</strong><br>\r\
 					 Nieuwe Ebbingestraat 87<br>Lunch<br>\
-					 Burger and a couple of other snacks<br>\
+					 Burger, smoothies, vegan croissants, pudding rolls, cake & sandwiches<br>\
 					<a href="https://www.google.nl/maps/dir//Vegansuper,+Nieuwe+Ebbingestraat+87,+9712+NG+Groningen/@53.2250471,6.560053,17z/data=!4m15!1m6!3m5!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2sVegansuper!8m2!3d53.2250439!4d6.5622417!4m7!1m0!1m5!1m1!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2m2!1d6.5622417!2d53.2250439">Get Directions</a>',
 		lat: 53.2250439,
 		long: 6.5622417,
-		breakfast: false,
+		breakfast: true,
 		lunch: true,
 		dinner: false,
-		coffee: false
+		coffee: true
 	};
 
 	var blabla = {
