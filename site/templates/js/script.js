@@ -304,9 +304,9 @@ function initMap() {
 		lat: 53.2190868,
 		long: 6.5622079,
 		breakfast: false,
-		lunch: false,
-		dinner: true,
-		coffee: false
+		lunch: true,
+		dinner: false,
+		coffee: true
 	};
 
 	var bodega = {
@@ -405,8 +405,8 @@ function initMap() {
 				Schuitendiep 33<br>Diner<br>\
 				Vegan rijsttafel en vegan rijstschotel<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Javaans+Eetcafe+Groningen,+Schuitendiep+33,+9711+RA+Groningen/@53.2180179,6.570403,17z/data=!4m15!1m6!3m5!1s0x47c9cd57a98d8b6b:0x33883194d243417e!2sJavaans+Eetcafe+Groningen!8m2!3d53.2180179!4d6.572597!4m7!1m0!1m5!1m1!1s0x47c9cd57a98d8b6b:0x33883194d243417e!2m2!1d6.572597!2d53.2180179">Bekijk Route</a>',
-		lat: 53.2188287,
-		long: 6.5621692,
+		lat: 53.2180179,
+		long: 6.572597,
 		breakfast: false,
 		lunch: false,
 		dinner: true,
