@@ -1119,11 +1119,18 @@ function initMap() {
 				});
 				var locationName = matches[0];
 
-				ga('send', 'event', 'Location', 'click', 'en-' + locationName);
-
+				
+				
+				gtag('event', 'view_item', {
+				  'event_category': 'Location Markers EN',
+				  'event_label': locationName + "_en"
+				});
 				
 				setAllMarkersIcon(normalIcon)
 				marker_l.setIcon(activeIcon);
+
+				// Move map to active marker position
+				map.panTo(marker_l.getPosition());
 				
 				locationInfo.classList.add('active');
 				infowindow_l.setContent(locations[i][0]);  
@@ -1172,6 +1179,12 @@ function initMap() {
 
     toggleBreakfast.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'breakfast'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1185,6 +1198,12 @@ function initMap() {
 
 	toggleLunch.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'lunch EN'
+			});
+						
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1198,6 +1217,12 @@ function initMap() {
 
 	toggleCoffee.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'taart'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1211,6 +1236,12 @@ function initMap() {
 
 	toggleDinner.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'dinner'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1224,6 +1255,12 @@ function initMap() {
 
 	toggleAll.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'all'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(true);
@@ -1334,6 +1371,11 @@ function adjustDynamicElements() {
 				// Set height for tabs to overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem1.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu EN',
+					'event_label': 'about'
+				});
 			}
 			menuItem2.onclick = function() {
 				// Remove active classes
@@ -1348,6 +1390,11 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem2.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu EN',
+					'event_label': 'vegan'
+				});
 			}
 
 			menuItem3.onclick = function() {
@@ -1363,6 +1410,11 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem2.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu EN',
+					'event_label': 'contact'
+				});
 			}
 
 			// Close the tab
@@ -1378,6 +1430,11 @@ function adjustDynamicElements() {
 					tabItem3.classList.remove("active");
 					tabItem3.style.height = "auto";
 				}, 100);
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu EN',
+					'event_label': 'close tab'
+				});
 			}
 
 		}

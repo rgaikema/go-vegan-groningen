@@ -1117,11 +1117,17 @@ function initMap() {
 				    matches.push(arguments[1]);
 				});
 				var locationName = matches[0];
-
-				ga('send', 'event', 'Location', 'click', locationName);
+		
+				gtag('event', 'view_item', {
+				  'event_category': 'Location Markers',
+				  'event_label': locationName
+				});
 				
 				setAllMarkersIcon(normalIcon)
 				marker_l.setIcon(activeIcon);
+
+				// Move map to active marker position
+				map.panTo(marker_l.getPosition());
 				
 				locationInfo.classList.add('active');
 				infowindow_l.setContent(locations[i][0]);  
@@ -1170,6 +1176,12 @@ function initMap() {
 
     toggleBreakfast.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'ontbijt'
+			});
+		    
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1183,6 +1195,12 @@ function initMap() {
 
 	toggleLunch.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'lunch'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1196,6 +1214,12 @@ function initMap() {
 
 	toggleCoffee.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'taart'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1209,6 +1233,13 @@ function initMap() {
 
 	toggleDinner.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'diner'
+			});
+			
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(false);
@@ -1222,6 +1253,12 @@ function initMap() {
 
 	toggleAll.addEventListener( 'change', function() {
 	    if(this.checked) {
+		    
+		    gtag('event', 'view_item', {
+				'event_category': 'Filter item',
+				'event_label': 'alles'
+			});
+			
 	        for (i = 0; i < locationMarkers.length; i++) {
 
 	        	locationMarkers[i].setVisible(true);
@@ -1332,6 +1369,11 @@ function adjustDynamicElements() {
 				// Set height for tabs to overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem1.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu',
+					'event_label': 'over'
+				});
 			}
 			menuItem2.onclick = function() {
 				// Remove active classes
@@ -1346,6 +1388,11 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem2.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu',
+					'event_label': 'vegan'
+				});
 			}
 
 			menuItem3.onclick = function() {
@@ -1361,6 +1408,11 @@ function adjustDynamicElements() {
 				// Set height for overflow scroll
 				var bodyHeight = body.offsetHeight;
 				tabItem3.style.height = bodyHeight + "px";
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu',
+					'event_label': 'contact'
+				});
 			}
 
 			// Close the tab
@@ -1376,6 +1428,11 @@ function adjustDynamicElements() {
 					tabItem3.classList.remove("active");
 					tabItem3.style.height = "auto";
 				}, 100);
+				
+				gtag('event', 'view_item', {
+					'event_category': 'Mobile menu',
+					'event_label': 'close tab'
+				});
 			}
 
 		}

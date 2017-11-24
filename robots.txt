@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /assets
+Disallow: /img
+Disallow: /modules
+Disallow: /templates/js/
+Disallow: /wire
+
+SITEMAP: https://go-vegan-groningen.nl/sitemap.xml
