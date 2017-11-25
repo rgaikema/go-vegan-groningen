@@ -1123,11 +1123,9 @@ function initMap() {
 				  'event_label': locationName
 				});
 				
-				setAllMarkersIcon(normalIcon)
+								
+				setAllMarkersIcon(normalIcon);
 				marker_l.setIcon(activeIcon);
-
-				// Move map to active marker position
-				map.panTo(marker_l.getPosition());
 				
 				locationInfo.classList.add('active');
 				infowindow_l.setContent(locations[i][0]);  
