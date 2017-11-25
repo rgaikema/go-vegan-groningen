@@ -120,6 +120,9 @@
 						<nav class="mobile-nav" id="js-mobile-nav">
 							<ul class="mobile-nav-list">
 								<?php 
+
+									// TODO 
+									// Change this in hamburger menu left
 		
 									$savedLanguage = $user->language;
 
@@ -181,6 +184,9 @@
 						<nav class="mobile-nav" id="js-mobile-nav">
 							<ul class="mobile-nav-list">
 								<?php 
+
+									// TODO 
+									// Move this section to hamburger menu
 		
 									$savedLanguage = $user->language;
 
@@ -206,6 +212,10 @@
 						</nav>
 					</div>
 					<div class="table-cell twenty v-align-top">
+
+						<!-- TODO -->
+						<!-- Add search icon + search section -->
+
 						<span class="language_switcher">
 							<select onchange='window.location=$(this).val();'>
 								<?php
@@ -295,6 +305,9 @@
 		</section> <!-- Closes page wrapper -->
 
 		<!-- Info sections -->
+
+		<!-- TODO -->
+		<!-- Remove app style for sections + add search section with app behaviour -->
 		<section class="sections" id="js-sections">
 			<span class="info-section-close" id="js-info-section-close"></span>
 			<section class="info section" id="js-mobile-tab-1">
