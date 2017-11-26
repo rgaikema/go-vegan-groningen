@@ -36,7 +36,7 @@
     	<meta itemprop="headline" content="Vegan uit eten in Groningen">
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="shortcut icon" href="https://go-vegan-groningen.nl/favicon.ico">
 		<link itemprop="url" href="https://go-vegan-groningen.nl/"/>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109095981-1"></script>
