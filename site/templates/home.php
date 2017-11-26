@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<?php 
+
+			//TODO 
+			//Check language switcher one time instead of multiple
 			$savedLanguage = $user->language;
 
 			foreach($languages as $language) {
