@@ -90,31 +90,6 @@ input[type="radio"]:checked + label:before {
 	transform: translateY(-50%);
 }
 
-
-// input[type="radio"]:checked {
-// 	background: #33ab33;
-// 	position: relative;
-// }
-
-
-// input[type="radio"]:checked:before{
-// 	content:'';
-// 	width: 0; 
-// 	height: 0; 
-// 	border-top: 10px solid transparent;
-// 	border-bottom: 10px solid transparent; 
-// 	border-right:10px solid #33ab33; 
-// 	position: absolute;
-// 	left: -10px;
-// 	top: 50%;
-// 	transform: translateY(-50%);
-// }
-
-
-// input[type="radio"]:checked + label {
-// 	color: #fff;
-// }
-
 input[type="radio"]+ label {
 	cursor: pointer;
 }
@@ -380,6 +355,19 @@ select {
 	padding-top: 30px;
 }
 
+/*
+
+for info sections per location
+.location-title {
+	margin-bottom: 5px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.location-content {
+	margin-bottom: 5px;
+} */
+
 .location-info.active {
 	border-color: transparent;
 }
@@ -398,21 +386,6 @@ select {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-// .options-wrapper label {
-// 	font-size: 10px;
-// 	text-transform: uppercase;
-// 	font-weight: bold;
-// 	color: #6b6b6b;
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// }
-
-// .options-wrapper:last-of-type input {
-// 	border-bottom: 1px solid #dcdcdc;
-// }
 
 .ads-space {
 	height: 100px;
@@ -820,13 +793,6 @@ select {
 	    border-bottom: 1px solid #dcdcdc;
 	}
 
-	// input[type="radio"] {
-	// 	border: 0;
-	//     border-right: 1px solid #dcdcdc;
-	//     border-top: 1px solid #dcdcdc;
-	//     border-bottom: 1px solid #dcdcdc;
-	// }
-
 	input[type="radio"] + label {
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -834,28 +800,13 @@ select {
 		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
 	}
 
-	// input[type="radio"] {
-	// 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-	// 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	// 	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	// 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	// }
-
 	input[type="radio"]:checked + label {
 		border-top: 1px solid #33ab33;
 	}
 
-	// input[type="radio"]:checked {
-	// 	border-top: 1px solid #33ab33;
-	// }
-
 	input[type="radio"]:checked + label:before{
 		display: none;
 	}
-
-	// input[type="radio"]:checked:before{
-	// 	display: none;
-	// }
 
 	.options-wrapper:last-of-type input {
 		border-right: 0;
