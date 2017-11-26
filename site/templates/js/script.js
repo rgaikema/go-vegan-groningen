@@ -483,8 +483,8 @@ function initMap() {
 				Oude Kijk in ’t Jatstraat 53<br>Diner<br>\
 				Serveren een aantal vegan tapas<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//El+Txoko,+Oude+Kijk+in+Het+Jatstraat+53,+9712+EC+Groningen/@53.2198641,6.559398,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2sEl+Txoko!8m2!3d53.2198641!4d6.561592!4m7!1m0!1m5!1m1!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2m2!1d6.561592!2d53.2198641">Bekijk Route</a>',
-		lat: 53.2190992,
-		long: 6.5650493,
+		lat: 53.2198641,
+		long: 6.561592,
 		breakfast: false,
 		lunch: false,
 		dinner: true,

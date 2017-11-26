@@ -452,8 +452,8 @@ function initMap() {
 
 	var opznkop = {
 		info: '<strong>Kattencafé Op z´n Kop</strong><br>\r\
-				Oude Ebbingestraat 57<br>Ontbijt en lunch<br>\
-				Sandwiches, soy yoghurt with fuit and vegan snacks.<br>\
+				Oude Ebbingestraat 57<br>Breakfast & lunch<br>\
+				Sandwiches, soy yoghurt with fruit and vegan snacks.<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Kattencaf%C3%A9+Op+z\'n+Kop,+Oude+Ebbingestraat+57,+9712+HC+Groningen/@53.2207933,6.5641078,17z/data=!4m15!1m6!3m5!1s0x47c9cd5a7f8fa731:0x8a890c3dce4569e8!2sKattencaf%C3%A9+Op+z\'n+Kop!8m2!3d53.2207933!4d6.5663018!4m7!1m0!1m5!1m1!1s0x47c9cd5a7f8fa731:0x8a890c3dce4569e8!2m2!1d6.5663018!2d53.2207933">Get Directions</a>',
 		lat: 53.2207933,
 		long: 6.5663018,
@@ -483,8 +483,8 @@ function initMap() {
 				Oude Kijk in ’t Jatstraat 53<br>Dinner<br>\
 				Several vegan tapas<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//El+Txoko,+Oude+Kijk+in+Het+Jatstraat+53,+9712+EC+Groningen/@53.2198641,6.559398,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2sEl+Txoko!8m2!3d53.2198641!4d6.561592!4m7!1m0!1m5!1m1!1s0x47c9cd4fe647d503:0x4c940a225d7916e9!2m2!1d6.561592!2d53.2198641">Get Directions</a>',
-		lat: 53.2190992,
-		long: 6.5650493,
+		lat: 53.2198641,
+		long: 6.561592,
 		breakfast: false,
 		lunch: false,
 		dinner: true,
