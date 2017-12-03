@@ -1,7 +1,7 @@
 function initMap() {
 
 	//Set vars for map
-	var locationInfo = document.getElementById("location-info");
+	var locationInfo = document.querySelector(".location-info-holder");
 	var locationMarkers = [];
 
 	//Set vars for location hash
@@ -177,7 +177,7 @@ function initMap() {
 	var pernikkel = {
 		info: '<strong>Pernikkel</strong><br>\r\
 				Aweg 2<br>Lunch & diner<br>\
-				Serveren een paar vegan opties, waaronder een borrelplank/<br>\
+				Serveren een paar vegan opties, waaronder een borrelplank<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Pernikkel,+Aweg+2,+9718+CS+Groningen/@53.2164047,6.5549666,17z/data=!4m15!1m6!3m5!1s0x0:0xa7fdb917d17115b3!2sPernikkel!8m2!3d53.2164047!4d6.5571608!4m7!1m0!1m5!1m1!1s0x47c9cd4e854af69d:0xa7fdb917d17115b3!2m2!1d6.5571606!2d53.2164047">Bekijk Route</a>',
 		lat: 53.2164047,
 		long: 6.5571606,
@@ -1199,7 +1199,7 @@ function initMap() {
 				infowindow_l.setContent(locations[i][0]);  
 				infoBoxInfo.style.display = "none";
 
-				//Add text label for infro window
+				//Add text label for info window
 				if (window.screen.width < 768) {
 					infoBox.classList.remove("small");
 					hideTxt.innerHTML="verberg";
@@ -1209,6 +1209,27 @@ function initMap() {
 
 				//Add location info to info window
 				document.getElementById('location-info').innerHTML = infowindow_l.content;
+
+				//Copy to clipboard share URL
+				var siteURL = window.location.href.split('#')[0];
+				var shareURL = siteURL + '#' + locationHash;
+
+				document.getElementById('share-url').value = shareURL;
+
+				new Clipboard('.share-url-btn');
+				var clipboard = new Clipboard('.share-url-btn');
+				var succesMessage = document.getElementById("succes-message-url-copied");
+
+				clipboard.on('success', function(e) {
+					
+					succesMessage.classList.add('active');
+					setTimeout(function(){ 
+						succesMessage.classList.remove('active'); 
+					}, 1600);
+
+				    clipboard.destroy();
+				});
+
 			}
 		})(marker_l, i));
 

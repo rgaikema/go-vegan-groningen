@@ -43,6 +43,11 @@ textarea:focus, input:focus{
 	outline: none;
 }
 
+input[type="text"] {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
 input[type="radio"] {
 	display: none;
 }
@@ -348,7 +353,7 @@ select {
 	transform: translateY(-50%) rotate(-90deg);
 }
 
-.location-info {
+.location-info-holder {
 	min-height: 115px;
 	border: 1px dashed #ebebeb;
 	margin-bottom: 20px;
@@ -368,12 +373,82 @@ for info sections per location
 	margin-bottom: 5px;
 } */
 
-.location-info.active {
+.location-info-holder.active {
 	border-color: transparent;
+}
+
+.location-info{
+	padding-bottom: 10px;
 }
 
 .info-section-close {
 	display: none;
+}
+
+.share-url-holder {
+	border-top: 1px solid #eee;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.share-url-holder-text {
+	display: block;
+	padding-bottom: 5px;
+}
+
+.share-url-ipnut-btn-holder {
+	display: inline-block;
+	width: 100%;
+}
+
+.share-url-input {
+	float: left;
+	width: 85%;
+	height: 30px;
+	padding: 4px 2px;
+	font-size: 12px;
+	border: 1px solid #33ab33;
+	border-radius: 3px 0 0 3px;
+}
+
+.share-url-btn {
+	width: 15%;
+	float: left;
+    height: 30px;
+    padding: 0;
+    background: #33ab33;
+    border: 0;
+ 	border-radius: 0 3px 3px 0;   
+}
+
+.share-url-btn img {
+	height: 80%;
+}
+
+.succes-message-url-copied {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    background: rgba(51, 171, 51, 1);
+    transform: translateX(-100%);
+    color: #fff;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.succes-message-url-copied.active {
+	transform: translateX(0);
+	opacity: 1;
+	transition: all .3s ease-in-out;
+}
+
+.share-check-icon {
+	display: inline-block;
 }
 
 .options-wrapper label nobr {
@@ -570,10 +645,10 @@ for info sections per location
 		display: none;
 	}
 
-	.location-info {
+	.location-info-holder {
 		padding-top: 0;
     	position: relative;
-    	top: 50%;
+    	top: 40%;
     	transform: translateY(-50%);
 	}
 
@@ -772,7 +847,7 @@ for info sections per location
 		border-top: 1px solid #eee;
 	}
 
-	.location-info {
+	.location-info-holder {
 		min-height: 100px;
 		padding-top: 10px;
 	}
@@ -794,7 +869,6 @@ for info sections per location
 	}
 
 	input[type="radio"] + label {
-		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
 		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
 		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);

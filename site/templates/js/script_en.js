@@ -1,7 +1,7 @@
 function initMap() {
 
 	//Set vars for map
-	var locationInfo = document.getElementById("location-info");
+	var locationInfo = document.querySelector(".location-info-holder");
 	var locationMarkers = [];
 
 	//Set vars for location hash
@@ -1158,7 +1158,6 @@ function initMap() {
 
 		// Set location names for Hash
 		locationNames[(locations[i][7])] = marker_l;
-
 	
 		// Click action on Marker
 		google.maps.event.addListener(marker_l, 'click', (function (marker_l, i) {
@@ -1176,7 +1175,7 @@ function initMap() {
 				//Set location name for hash
 				var locationHash = locations[i][7];
 				
-				
+				//Set location name as GTAG label when clicked
 				gtag('event', 'view_item', {
 				  'event_category': 'Location Markers EN',
 				  'event_label': locationName + "_en"
@@ -1186,7 +1185,7 @@ function initMap() {
 				window.location.hash = locationHash;
 			
 				//Reset marker status icon and set active icon	
-				setAllMarkersIcon(normalIcon)
+				setAllMarkersIcon(normalIcon);
 				marker_l.setIcon(activeIcon);
 
 				// Move map to active marker position
@@ -1206,13 +1205,32 @@ function initMap() {
 				if (window.screen.width < 768) {
 					infoBox.classList.remove("small");
 					hideTxt.innerHTML="hide";
-					map.setZoom(15);
 				} else {
 					infoBox.classList.remove("side");
 				}
 
 				//Add location info to info window
 				document.getElementById('location-info').innerHTML = infowindow_l.content;
+
+				//Copy to clipboard share URL
+				var siteURL = window.location.href.split('#')[0];
+				var shareURL = siteURL + '#' + locationHash;
+
+				document.getElementById('share-url').value = shareURL;
+				
+				new Clipboard('.share-url-btn');
+				var clipboard = new Clipboard('.share-url-btn');
+				var succesMessage = document.getElementById("succes-message-url-copied");
+
+				clipboard.on('success', function(e) {
+					
+					succesMessage.classList.add('active');
+					setTimeout(function(){ 
+						succesMessage.classList.remove('active'); 
+					}, 1600);
+
+				    clipboard.destroy();
+				});
 			}
 		})(marker_l, i));
 

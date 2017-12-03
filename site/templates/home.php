@@ -274,7 +274,71 @@
 							echo '<i class="info-box-info" id="js-info-box-info">Klik op één van de marker iconen op de kaart om de informatie te bekijken</i>';
 						}
 					?>
-			  		<div class="location-info" id="location-info"></div>
+
+			  		<div class="location-info-holder">
+			  			<div class="location-info" id="location-info"></div>
+			  			<div class="share-url-holder">
+			  				<?php 
+								$savedLanguage = $user->language;
+
+								foreach($languages as $language) {
+
+									if($language->id == $savedLanguage->id) continue;
+
+									if(!$page->viewable($language)) continue;
+
+									$user->language = $language;
+
+								}
+
+								$user->language = $savedLanguage;
+
+								if ($savedLanguage->title !== "NL") {
+
+									echo '<span class="share-url-holder-text">Copy this link to share:</span>';
+
+								} else {
+									echo '<span class="share-url-holder-text">Kopieer deze link om te delen:</span>';
+								}
+							?>
+			  				
+			  				<div class="share-url-ipnut-btn-holder">
+					  			<input type="text" class="share-url-input" id="share-url" value="">
+					  			<button class="share-url-btn" data-clipboard-target="#share-url">
+		    						<img src="<?php echo $config->urls->root?>site/img/clippy.svg" alt="Copy to clipboard">
+								</button>
+							</div>
+				  		</div>
+			  			<div class="succes-message-url-copied" id="succes-message-url-copied">
+				  			<span class="share-check-icon">
+				  				<?php include 'share_success_icon.inc'; ?>
+				  			</span>
+							
+							<?php 
+								$savedLanguage = $user->language;
+
+								foreach($languages as $language) {
+
+									if($language->id == $savedLanguage->id) continue;
+
+									if(!$page->viewable($language)) continue;
+
+									$user->language = $language;
+
+								}
+
+								$user->language = $savedLanguage;
+
+								if ($savedLanguage->title !== "NL") {
+
+									echo '<p class="succesful-copied-text" id="succesful-copied-text">Your link has been copied!</p>';
+								} else {
+									echo '<p class="succesful-copied-text" id="succesful-copied-text">Je link is gekopieerd!</p>';
+								}
+							?>
+
+				  		</div><!-- Closes Success message-->
+			  		</div><!-- Closes location info -->
 			  		
 				</div>
 			</section> <!-- Closes map holder -->
@@ -414,6 +478,7 @@
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="<?php echo $config->urls->templates?>js/clipboard.min.js"></script>
 
 		<?php 
 		
