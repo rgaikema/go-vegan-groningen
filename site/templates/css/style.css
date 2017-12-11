@@ -648,7 +648,7 @@ for info sections per location
 	.location-info-holder {
 		padding-top: 0;
     	position: relative;
-    	top: 40%;
+    	top: 50%;
     	transform: translateY(-50%);
 	}
 

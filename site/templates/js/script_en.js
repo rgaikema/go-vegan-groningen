@@ -8,6 +8,20 @@ function initMap() {
 	var locationNames = [];
 	var urlhash = window.location.hash.replace('#', '');
 
+	// Check if URL hash is not the same - by reload in same window or tab
+	function locationHashChanged() {
+
+		var lastLocation = localStorage.getItem('last_location');
+		var urlhashChanged = window.location.hash.replace('#', '');
+
+	     if (lastLocation != urlhashChanged) {
+	     	location.reload();
+	     }
+	}
+	window.onhashchange = locationHashChanged;
+
+
+	//Locations
 	var herbivoor = {
 		info: '<strong>De Herbivoor</strong><br>\r\
 				Gedempte Zuiderdiep 59<br> Lunch & cake, dinner on Thursday<br>\
@@ -280,20 +294,6 @@ function initMap() {
 		dinner: false,
 		coffee: true,
 		name: 'ps'
-	};
-
-	var vegansuper = {
-		info: '<strong>Vegansuper</strong><br>\r\
-					 Nieuwe Ebbingestraat 87<br>Breakfast & lunch<br>\
-					 Burger, smoothies, vegan croissants, pudding rolls, cake & sandwiches<br>\
-					<a href="https://www.google.nl/maps/dir//Vegansuper,+Nieuwe+Ebbingestraat+87,+9712+NG+Groningen/@53.2250471,6.560053,17z/data=!4m15!1m6!3m5!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2sVegansuper!8m2!3d53.2250439!4d6.5622417!4m7!1m0!1m5!1m1!1s0x47c9cd44c09adb71:0xba58b7016823dca4!2m2!1d6.5622417!2d53.2250439">Get Directions</a>',
-		lat: 53.2250439,
-		long: 6.5622417,
-		breakfast: true,
-		lunch: true,
-		dinner: false,
-		coffee: true,
-		name: 'vegansuper'
 	};
 
 	var blabla = {
@@ -655,30 +655,29 @@ function initMap() {
       [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, zevendehemel.name, 17],
       [kult.info, kult.lat, kult.long, kult.breakfast, kult.lunch, kult.dinner, kult.coffee, kult.name, 18],
       [ps.info, ps.lat, ps.long, ps.breakfast, ps.lunch, ps.dinner, ps.coffee, ps.name, 19],
-      [vegansuper.info, vegansuper.lat, vegansuper.long, vegansuper.breakfast, vegansuper.lunch, vegansuper.dinner, vegansuper.coffee, vegansuper.name, 20],
-      [blabla.info, blabla.lat, blabla.long, blabla.breakfast, blabla.lunch, blabla.dinner, blabla.coffee, blabla.name,  21],
-      [beeren.info, beeren.lat, beeren.long, beeren.breakfast, beeren.lunch, beeren.dinner, beeren.coffee, beeren.name, 22],
-      [bijbritta.info, bijbritta.lat, bijbritta.long, bijbritta.breakfast, bijbritta.lunch, bijbritta.dinner, bijbritta.coffee, bijbritta.name, 23],
-      [bodega.info, bodega.lat, bodega.long, bodega.breakfast, bodega.lunch, bodega.dinner, bodega.coffee, bodega.name, 24],
-      [curryhuis.info, curryhuis.lat, curryhuis.long, curryhuis.breakfast, curryhuis.lunch, curryhuis.dinner, curryhuis.coffee, curryhuis.name, 25],
-      [dubbeljoe.info, dubbeljoe.lat, dubbeljoe.long, dubbeljoe.breakfast, dubbeljoe.lunch, dubbeljoe.dinner, dubbeljoe.coffee, dubbeljoe.name, 26],
-      [gustatio.info, gustatio.lat, gustatio.long, gustatio.breakfast, gustatio.lunch, gustatio.dinner, gustatio.coffee, gustatio.name, 27],
-      [bakkerscafe.info, bakkerscafe.lat, bakkerscafe.long, bakkerscafe.breakfast, bakkerscafe.lunch, bakkerscafe.dinner, bakkerscafe.coffee, bakkerscafe.name, 28],
-      [concerthuis.info, concerthuis.lat, concerthuis.long, concerthuis.breakfast, concerthuis.lunch, concerthuis.dinner, concerthuis.coffee, concerthuis.name, 29],
-      [holtbar.info, holtbar.lat, holtbar.long, holtbar.breakfast, holtbar.lunch, holtbar.dinner, holtbar.coffee, holtbar.name, 30],
-      [javaans.info, javaans.lat, javaans.long, javaans.breakfast, javaans.lunch, javaans.dinner, javaans.coffee, javaans.name, 31],
-      [opznkop.info, opznkop.lat, opznkop.long, opznkop.breakfast, opznkop.lunch, opznkop.dinner, opznkop.coffee, opznkop.name, 32],
-      [kokanje.info, kokanje.lat, kokanje.long, kokanje.breakfast, kokanje.lunch, kokanje.dinner, kokanje.coffee, kokanje.name, 33],
-      [txoko.info, txoko.lat, txoko.long, txoko.breakfast, txoko.lunch, txoko.dinner, txoko.coffee, txoko.name, 34],
-      [pannekoekschip.info, pannekoekschip.lat, pannekoekschip.long, pannekoekschip.breakfast, pannekoekschip.lunch, pannekoekschip.dinner, pannekoekschip.coffee, pannekoekschip.name, 35],
-      [sumo.info, sumo.lat, sumo.long, sumo.breakfast, sumo.lunch, sumo.dinner, sumo.coffee, sumo.name, 36],
-      [tapasco.info, tapasco.lat, tapasco.long, tapasco.breakfast, tapasco.lunch, tapasco.dinner, tapasco.coffee, tapasco.name, 37],
-      [jasmine.info, jasmine.lat, jasmine.long, jasmine.breakfast, jasmine.lunch, jasmine.dinner, jasmine.coffee, jasmine.name, 38],
-      [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, toshka.name, 39],
-      [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, uurwerker.name, 40],
-      [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, 41],
-      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, 42],
-      [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, 43],
+      [blabla.info, blabla.lat, blabla.long, blabla.breakfast, blabla.lunch, blabla.dinner, blabla.coffee, blabla.name,  20],
+      [beeren.info, beeren.lat, beeren.long, beeren.breakfast, beeren.lunch, beeren.dinner, beeren.coffee, beeren.name, 21],
+      [bijbritta.info, bijbritta.lat, bijbritta.long, bijbritta.breakfast, bijbritta.lunch, bijbritta.dinner, bijbritta.coffee, bijbritta.name, 22],
+      [bodega.info, bodega.lat, bodega.long, bodega.breakfast, bodega.lunch, bodega.dinner, bodega.coffee, bodega.name, 23],
+      [curryhuis.info, curryhuis.lat, curryhuis.long, curryhuis.breakfast, curryhuis.lunch, curryhuis.dinner, curryhuis.coffee, curryhuis.name, 24],
+      [dubbeljoe.info, dubbeljoe.lat, dubbeljoe.long, dubbeljoe.breakfast, dubbeljoe.lunch, dubbeljoe.dinner, dubbeljoe.coffee, dubbeljoe.name, 25],
+      [gustatio.info, gustatio.lat, gustatio.long, gustatio.breakfast, gustatio.lunch, gustatio.dinner, gustatio.coffee, gustatio.name, 26],
+      [bakkerscafe.info, bakkerscafe.lat, bakkerscafe.long, bakkerscafe.breakfast, bakkerscafe.lunch, bakkerscafe.dinner, bakkerscafe.coffee, bakkerscafe.name, 27],
+      [concerthuis.info, concerthuis.lat, concerthuis.long, concerthuis.breakfast, concerthuis.lunch, concerthuis.dinner, concerthuis.coffee, concerthuis.name, 28],
+      [holtbar.info, holtbar.lat, holtbar.long, holtbar.breakfast, holtbar.lunch, holtbar.dinner, holtbar.coffee, holtbar.name, 29],
+      [javaans.info, javaans.lat, javaans.long, javaans.breakfast, javaans.lunch, javaans.dinner, javaans.coffee, javaans.name, 30],
+      [opznkop.info, opznkop.lat, opznkop.long, opznkop.breakfast, opznkop.lunch, opznkop.dinner, opznkop.coffee, opznkop.name, 31],
+      [kokanje.info, kokanje.lat, kokanje.long, kokanje.breakfast, kokanje.lunch, kokanje.dinner, kokanje.coffee, kokanje.name, 32],
+      [txoko.info, txoko.lat, txoko.long, txoko.breakfast, txoko.lunch, txoko.dinner, txoko.coffee, txoko.name, 33],
+      [pannekoekschip.info, pannekoekschip.lat, pannekoekschip.long, pannekoekschip.breakfast, pannekoekschip.lunch, pannekoekschip.dinner, pannekoekschip.coffee, pannekoekschip.name, 34],
+      [sumo.info, sumo.lat, sumo.long, sumo.breakfast, sumo.lunch, sumo.dinner, sumo.coffee, sumo.name, 35],
+      [tapasco.info, tapasco.lat, tapasco.long, tapasco.breakfast, tapasco.lunch, tapasco.dinner, tapasco.coffee, tapasco.name, 36],
+      [jasmine.info, jasmine.lat, jasmine.long, jasmine.breakfast, jasmine.lunch, jasmine.dinner, jasmine.coffee, jasmine.name, 37],
+      [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, toshka.name, 38],
+      [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, uurwerker.name, 39],
+      [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, 40],
+      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, 41],
+      [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, 42],
     ];
 
 
@@ -1217,13 +1216,20 @@ function initMap() {
 				var shareURL = siteURL + '#' + locationHash;
 
 				document.getElementById('share-url').value = shareURL;
-				
+
 				new Clipboard('.share-url-btn');
 				var clipboard = new Clipboard('.share-url-btn');
 				var succesMessage = document.getElementById("succes-message-url-copied");
 
 				clipboard.on('success', function(e) {
 					
+					//Show shared location GTAG
+					gtag('event', 'share_item', {
+						'event_category': 'share_url_en',
+						'event_label': locationHash
+					});
+					
+					//Show Succes Message
 					succesMessage.classList.add('active');
 					setTimeout(function(){ 
 						succesMessage.classList.remove('active'); 
@@ -1231,6 +1237,13 @@ function initMap() {
 
 				    clipboard.destroy();
 				});
+
+				//Set last location in Local Storage
+				function setLastLocation() {
+					localStorage.setItem('last_location', locationHash);
+				}
+				setLastLocation();
+
 			}
 		})(marker_l, i));
 
