@@ -633,6 +633,20 @@ function initMap() {
 		name: 'kattencafe-poeslief'
 	};
 
+	var dunk = {
+		info: '<strong>Dunk Ontmoet</strong><br>\r\
+				Oude Ebbingestraat 71<br>Smoothies & cake<br>\
+				Smoothies & cake - ONLY SUNDAY OPEN 12-17hr<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Dunk,+Oude+Ebbingestraat+71,+9712+HE+Groningen/@53.2213177,6.564892,18z/data=!4m16!1m6!3m5!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2sDunk!8m2!3d53.2213177!4d6.5659862!4m8!1m0!1m5!1m1!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2m2!1d6.5659862!2d53.2213177!3e2">Get Directions</a>',
+		lat: 53.2213177,
+		long: 6.5659862,
+		breakfast: false,
+		lunch: false,
+		dinner: false,
+		coffee: true,
+		name: 'dunk-ontmoet'
+	};
+
 
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, 0],
@@ -678,6 +692,7 @@ function initMap() {
       [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, 40],
       [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, 41],
       [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, 42],
+      [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, 43],
     ];
 
 
@@ -1145,7 +1160,8 @@ function initMap() {
 				locations[i][39],
 				locations[i][40],
 				locations[i][41],
-				locations[i][42]),
+				locations[i][42],
+				locations[i][43]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
