@@ -30,11 +30,11 @@
 			}
 		?>
 		<meta name="description" content="Op deze website zie je waar je vegan uit eten kunt in Groningen.">
-		<meta property="og:title" content="Go Vegan Groningen"/>
+		<meta property="og:title" content="Vegan uit eten in Groningen"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://go-vegan-groningen.nl/" />
 		<meta property="og:image" content="https://go-vegan-groningen.nl/site/img/f-image.jpg"/>
-		<meta property="og:description" content="Vegan uit eten in Groningen" />
+		<meta property="og:description" content="Alle locaties op één site." />
 		<meta itemprop="name" content="Go-vegan-Groningen.nl">
     	<meta itemprop="headline" content="Vegan uit eten in Groningen">
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">

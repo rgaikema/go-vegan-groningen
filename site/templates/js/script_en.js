@@ -635,13 +635,13 @@ function initMap() {
 
 	var dunk = {
 		info: '<strong>Dunk Ontmoet</strong><br>\r\
-				Oude Ebbingestraat 71<br>Smoothies & cake<br>\
-				Smoothies & cake - ONLY SUNDAY OPEN 12-17hr<br>\
+				Oude Ebbingestraat 71<br>Lunch & cake<br>\
+				Lunch, smoothies & cake - OPEN: thursday till sunday 12-16:30hr<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Dunk,+Oude+Ebbingestraat+71,+9712+HE+Groningen/@53.2213177,6.564892,18z/data=!4m16!1m6!3m5!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2sDunk!8m2!3d53.2213177!4d6.5659862!4m8!1m0!1m5!1m1!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2m2!1d6.5659862!2d53.2213177!3e2">Get Directions</a>',
 		lat: 53.2213177,
 		long: 6.5659862,
 		breakfast: false,
-		lunch: false,
+		lunch: true,
 		dinner: false,
 		coffee: true,
 		name: 'dunk-ontmoet'
