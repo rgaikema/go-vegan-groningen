@@ -33,7 +33,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: true,
-		name: 'herbivoor'
+		name: 'de-herbivoor',
+		s_name: 'De Herbivoor',
+		site: 'http://deherbivoor.nl/'
 	};
 
 	var anat = {
@@ -47,7 +49,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: true,
-		name: 'anat'
+		name: 'anat',
+		s_name: 'Anat',
+		site:'http://anat.nu/'
 	};
 
 	var mechoui = {
@@ -61,7 +65,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'mechoui'
+		name: 'mechoui',
+		s_name: 'Mechoui',
+		site: 'http://www.mechoui.nl/'
 	};
 
 	var moghul = {
@@ -75,7 +81,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name:'kleine-moghul'
+		name:'de-kleine-moghul',
+		s_name:'De Kleine Moghul',
+		site:'http://www.moghul.nl/'
 	};
 
 	var buurman = {
@@ -89,7 +97,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name:'buurman-buurman'
+		name:'buurman-buurman',
+		s_name:'Buurman & Buurman',
+		site: 'http://buurman-groningen.nl/'
 	};
 
 	var semarang = {
@@ -103,7 +113,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'toko-semarang'
+		name: 'toko-semarang',
+		s_name: 'Toko Semarang',
+		site: 'http://www.tokosemarang.nl/'
 	};
 
 	var toetpannekoek = {
@@ -117,7 +129,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: true,
-		name: 'toet-pannekoek'
+		name: 'toet-pannekoek',
+		s_name: 'Toet pannekoek',
+		site:'https://www.facebook.com/TOETpannekoek/'
 	};
 
 	var toet = {
@@ -131,7 +145,9 @@ function initMap() {
 		lunch: false,
 		dinner: false,
 		coffee: true,
-		name: 'toet'
+		name: 'toet',
+		s_name: 'Toet',
+		site:'http://www.toet.nu/'
 	};
 
 	var soepwinkel = {
@@ -145,7 +161,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'soepwinkel'
+		name: 'de-soepwinkel',
+		s_name:'De Soepwinkel',
+		site:'http://www.desoepwinkel.com/'
 	};
 
 	var feelgood = {
@@ -159,7 +177,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: true,
-		name: 'feelgood'
+		name: 'feelgood',
+		s_name: 'Feel Good',
+		site:'https://www.feelgoodgroningen.nl/'
 	};
 	var fatoush = {
 		info: '<strong>Fatoush</strong><br>\r\
@@ -172,7 +192,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'fatoush'
+		name: 'fatoush',
+		s_name: 'Fatoush',
+		site:'http://www.fatoush.nl/'
 	};
 
 	var bagelsbeans = {
@@ -186,7 +208,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'bagels-beans'
+		name: 'bagels-beans',
+		s_name: 'Bagels & Beans',
+		site:'https://www.bagelsbeans.nl/nl/storelocator?address=zwanestraat%20groningen'
 	};
 	var pernikkel = {
 		info: '<strong>Pernikkel</strong><br>\r\
@@ -199,7 +223,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: false,
-		name: 'pernikkel'
+		name: 'pernikkel',
+		s_name: 'Pernikkel',
+		site:'http://www.pernikkel.nl/'
 	};
 	var gasfabriek = {
 		info: '<strong>De Oude Gasfabriek</strong><br>\r\
@@ -212,7 +238,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: false,
-		name:'oude-gasfabriek'
+		name:'de-oude-gasfabriek',
+		s_name:'De Oude Gasfabriek',
+		site: 'http://www.deoudegasfabriek.nl/'
 	};
 	var achterwerk = {
 		info: '<strong>Achterwerk</strong><br>\r\
@@ -225,7 +253,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'achterwerk'
+		name: 'achterwerk',
+		s_name: 'Achterwerk',
+		site: 'http://lekkerachterwerk.nl/'
 	};
 	var palermo = {
 		info: '<strong>Pizzeria Palermo</strong><br>\r\
@@ -238,7 +268,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'palermo'
+		name: 'palermo',
+		s_name: 'Palermo',
+		site:'https://www.pizzeriapalermo.nl/'
 	};
 	var frietvanpiet = {
 		info: '<strong>Friet van Piet</strong><br>\r\
@@ -251,7 +283,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: false,
-		name: 'friet-van-piet'
+		name: 'friet-van-piet',
+		s_name: 'Friet van Piet',
+		site:'http://www.cafetariafrietvanpiet.nl/'
 	};
 
 	var zevendehemel = {
@@ -265,7 +299,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'zevende-hemel'
+		name: 'zevende-hemel',
+		s_name: 'Zevende Hemel',
+		site:'https://www.zevendehemel.nl/'
 	};
 
 	var kult = {
@@ -279,7 +315,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: true,
-		name: 'kult'
+		name: 'kult',
+		s_name: 'Kult',
+		site: 'http://www.cafekult.nl/'
 	};
 
 	var ps = {
@@ -293,7 +331,9 @@ function initMap() {
 		lunch: false,
 		dinner: false,
 		coffee: true,
-		name: 'ps'
+		name: 'ps',
+		s_name: 'Ps',
+		site: 'http://mijnps.nl/'
 	};
 
 	var blabla = {
@@ -307,7 +347,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'blabla'
+		name: 'blabla',
+		s_name: 'Bla Bla',
+		site: 'http://www.bla-bla.nl/'
 	};
 
 	var beeren = {
@@ -321,7 +363,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'beer-n'
+		name: 'beer-n',
+		s_name: 'Beer&',
+		site: 'https://beer-n.nl/'
 	};
 
 	var bijbritta = {
@@ -335,7 +379,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: true,
-		name: 'bij-britta'
+		name: 'bij-britta',
+		s_name: 'Bij Britta',
+		site:'https://www.facebook.com/bijbritta/'
 	};
 
 	var bodega = {
@@ -349,7 +395,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'bodega-y-tapas'
+		name: 'bodega-y-tapas',
+		s_name: 'Bodega y Tapas',
+		site: 'http://www.bodega-y-tapas.nl/'
 	};
 
 	var curryhuis = {
@@ -363,7 +411,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'curryhuis'
+		name: 'curryhuis',
+		s_name: 'Curryhuis',
+		site:'http://indiaasgroningen.nl/'
 	};
 
 	var dubbeljoe = {
@@ -377,7 +427,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'dubbeljoe'
+		name: 'dubbeljoe',
+		s_name: 'Dubbeljoe J',
+		site:'http://dubbeljoej.nl/'
 	};
 
 	var gustatio = {
@@ -391,7 +443,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'gustatio'
+		name: 'gustatio',
+		s_name: 'Gustatio',
+		site:'http://gustatiogroningen.nl/'
 	};
 
 	var bakkerscafe = {
@@ -405,7 +459,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'bakkerscafe'
+		name: 'het-bakkerscafe',
+		s_name: 'Het Bakkerscafé',
+		site: 'http://www.hetbakkerscafe.nl/'
 	};
 
 	var concerthuis = {
@@ -419,7 +475,9 @@ function initMap() {
 		lunch: true,
 		dinner: true,
 		coffee: false,
-		name: 'concerthuis'
+		name: 'concerthuis',
+		s_name: 'Concerthuis',
+		site:'http://www.hetconcerthuis.nl/'
 	};
 
 	var holtbar = {
@@ -433,7 +491,9 @@ function initMap() {
 		lunch: false,
 		dinner: false,
 		coffee: false,
-		name: 'holtbar'
+		name: 'holtbar',
+		s_name: 'Holtbar',
+		site: 'https://holtbar.nl/'
 	};
 
 	var javaans = {
@@ -447,7 +507,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'javaans-eetcafe'
+		name: 'javaans-eetcafe',
+		s_name: 'Javaans Eetcafé',
+		site:'http://javaanseetcafegroningen.nl/'
 	};
 
 	var opznkop = {
@@ -461,7 +523,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'kattencafe-op-zn-kop'
+		name: 'kattencafe-op-zn-kop',
+		s_name: 'Kattencafé Op z\'n kop',
+		site:'https://opznkop.nl/'
 	};
 
 	var kokanje = {
@@ -475,7 +539,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'land-van-kokanje'
+		name: 'land-van-kokanje',
+		s_name: 'Land van Kokanje',
+		site: 'https://www.landvankokanje.nl/'
 	};
 
 	var txoko = {
@@ -489,7 +555,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'el-txoko'
+		name: 'el-txoko',
+		s_name: 'El Txoko',
+		site:'http://www.eltxoko.nl/'
 	};
 
 	var moro = {
@@ -503,7 +571,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'moro'
+		name: 'moro',
+		s_name: 'Moro',
+		site: 'http://morogroningen.bennergroep.nl/'
 	};
 
 	var pannekoekschip = {
@@ -517,7 +587,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: false,
-		name: 'pannekoekschip'
+		name: 'pannekoekschip',
+		s_name: 'Pannekoekschip',
+		site: 'http://www.pannekoekschip.nl/'
 	};
 
 	var sumo = {
@@ -531,7 +603,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'sumo'
+		name: 'sumo',
+		s_name: 'Sumo',
+		site:'http://restaurantsumo.com/restaurants/groningen/'
 	};
 
 	var tapasco = {
@@ -545,7 +619,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'tapasco'
+		name: 'tapasco',
+		s_name: 'Tapasco',
+		site: 'http://www.tapasco.nl/'
 	};
 
 	var jasmine = {
@@ -559,7 +635,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'thai-jasmine'
+		name: 'thai-jasmine',
+		s_name: 'Thai Jasmine',
+		site:'http://www.thaijasmine.nl/'
 	};
 
 
@@ -574,7 +652,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'toshka'
+		name: 'toshka',
+		s_name: 'Toshka',
+		site: 'http://toshka.nl/'
 	};
 
 	var uurwerker = {
@@ -588,7 +668,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'uurwerker'
+		name: 'de-uurwerker',
+		s_name: 'De Uurwerker',
+		site:'http://www.uurwerker.nl/'
 	};
 
 	var warung = {
@@ -602,7 +684,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: false,
-		name: 'warung-jawa'
+		name: 'warung-jawa',
+		s_name: 'Warung Jawa',
+		site: 'http://www.warungjawa.nl/'
 	};
 
 	var wereldburgers = {
@@ -616,7 +700,9 @@ function initMap() {
 		lunch: false,
 		dinner: true,
 		coffee: true,
-		name: 'wereldburgers'
+		name: 'wereldburgers',
+		s_name: 'Wereldburgers',
+		site:'http://wereldburgersgroningen.nl/'
 	};
 
 	var poeslief = {
@@ -630,7 +716,9 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: true,
-		name: 'kattencafe-poeslief'
+		name: 'kattencafe-poeslief',
+		s_name: 'Kattencafé Poeslief',
+		site:'https://kattencafepoeslief.nl/'
 	};
 
 	var dunk = {
@@ -644,55 +732,57 @@ function initMap() {
 		lunch: true,
 		dinner: false,
 		coffee: true,
-		name: 'dunk-ontmoet'
+		name: 'dunk-ontmoet',
+		s_name: 'Dunk Ontmoet',
+		site:'https://www.facebook.com/dunkontmoeten/'
 	};
 
 
     var locations = [
-      [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, 0],
-      [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, 1],
-      [mechoui.info, mechoui.lat, mechoui.long, mechoui.breakfast, mechoui.lunch, mechoui.dinner, mechoui.coffee, mechoui.name, 2],
-      [moghul.info, moghul.lat, moghul.long, moghul.breakfast, moghul.lunch, moghul.dinner, moghul.coffee, moghul.name, 3],
-      [buurman.info, buurman.lat, buurman.long, buurman.breakfast, buurman.lunch, buurman.dinner, buurman.coffee, buurman.name, 4],
-      [semarang.info, semarang.lat, semarang.long, semarang.breakfast, semarang.lunch, semarang.dinner, semarang.coffee, semarang.name, 5],
-      [toet.info, toet.lat, toet.long, toet.breakfast, toet.lunch, toet.dinner, toet.coffee, toet.name, 6],
-      [toetpannekoek.info, toetpannekoek.lat, toetpannekoek.long, toet.breakfast, toetpannekoek.lunch, toetpannekoek.dinner, toetpannekoek.coffee, toetpannekoek.name, 7],
-      [soepwinkel.info, soepwinkel.lat, soepwinkel.long, soepwinkel.breakfast, soepwinkel.lunch, soepwinkel.dinner, soepwinkel.coffee, soepwinkel.name, 8],
-      [feelgood.info, feelgood.lat, feelgood.long, feelgood.breakfast, feelgood.lunch, feelgood.dinner, feelgood.coffee, feelgood.name, 9],
-      [fatoush.info, fatoush.lat, fatoush.long, fatoush.breakfast, fatoush.lunch, fatoush.dinner, fatoush.coffee, fatoush.name, 10],
-      [bagelsbeans.info, bagelsbeans.lat, bagelsbeans.long, bagelsbeans.breakfast, bagelsbeans.lunch, bagelsbeans.dinner, bagelsbeans.coffee, bagelsbeans.name, 11],
-      [pernikkel.info, pernikkel.lat, pernikkel.long, pernikkel.breakfast, pernikkel.lunch, pernikkel.dinner, pernikkel.coffee, pernikkel.name, 12],
-      [gasfabriek.info, gasfabriek.lat, gasfabriek.long, gasfabriek.breakfast, gasfabriek.lunch, gasfabriek.dinner, gasfabriek.coffee, gasfabriek.name, 13],
-      [achterwerk.info, achterwerk.lat, achterwerk.long, achterwerk.breakfast, achterwerk.lunch, achterwerk.dinner, achterwerk.coffee, achterwerk.name, 14],
-      [palermo.info, palermo.lat, palermo.long, palermo.breakfast, palermo.lunch, palermo.dinner, palermo.coffee, palermo.name, 15],
-      [frietvanpiet.info, frietvanpiet.lat, frietvanpiet.long, frietvanpiet.breakfast, frietvanpiet.lunch, frietvanpiet.dinner, frietvanpiet.coffee, frietvanpiet.name, 16],
-      [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, zevendehemel.name, 17],
-      [kult.info, kult.lat, kult.long, kult.breakfast, kult.lunch, kult.dinner, kult.coffee, kult.name, 18],
-      [ps.info, ps.lat, ps.long, ps.breakfast, ps.lunch, ps.dinner, ps.coffee, ps.name, 19],
-      [blabla.info, blabla.lat, blabla.long, blabla.breakfast, blabla.lunch, blabla.dinner, blabla.coffee, blabla.name,  20],
-      [beeren.info, beeren.lat, beeren.long, beeren.breakfast, beeren.lunch, beeren.dinner, beeren.coffee, beeren.name, 21],
-      [bijbritta.info, bijbritta.lat, bijbritta.long, bijbritta.breakfast, bijbritta.lunch, bijbritta.dinner, bijbritta.coffee, bijbritta.name, 22],
-      [bodega.info, bodega.lat, bodega.long, bodega.breakfast, bodega.lunch, bodega.dinner, bodega.coffee, bodega.name, 23],
-      [curryhuis.info, curryhuis.lat, curryhuis.long, curryhuis.breakfast, curryhuis.lunch, curryhuis.dinner, curryhuis.coffee, curryhuis.name, 24],
-      [dubbeljoe.info, dubbeljoe.lat, dubbeljoe.long, dubbeljoe.breakfast, dubbeljoe.lunch, dubbeljoe.dinner, dubbeljoe.coffee, dubbeljoe.name, 25],
-      [gustatio.info, gustatio.lat, gustatio.long, gustatio.breakfast, gustatio.lunch, gustatio.dinner, gustatio.coffee, gustatio.name, 26],
-      [bakkerscafe.info, bakkerscafe.lat, bakkerscafe.long, bakkerscafe.breakfast, bakkerscafe.lunch, bakkerscafe.dinner, bakkerscafe.coffee, bakkerscafe.name, 27],
-      [concerthuis.info, concerthuis.lat, concerthuis.long, concerthuis.breakfast, concerthuis.lunch, concerthuis.dinner, concerthuis.coffee, concerthuis.name, 28],
-      [holtbar.info, holtbar.lat, holtbar.long, holtbar.breakfast, holtbar.lunch, holtbar.dinner, holtbar.coffee, holtbar.name, 29],
-      [javaans.info, javaans.lat, javaans.long, javaans.breakfast, javaans.lunch, javaans.dinner, javaans.coffee, javaans.name, 30],
-      [opznkop.info, opznkop.lat, opznkop.long, opznkop.breakfast, opznkop.lunch, opznkop.dinner, opznkop.coffee, opznkop.name, 31],
-      [kokanje.info, kokanje.lat, kokanje.long, kokanje.breakfast, kokanje.lunch, kokanje.dinner, kokanje.coffee, kokanje.name, 32],
-      [txoko.info, txoko.lat, txoko.long, txoko.breakfast, txoko.lunch, txoko.dinner, txoko.coffee, txoko.name, 33],
-      [pannekoekschip.info, pannekoekschip.lat, pannekoekschip.long, pannekoekschip.breakfast, pannekoekschip.lunch, pannekoekschip.dinner, pannekoekschip.coffee, pannekoekschip.name, 34],
-      [sumo.info, sumo.lat, sumo.long, sumo.breakfast, sumo.lunch, sumo.dinner, sumo.coffee, sumo.name, 35],
-      [tapasco.info, tapasco.lat, tapasco.long, tapasco.breakfast, tapasco.lunch, tapasco.dinner, tapasco.coffee, tapasco.name, 36],
-      [jasmine.info, jasmine.lat, jasmine.long, jasmine.breakfast, jasmine.lunch, jasmine.dinner, jasmine.coffee, jasmine.name, 37],
-      [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, toshka.name, 38],
-      [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, uurwerker.name, 39],
-      [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, 40],
-      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, 41],
-      [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, 42],
-      [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, 43],
+      [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
+      [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
+      [mechoui.info, mechoui.lat, mechoui.long, mechoui.breakfast, mechoui.lunch, mechoui.dinner, mechoui.coffee,mechoui.name, mechoui.s_name, mechoui.site, 2],
+      [moghul.info, moghul.lat, moghul.long, moghul.breakfast, moghul.lunch, moghul.dinner, moghul.coffee, moghul.name, moghul.s_name, moghul.site, 3],
+      [buurman.info, buurman.lat, buurman.long, buurman.breakfast, buurman.lunch, buurman.dinner, buurman.coffee, buurman.name, buurman.s_name, buurman.site, 4],
+      [semarang.info, semarang.lat, semarang.long, semarang.breakfast, semarang.lunch, semarang.dinner, semarang.coffee, semarang.name, semarang.s_name, semarang.site, 5],
+      [toet.info, toet.lat, toet.long, toet.breakfast, toet.lunch, toet.dinner, toet.coffee, toet.name, toet.s_name, toet.site, 6],
+      [toetpannekoek.info, toetpannekoek.lat, toetpannekoek.long, toetpannekoek.breakfast, toetpannekoek.lunch, toetpannekoek.dinner, toetpannekoek.coffee, toetpannekoek.name, toetpannekoek.s_name, toetpannekoek.site, 7],
+      [soepwinkel.info, soepwinkel.lat, soepwinkel.long, soepwinkel.breakfast, soepwinkel.lunch, soepwinkel.dinner, soepwinkel.coffee, soepwinkel.name, soepwinkel.s_name, soepwinkel.site, 8],
+      [feelgood.info, feelgood.lat, feelgood.long, feelgood.breakfast, feelgood.lunch, feelgood.dinner, feelgood.coffee, feelgood.name, feelgood.s_name, feelgood.site, 9],
+      [fatoush.info, fatoush.lat, fatoush.long, fatoush.breakfast, fatoush.lunch, fatoush.dinner, fatoush.coffee, fatoush.name, fatoush.s_name, fatoush.site, 10],
+      [bagelsbeans.info, bagelsbeans.lat, bagelsbeans.long, bagelsbeans.breakfast, bagelsbeans.lunch, bagelsbeans.dinner, bagelsbeans.coffee, bagelsbeans.name, bagelsbeans.s_name, bagelsbeans.site, 11],
+      [pernikkel.info, pernikkel.lat, pernikkel.long, pernikkel.breakfast, pernikkel.lunch, pernikkel.dinner, pernikkel.coffee, pernikkel.name, pernikkel.s_name, pernikkel.site, 12],
+      [gasfabriek.info, gasfabriek.lat, gasfabriek.long, gasfabriek.breakfast, gasfabriek.lunch, gasfabriek.dinner, gasfabriek.coffee, gasfabriek.name, gasfabriek.s_name, gasfabriek.site, 13],
+      [achterwerk.info, achterwerk.lat, achterwerk.long, achterwerk.breakfast, achterwerk.lunch, achterwerk.dinner, achterwerk.coffee, achterwerk.name, achterwerk.s_name, achterwerk.site, 14],
+      [palermo.info, palermo.lat, palermo.long, palermo.breakfast, palermo.lunch, palermo.dinner, palermo.coffee, palermo.name, palermo.s_name, palermo.site, 15],
+      [frietvanpiet.info, frietvanpiet.lat, frietvanpiet.long, frietvanpiet.breakfast, frietvanpiet.lunch, frietvanpiet.dinner, frietvanpiet.coffee, frietvanpiet.name, frietvanpiet.s_name, frietvanpiet.site, 16],
+      [zevendehemel.info, zevendehemel.lat, zevendehemel.long, zevendehemel.breakfast, zevendehemel.lunch, zevendehemel.dinner, zevendehemel.coffee, zevendehemel.name, zevendehemel.s_name, zevendehemel.site, 17],
+      [kult.info, kult.lat, kult.long, kult.breakfast, kult.lunch, kult.dinner, kult.coffee, kult.name, kult.s_name, kult.site, 18],
+      [ps.info, ps.lat, ps.long, ps.breakfast, ps.lunch, ps.dinner, ps.coffee, ps.name, ps.s_name, ps.site, 19],
+      [blabla.info, blabla.lat, blabla.long, blabla.breakfast, blabla.lunch, blabla.dinner, blabla.coffee, blabla.name, blabla.s_name, blabla.site, 20],
+      [beeren.info, beeren.lat, beeren.long, beeren.breakfast, beeren.lunch, beeren.dinner, beeren.coffee, beeren.name, beeren.s_name, beeren.site, 21],
+      [bijbritta.info, bijbritta.lat, bijbritta.long, bijbritta.breakfast, bijbritta.lunch, bijbritta.dinner, bijbritta.coffee, bijbritta.name, bijbritta.s_name, bijbritta.site, 22],
+      [bodega.info, bodega.lat, bodega.long, bodega.breakfast, bodega.lunch, bodega.dinner, bodega.coffee, bodega.name, bodega.s_name, bodega.site, 23],
+      [curryhuis.info, curryhuis.lat, curryhuis.long, curryhuis.breakfast, curryhuis.lunch, curryhuis.dinner, curryhuis.coffee, curryhuis.name, curryhuis.s_name, curryhuis.site, 24],
+      [dubbeljoe.info, dubbeljoe.lat, dubbeljoe.long, dubbeljoe.breakfast, dubbeljoe.lunch, dubbeljoe.dinner, dubbeljoe.coffee, dubbeljoe.name, dubbeljoe.s_name, dubbeljoe.site, 25],
+      [gustatio.info, gustatio.lat, gustatio.long, gustatio.breakfast, gustatio.lunch, gustatio.dinner, gustatio.coffee, gustatio.name, gustatio.s_name, gustatio.site, 26],
+      [bakkerscafe.info, bakkerscafe.lat, bakkerscafe.long, bakkerscafe.breakfast, bakkerscafe.lunch, bakkerscafe.dinner, bakkerscafe.coffee, bakkerscafe.name, bakkerscafe.s_name, bakkerscafe.site, 27],
+      [concerthuis.info, concerthuis.lat, concerthuis.long, concerthuis.breakfast, concerthuis.lunch, concerthuis.dinner, concerthuis.coffee, concerthuis.name, concerthuis.s_name, concerthuis.site, 28],
+      [holtbar.info, holtbar.lat, holtbar.long, holtbar.breakfast, holtbar.lunch, holtbar.dinner, holtbar.coffee, holtbar.name, holtbar.s_name, holtbar.site, 29],
+      [javaans.info, javaans.lat, javaans.long, javaans.breakfast, javaans.lunch, javaans.dinner, javaans.coffee, javaans.name, javaans.s_name, javaans.site, 30],
+      [opznkop.info, opznkop.lat, opznkop.long, opznkop.breakfast, opznkop.lunch, opznkop.dinner, opznkop.coffee, opznkop.name, opznkop.s_name, opznkop.site, 31],
+      [kokanje.info, kokanje.lat, kokanje.long, kokanje.breakfast, kokanje.lunch, kokanje.dinner, kokanje.coffee, kokanje.name, kokanje.s_name, kokanje.site, 32],
+      [txoko.info, txoko.lat, txoko.long, txoko.breakfast, txoko.lunch, txoko.dinner, txoko.coffee, txoko.name, txoko.s_name, txoko.site,  33],
+      [pannekoekschip.info, pannekoekschip.lat, pannekoekschip.long, pannekoekschip.breakfast, pannekoekschip.lunch, pannekoekschip.dinner, pannekoekschip.coffee, pannekoekschip.name, pannekoekschip.s_name, pannekoekschip.site, 34],
+      [sumo.info, sumo.lat, sumo.long, sumo.breakfast, sumo.lunch, sumo.dinner, sumo.coffee, sumo.name, sumo.s_name, sumo.site, 35],
+      [tapasco.info, tapasco.lat, tapasco.long, tapasco.breakfast, tapasco.lunch, tapasco.dinner, tapasco.coffee, tapasco.name, tapasco.s_name, tapasco.site, 36],
+      [jasmine.info, jasmine.lat, jasmine.long, jasmine.breakfast, jasmine.lunch, jasmine.dinner, jasmine.coffee, jasmine.name, jasmine.s_name, jasmine.site, 37],
+      [toshka.info, toshka.lat, toshka.long, toshka.breakfast, toshka.lunch, toshka.dinner, toshka.coffee, toshka.name, toshka.s_name, toshka.site, 38],
+      [uurwerker.info, uurwerker.lat, uurwerker.long, uurwerker.breakfast, uurwerker.lunch, uurwerker.dinner, uurwerker.coffee, uurwerker.name, uurwerker.s_name, uurwerker.site, 39],
+      [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, warung.s_name, warung.site, 40],
+      [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, wereldburgers.s_name, wereldburgers.site, 41],
+      [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, poeslief.s_name, poeslief.site, 42],
+      [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, dunk.s_name, dunk.site, 43],
     ];
 
 
@@ -1114,6 +1204,8 @@ function initMap() {
         	dinnerCheck = marker[5],
         	coffeeCheck = marker[6],
         	markerName = marker[7],
+        	markerSearchName = marker[8],
+        	markerSite = marker[9],
         	hideTxt = document.getElementById("js-hide-txt"),
         	infoBoxInfo = document.getElementById("js-info-box-info");
 
@@ -1168,7 +1260,9 @@ function initMap() {
 			lunch: lunchCheck,
 			dinner: dinnerCheck,
 			coffee: coffeeCheck,
-			name: markerName
+			name: markerName, 
+			s_name: markerSearchName, 
+			site: markerSite, 
 		});
 
 		// Set location names for Hash
@@ -1241,8 +1335,8 @@ function initMap() {
 					
 					//Show shared location GTAG
 					gtag('event', 'share_item', {
-						'event_category': 'share_url_en',
-						'event_label': locationHash
+						'event_category': 'Info window EN',
+						'event_label': locationHash + " EN"
 					});
 					
 					//Show Succes Message
@@ -1282,10 +1376,82 @@ function initMap() {
 				marker_l.setIcon(iconUrl);
 				
 			}
-			
 		}
-		
 	}
+
+
+	function searchLocations(){
+		var toggleSearch = document.getElementById("search-icon-svg"),
+		searchResultsList = document.getElementById("js-search-result-list");
+
+		// Add all the hashnames to the array
+		var hashNames = [];
+		for (i = 0; i < locationMarkers.length; i++) {
+			hashNames.push(locationMarkers[i].name);
+		}
+
+		//Add all the friendly names to the array
+		var itemNames = [];
+		for (i = 0; i < locationMarkers.length; i++) {
+		    itemNames.push(locationMarkers[i].s_name);
+		}
+
+		// Combine location names with location hash
+		var r = [],
+		    i,
+		    keys = itemNames,
+		    values = hashNames;
+		for (i = 0; i < keys.length; i++) {
+		    r[keys[i]] = values[i];
+		}
+
+		//Split Arrays into name and hash arrays
+		var nameArray = Object.keys(r);
+		var hashArray = nameArray.map(function (k) {
+		    return r[k];
+		});
+
+		// Sort the Arrays alphabetically
+		abcNames = nameArray.sort();
+		abcHash = hashArray.sort();
+
+		// Add list items to the list with href hashtag
+		for (i = 0; i < abcHash.length; i++) {
+			//Set location name for hash
+			var locationHash = abcHash[i];
+			var locName = abcNames[i];
+
+			// Add list items and fill them with hash links and location names
+			li = document.createElement('li');
+			li.className = "search-result-list-item";
+			el = document.createElement('a');
+			el.setAttribute('href', '#' + locationHash);
+	    	el.innerHTML = locName;
+	    	searchResultsList.appendChild(li);
+	    	li.appendChild(el);
+	    }
+
+	    ListItems = searchResultsList.children;
+	    for (let value of ListItems) {
+		  var searchLocationLink = value.firstChild;
+
+			//Show searched location GTAG
+			searchLocationLink.onclick = function() {
+				searchLocationName = this.innerHTML;
+				gtag('event', 'searched_item', {
+					'event_category': 'Search EN',
+					'event_label': searchLocationName + " EN"
+				});
+		  	}
+		}
+
+	    // Animate the search icon on click
+		toggleSearch.onclick = function() {
+			toggleSearch.classList.toggle("active");
+		}
+
+	}
+	searchLocations();
 
 	// Show/Hide Breakfast places
 	var toggleBreakfast = document.getElementById("showBreakfast"),
@@ -1299,8 +1465,8 @@ function initMap() {
 	    if(this.checked) {
 		    
 		    gtag('event', 'view_item', {
-				'event_category': 'Filter item',
-				'event_label': 'breakfast'
+				'event_category': 'Filter item EN',
+				'event_label': 'breakfast EN'
 			});
 			
 	        for (i = 0; i < locationMarkers.length; i++) {
@@ -1318,7 +1484,7 @@ function initMap() {
 	    if(this.checked) {
 		    
 		    gtag('event', 'view_item', {
-				'event_category': 'Filter item',
+				'event_category': 'Filter item EN',
 				'event_label': 'lunch EN'
 			});
 						
@@ -1337,8 +1503,8 @@ function initMap() {
 	    if(this.checked) {
 		    
 		    gtag('event', 'view_item', {
-				'event_category': 'Filter item',
-				'event_label': 'taart'
+				'event_category': 'Filter item EN',
+				'event_label': 'taart EN'
 			});
 			
 	        for (i = 0; i < locationMarkers.length; i++) {
@@ -1356,8 +1522,8 @@ function initMap() {
 	    if(this.checked) {
 		    
 		    gtag('event', 'view_item', {
-				'event_category': 'Filter item',
-				'event_label': 'dinner'
+				'event_category': 'Filter item EN',
+				'event_label': 'dinner EN'
 			});
 			
 	        for (i = 0; i < locationMarkers.length; i++) {
@@ -1375,8 +1541,8 @@ function initMap() {
 	    if(this.checked) {
 		    
 		    gtag('event', 'view_item', {
-				'event_category': 'Filter item',
-				'event_label': 'all'
+				'event_category': 'Filter item EN',
+				'event_label': 'all EN'
 			});
 			
 	        for (i = 0; i < locationMarkers.length; i++) {
@@ -1429,6 +1595,11 @@ var hideInfo = document.getElementById("js-hide-info"),
 
 hideInfo.addEventListener('click',function(){
 
+	gtag('event', 'view_item', {
+		'event_category': 'Info window EN',
+		'event_label': 'toggle EN'
+	});
+
 	if (window.screen.width <= 767) {
 		infoBox.classList.toggle("small");
 
@@ -1449,6 +1620,25 @@ hideInfo.addEventListener('click',function(){
 	
 }, false);
 
+
+
+function ToggleSearchList() {
+	var searchToggle = document.getElementById("js-search-toggle"),
+	searchResults = document.getElementById("js-search-results");
+
+	searchToggle.onclick = function() {
+		searchResults.classList.toggle("open");
+		document.body.classList.toggle("no-scroll");
+
+		//Show Searchtoggle click in GA
+		gtag('event', 'view_item', {
+		  'event_category': 'Search EN',
+		  'event_label': 'search overview EN'
+		});
+	}
+}
+ToggleSearchList();
+
 function adjustDynamicElements() {
 
 	if (window.screen.width <= 767) {
@@ -1459,7 +1649,22 @@ function adjustDynamicElements() {
 
 		function ToggleMobileMenu() {
 			var sections = document.getElementById("js-sections"),
-				infoBox = document.getElementById("info-box");
+				infoBox = document.getElementById("info-box"),
+				menuToggle = document.getElementById("js-mobile-nav-toggle"),
+				animenu = document.getElementById("animenu"),
+				mobileNav = document.getElementById("js-mobile-nav");
+
+				menuToggle.onclick = function() {
+
+					mobileNav.classList.toggle("open");
+					animenu.classList.toggle("open");
+
+					//Show Menutoggle click in GA
+					gtag('event', 'view_item', {
+					  'event_category': 'Mobile menu EN',
+					  'event_label': 'Menu toggle EN'
+					});
+				}
 
 		    ToggleMenuItems();
 		}
@@ -1492,7 +1697,7 @@ function adjustDynamicElements() {
 				
 				gtag('event', 'view_item', {
 					'event_category': 'Mobile menu EN',
-					'event_label': 'about'
+					'event_label': 'about EN'
 				});
 			}
 			menuItem2.onclick = function() {
@@ -1511,7 +1716,7 @@ function adjustDynamicElements() {
 				
 				gtag('event', 'view_item', {
 					'event_category': 'Mobile menu EN',
-					'event_label': 'vegan'
+					'event_label': 'vegan EN'
 				});
 			}
 
@@ -1531,7 +1736,7 @@ function adjustDynamicElements() {
 				
 				gtag('event', 'view_item', {
 					'event_category': 'Mobile menu EN',
-					'event_label': 'contact'
+					'event_label': 'contact EN'
 				});
 			}
 
@@ -1551,7 +1756,7 @@ function adjustDynamicElements() {
 				
 				gtag('event', 'view_item', {
 					'event_category': 'Mobile menu EN',
-					'event_label': 'close tab'
+					'event_label': 'close tab EN'
 				});
 			}
 
@@ -1575,4 +1780,4 @@ adjustDynamicElements();
 window.addEventListener('resize', function () {
 	initMap();
 	adjustDynamicElements();
-})
+});

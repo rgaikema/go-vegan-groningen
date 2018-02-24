@@ -1,249 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl" itemscope itemtype="http://schema.org/WebPage">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<?php 
-
-			//TODO 
-			//Check language switcher one time instead of multiple
-			$savedLanguage = $user->language;
-
-			foreach($languages as $language) {
-
-				if($language->id == $savedLanguage->id) continue;
-
-				if(!$page->viewable($language)) continue;
-
-				$user->language = $language;
-
-			}
-
-			$user->language = $savedLanguage;
-
-			if ($savedLanguage->title !== "NL") {
-
-				echo '<title>Go Vegan Groningen - Vegan food in Groningen</title>';
-
-			} else {
-				echo '<title>Go Vegan Groningen - Vegan uit eten in Groningen</title>';
-			}
-		?>
-		<meta name="description" content="Op deze website zie je waar je vegan uit eten kunt in Groningen.">
-		<meta property="og:title" content="Vegan uit eten in Groningen"/>
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://go-vegan-groningen.nl/" />
-		<meta property="og:image" content="https://go-vegan-groningen.nl/site/img/f-image.jpg"/>
-		<meta property="og:description" content="Alle locaties op één site." />
-		<meta itemprop="name" content="Go-vegan-Groningen.nl">
-    	<meta itemprop="headline" content="Vegan uit eten in Groningen">
-		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-		<link rel="shortcut icon" href="https://go-vegan-groningen.nl/favicon.ico">
-		<link itemprop="url" href="https://go-vegan-groningen.nl/"/>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109095981-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-109095981-1');
-		</script>
-	</head>
-	<body>
-		<div id="fb-root"></div>
-		<script>
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=146295529459606';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-		<section class="page-wrapper">
-
-			<section class="top">
-				<div class="logo desktop-only">
-					<?php 
-						$savedLanguage = $user->language;
-
-						foreach($languages as $language) {
-
-							if($language->id == $savedLanguage->id) continue;
-
-							if(!$page->viewable($language)) continue;
-
-							$user->language = $language;
-
-						}
-
-						$user->language = $savedLanguage;
-
-						if ($savedLanguage->title !== "NL") {
-
-							echo '<a href="' . $config->urls->root . 'en/">';
-							include 'logo_dt.inc';
-							echo '</a>';
-
-						} else {
-							echo '<a href="' . $config->urls->root . '">';
-							include 'logo_dt.inc';
-							echo "</a>";
-						}
-					?>
-				</div>
-				<div class="top-items-holder table">
-					<div class="table-cell desktop-only">
-						<?php 
-		
-							$savedLanguage = $user->language;
-
-							foreach($languages as $language) {
-
-								if($language->id == $savedLanguage->id) continue;
-
-								if(!$page->viewable($language)) continue;
-
-								$user->language = $language;
-
-							}
-
-							$user->language = $savedLanguage;
-
-							if ($savedLanguage->title !== "NL") {
-								echo "<h1>Vegan food in Groningen</h1>";
-							} else {
-								echo "<h1>Vegan uit eten in Groningen</h1>";
-							}
-						?>
-					</div>
-					<div class="table-cell mobile-only fourty">
-						<nav class="mobile-nav" id="js-mobile-nav">
-							<ul class="mobile-nav-list">
-								<?php 
-
-									// TODO 
-									// Change this in hamburger menu left
-		
-									$savedLanguage = $user->language;
-
-									foreach($languages as $language) {
-
-										if($language->id == $savedLanguage->id) continue;
-
-										if(!$page->viewable($language)) continue;
-
-										$user->language = $language;
-
-									}
-
-									$user->language = $savedLanguage;
-
-									if ($savedLanguage->title !== "NL") {
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-1">About</li>';
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-2">Vegan?</li>';
-									} else {
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-1">Over</li>';
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-2">Vegan?</li>';
-									}
-								?>
-							</ul>
-						</nav>
-					</div>
-					<div class="table-cell mobile-only twenty">
-						<div class="logo">
-							<?php 
-								$savedLanguage = $user->language;
-
-								foreach($languages as $language) {
-
-									if($language->id == $savedLanguage->id) continue;
-
-									if(!$page->viewable($language)) continue;
-
-									$user->language = $language;
-
-								}
-
-								$user->language = $savedLanguage;
-
-								if ($savedLanguage->title !== "NL") {
-
-									echo '<a href="' . $config->urls->root . 'en/">';
-									include 'logo_mb.inc';
-									echo '</a>';
-
-								} else {
-									echo '<a href="' . $config->urls->root . '">';
-									include 'logo_mb.inc';
-									echo "</a>";
-								}
-							?>
-						</div>
-					</div>
-					<div class="table-cell mobile-only twenty v-align-top">
-						<nav class="mobile-nav" id="js-mobile-nav">
-							<ul class="mobile-nav-list">
-								<?php 
-
-									// TODO 
-									// Move this section to hamburger menu
-		
-									$savedLanguage = $user->language;
-
-									foreach($languages as $language) {
-
-										if($language->id == $savedLanguage->id) continue;
-
-										if(!$page->viewable($language)) continue;
-
-										$user->language = $language;
-
-									}
-
-									$user->language = $savedLanguage;
-
-									if ($savedLanguage->title !== "NL") {
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-3">Contact</li>';
-									} else {
-										echo '<li class="mobile-nav-list-item" id="js-mobile-nav-3">Contact</li>';
-									}
-								?>
-							</ul>
-						</nav>
-					</div>
-					<div class="table-cell twenty v-align-top">
-
-						<!-- TODO -->
-						<!-- Add search icon + search section -->
-
-						<span class="language_switcher">
-							<select onchange='window.location=$(this).val();'>
-								<?php
-									foreach($languages as $language) {
-									  $selected = '';
-
-									  // if this page isn't viewable (active) for the language, skip it
-									  if(!$page->viewable($language)) continue;
-
-									  // if language is current user's language, make it selected
-									  if($user->language->id == $language->id) $selected = " selected=selected";
-
-									  // determine the "local" URL for this language
-									  $url = $page->localUrl($language);
-
-									  // output the option tag
-									  echo "<option$selected value='$url'>$language->title</option>";
-									}
-								?>
-							</select>
-						</span>	
-					</div>
-				</div>
-			</section> <!-- end top -->
-
+<?php
+	include 'header.inc';
+?>
 			<div class="bottom-curve-green"></div>
 
 			<section class="map-holder section">
@@ -253,21 +10,6 @@
 						<span class="hide-info" id="js-hide-info"><span id="js-hide-triangle">&#x25BC;</span> <span id="js-hide-txt">hide info</span></span>
 					</div>
 					<?php 
-		
-						$savedLanguage = $user->language;
-
-						foreach($languages as $language) {
-
-							if($language->id == $savedLanguage->id) continue;
-
-							if(!$page->viewable($language)) continue;
-
-							$user->language = $language;
-
-						}
-
-						$user->language = $savedLanguage;
-
 						if ($savedLanguage->title !== "NL") {
 							echo '<i class="info-box-info" id="js-info-box-info">Click on one of the markers in the map to view the location\'s information</i>';
 						} else {
@@ -279,20 +21,6 @@
 			  			<div class="location-info" id="location-info"></div>
 			  			<div class="share-url-holder">
 			  				<?php 
-								$savedLanguage = $user->language;
-
-								foreach($languages as $language) {
-
-									if($language->id == $savedLanguage->id) continue;
-
-									if(!$page->viewable($language)) continue;
-
-									$user->language = $language;
-
-								}
-
-								$user->language = $savedLanguage;
-
 								if ($savedLanguage->title !== "NL") {
 
 									echo '<span class="share-url-holder-text">Copy this link to share:</span>';
@@ -315,20 +43,6 @@
 				  			</span>
 							
 							<?php 
-								$savedLanguage = $user->language;
-
-								foreach($languages as $language) {
-
-									if($language->id == $savedLanguage->id) continue;
-
-									if(!$page->viewable($language)) continue;
-
-									$user->language = $language;
-
-								}
-
-								$user->language = $savedLanguage;
-
 								if ($savedLanguage->title !== "NL") {
 
 									echo '<p class="succesful-copied-text" id="succesful-copied-text">Your link has been copied!</p>';
@@ -346,21 +60,6 @@
 			<div class="bottom-curve"></div>
 
 			<?php 
-		
-				$savedLanguage = $user->language;
-
-				foreach($languages as $language) {
-
-					if($language->id == $savedLanguage->id) continue;
-
-					if(!$page->viewable($language)) continue;
-
-					$user->language = $language;
-
-				}
-
-				$user->language = $savedLanguage;
-
 				if ($savedLanguage->title !== "NL") {
 					include 'filter_en.inc';
 				} else {
@@ -381,6 +80,10 @@
 				<div class="content-holder">
 					<h2><?php echo $page->title; ?></h2>
 					<?php echo $page->info_text; ?>
+
+					<div class="facebook-like-holder">
+						<div class="fb-like" data-href="https://www.facebook.com/go.vegan.groningen.nl" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+					</div>
 				</div>
 			</section>
 
@@ -393,20 +96,6 @@
 					<?php echo $page->vegan_text; ?>
 					<br>
 					<?php 
-						$savedLanguage = $user->language;
-
-						foreach($languages as $language) {
-
-							if($language->id == $savedLanguage->id) continue;
-
-							if(!$page->viewable($language)) continue;
-
-							$user->language = $language;
-
-						}
-
-						$user->language = $savedLanguage;
-
 						if ($savedLanguage->title !== "NL") {
 							echo '<h3>Why vegan?</h3>';
 						} else {
@@ -453,9 +142,9 @@
 							<img src="https://go-vegan-groningen.nl/site/img/jani.jpg" alt="Jani - Go-vegan-Groningen.nl - Vegan uit eten in Groningen">
 							<figcaption itemprop="name">Jani</figcaption>
 						</figure>
-						<div class="facebook-like-holder">
-							<div class="fb-like" data-href="https://www.facebook.com/go.vegan.groningen.nl" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-						</div>
+						
+						<!-- Original FB like button	 -->
+
 					</div>
 				</div><!-- Closes Organisation Schema.org -->
 			</section>
@@ -481,21 +170,6 @@
 		<script src="<?php echo $config->urls->templates?>js/clipboard.min.js"></script>
 
 		<?php 
-		
-			$savedLanguage = $user->language;
-
-			foreach($languages as $language) {
-
-				if($language->id == $savedLanguage->id) continue;
-
-				if(!$page->viewable($language)) continue;
-
-				$user->language = $language;
-
-			}
-
-			$user->language = $savedLanguage;
-
 			if ($savedLanguage->title !== "NL") {
 				echo '<script src="' . $config->urls->templates . 'js/script_en.js"></script>';
 			} else {
