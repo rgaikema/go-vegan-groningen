@@ -96,6 +96,10 @@ input[type="radio"]:checked + label {
 	position: relative;
 }
 
+.options-wrapper label:hover{
+	background: #eee;
+}
+
 input[type="radio"]:checked + label:before {
 	content:'';
 	width: 0; 
@@ -464,7 +468,7 @@ select {
 }
 
 .search-results .search-title {
-	padding-left: 30px;
+	padding-left: 10%;
 	color: #333;
 	margin-top: 0;
 	font-size: 22px;
@@ -1102,9 +1106,13 @@ for info sections per location
 		border-bottom: 1px solid #dcdcdc;
 	}
 
-	input[type="radio"]:checked + label {
-		border-top: 1px solid #33ab33;
+	.options-wrapper:last-of-type input[type="radio"]+ label {
+		border-right: 0;
 	}
+
+/*	input[type="radio"]:checked + label {
+		border-top: 1px solid #33ab33;
+	}*/
 
 	input[type="radio"]:checked + label:before{
 		display: none;
