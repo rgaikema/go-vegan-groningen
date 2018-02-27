@@ -1273,6 +1273,9 @@ function initMap() {
 
 			return function () {
 
+				// Get website of location
+				var locationWebsite = locations[i][9];
+
 				// Get name of location for GTAG
 				var matches = [];
 				var text = locations[i][0];
@@ -1320,6 +1323,28 @@ function initMap() {
 
 				//Add location info to info window
 				document.getElementById('location-info').innerHTML = infowindow_l.content;
+
+				//Create elements for route link & website link
+				var locationInfoContent = document.getElementById('location-info'),
+					routeLink = locationInfoContent.getElementsByTagName("a")[0],
+					routeSiteHolder = document.createElement("div"),
+					routeHolder = document.createElement("span"),
+					siteHolder = document.createElement("span");
+
+				routeSiteHolder.setAttribute('class', 'website-route-holder');
+				routeHolder.setAttribute('class', 'route-holder');
+				siteHolder.setAttribute('class', 'website-holder');
+
+				//Put elemnts in right order
+				locationInfoContent.appendChild(routeSiteHolder);
+				routeSiteHolder.appendChild(routeHolder);
+				routeHolder.appendChild(routeLink);
+				routeSiteHolder.appendChild(siteHolder);
+
+				// Place link in website holder
+				locationWebsiteLink  = '<a href="' + locationWebsite + '" target="_blank">Visit website</a>'
+				siteHolder.innerHTML = locationWebsiteLink;
+
 
 				//Copy to clipboard share URL
 				var siteURL = window.location.href.split('#')[0];
@@ -1381,8 +1406,7 @@ function initMap() {
 
 
 	function searchLocations(){
-		var toggleSearch = document.getElementById("search-icon-svg"),
-		searchResultsList = document.getElementById("js-search-result-list");
+		var searchResultsList = document.getElementById("js-search-result-list");
 
 		// Add all the hashnames to the array
 		var hashNames = [];
@@ -1432,24 +1456,19 @@ function initMap() {
 	    }
 
 	    ListItems = searchResultsList.children;
-	    for (let value of ListItems) {
+		var value = Object.keys(ListItems).map(function(e) {
+		  return ListItems[e]
 		  var searchLocationLink = value.firstChild;
 
 			//Show searched location GTAG
 			searchLocationLink.onclick = function() {
 				searchLocationName = this.innerHTML;
 				gtag('event', 'searched_item', {
-					'event_category': 'Search EN',
-					'event_label': searchLocationName + " EN"
+					'event_category': 'Search',
+					'event_label': searchLocationName
 				});
 		  	}
-		}
-
-	    // Animate the search icon on click
-		toggleSearch.onclick = function() {
-			toggleSearch.classList.toggle("active");
-		}
-
+		});
 	}
 	searchLocations();
 
@@ -1624,9 +1643,11 @@ hideInfo.addEventListener('click',function(){
 
 function ToggleSearchList() {
 	var searchToggle = document.getElementById("js-search-toggle"),
+	closeSearch = document.getElementById("js-search-section-close"),
 	searchResults = document.getElementById("js-search-results");
 
 	searchToggle.onclick = function() {
+		searchToggle.classList.toggle("active");
 		searchResults.classList.toggle("open");
 		document.body.classList.toggle("no-scroll");
 
@@ -1634,6 +1655,18 @@ function ToggleSearchList() {
 		gtag('event', 'view_item', {
 		  'event_category': 'Search EN',
 		  'event_label': 'search overview EN'
+		});
+	}
+
+	closeSearch.onclick = function() {
+		searchResults.classList.toggle("open");
+		document.body.classList.toggle("no-scroll");
+		searchToggle.classList.toggle("active");
+
+		//Show Searchtoggle click in GA
+		gtag('event', 'close_item', {
+		  'event_category': 'Search EN',
+		  'event_label': 'close Search EN'
 		});
 	}
 }
@@ -1772,9 +1805,6 @@ function adjustDynamicElements() {
 
 }
 adjustDynamicElements();
-
-
-
 
 
 window.addEventListener('resize', function () {

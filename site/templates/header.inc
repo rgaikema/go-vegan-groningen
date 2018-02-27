@@ -113,7 +113,7 @@
 							?>
 						</div>
 					</div>
-					<div class="table-cell twenty v-align-top">
+					<div class="table-cell twenty v-align-top t-align-right">
 						<div class="search-top" id="js-search-toggle">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" id="search-icon-svg" class="js-search-icon-svg">
 <g><path d="M963.1,833.6L704.8,575.3c0,0,0,0-6.1,0c30.7-61.5,49.2-123,49.2-190.6c0-202.9-166-368.9-368.9-368.9S10,181.8,10,384.7c0,202.9,166,368.9,368.9,368.9c67.6,0,135.3-18.4,190.6-55.3l0,0l258.2,258.2c36.9,36.9,92.2,36.9,129.1,0C999.9,925.8,999.9,870.5,963.1,833.6z M133,384.7c0-135.3,110.7-245.9,245.9-245.9c135.3,0,245.9,110.7,245.9,245.9c0,135.3-110.7,246-245.9,246C243.7,630.7,133,520,133,384.7z"/></g>
@@ -165,11 +165,12 @@
 			<div class="search-results" id="js-search-results">
 				<?php
 					if ($savedLanguage->title !== "NL") {
-						echo'<h2 class="search-title">Every location from A-Z</h2>';
+						echo'<h2 class="search-title">Every location A-Z</h2>';
 					} else {
 						echo'<h2 class="search-title">Alle locaties van A-Z</h2>';
 					}
 				?>
+				<span class="search-section-close" id="js-search-section-close"></span>
 				<ul class="search-result-list" id="js-search-result-list">
 					<!-- All the locations -->
 

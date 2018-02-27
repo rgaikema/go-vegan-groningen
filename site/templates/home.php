@@ -23,34 +23,45 @@
 			  				<?php 
 								if ($savedLanguage->title !== "NL") {
 
-									echo '<span class="share-url-holder-text">Copy this link to share:</span>';
+									echo '<span class="share-url-holder-text">Share this location:</span>';
 
 								} else {
-									echo '<span class="share-url-holder-text">Kopieer deze link om te delen:</span>';
+									echo '<span class="share-url-holder-text">Deel deze locatie:</span>';
 								}
 							?>
 			  				
 			  				<div class="share-url-ipnut-btn-holder">
 					  			<input type="text" class="share-url-input" id="share-url" value="">
 					  			<button class="share-url-btn" data-clipboard-target="#share-url">
-		    						<img src="<?php echo $config->urls->root?>site/img/clippy.svg" alt="Copy to clipboard">
+		    						<?php 
+								if ($savedLanguage->title !== "NL") {
+
+									echo 'Copy';
+
+								} else {
+									echo 'Kopieer';
+								}
+							?>
 								</button>
 							</div>
 				  		</div>
 			  			<div class="succes-message-url-copied" id="succes-message-url-copied">
-				  			<span class="share-check-icon">
-				  				<?php include 'share_success_icon.inc'; ?>
-				  			</span>
+			  				<div class="succes-info-holder">
+					  			<span class="share-check-icon">
+					  				<?php include 'share_success_icon.inc'; ?>
+					  			</span>
+					  			<span class="share-success-info">
 							
-							<?php 
-								if ($savedLanguage->title !== "NL") {
+									<?php 
+										if ($savedLanguage->title !== "NL") {
 
-									echo '<p class="succesful-copied-text" id="succesful-copied-text">Your link has been copied!</p>';
-								} else {
-									echo '<p class="succesful-copied-text" id="succesful-copied-text">Je link is gekopieerd!</p>';
-								}
-							?>
-
+											echo '<p class="succesful-copied-text" id="succesful-copied-text">Your link has been copied!</p>';
+										} else {
+											echo '<p class="succesful-copied-text" id="succesful-copied-text">Je link is gekopieerd!</p>';
+										}
+									?>
+								</span>
+							</div>
 				  		</div><!-- Closes Success message-->
 			  		</div><!-- Closes location info -->
 			  		
