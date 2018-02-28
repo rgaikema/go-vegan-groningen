@@ -1649,6 +1649,7 @@ function ToggleSearchList() {
 	searchToggle.onclick = function() {
 		searchToggle.classList.toggle("active");
 		searchResults.classList.toggle("open");
+		closeSearch.classList.toggle("active");
 		document.body.classList.toggle("no-scroll");
 
 		//Show Searchtoggle click in GA
@@ -1661,6 +1662,7 @@ function ToggleSearchList() {
 	closeSearch.onclick = function() {
 		searchResults.classList.toggle("open");
 		document.body.classList.toggle("no-scroll");
+		closeSearch.classList.toggle("active");
 		searchToggle.classList.toggle("active");
 
 		//Show Searchtoggle click in GA

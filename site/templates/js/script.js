@@ -1648,6 +1648,7 @@ function ToggleSearchList() {
 
 	searchToggle.onclick = function() {
 		searchToggle.classList.toggle("active");
+		closeSearch.classList.toggle("active");
 		searchResults.classList.toggle("open");
 		document.body.classList.toggle("no-scroll");
 
@@ -1660,6 +1661,7 @@ function ToggleSearchList() {
 
 	closeSearch.onclick = function() {
 		searchResults.classList.toggle("open");
+		closeSearch.classList.toggle("active");
 		document.body.classList.toggle("no-scroll");
 		searchToggle.classList.toggle("active");
 

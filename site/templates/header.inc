@@ -161,7 +161,7 @@
 					?>
 				</ul>
 			</nav>
-
+			<span class="search-section-close" id="js-search-section-close"></span>
 			<div class="search-results" id="js-search-results">
 				<?php
 					if ($savedLanguage->title !== "NL") {
@@ -170,7 +170,6 @@
 						echo'<h2 class="search-title">Alle locaties van A-Z</h2>';
 					}
 				?>
-				<span class="search-section-close" id="js-search-section-close"></span>
 				<ul class="search-result-list" id="js-search-result-list">
 					<!-- All the locations -->
 

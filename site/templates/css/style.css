@@ -297,6 +297,38 @@ select {
 	display: block;
 }
 
+.search-section-close {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+    color: #000;
+    z-index: 4;
+    right: 9%;
+    top: 80px;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.search-section-close:after {
+	content: '×';
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	left: 50%;
+	font-size: 24px;
+	transform: translate(-50%, -50%);
+}
+
+.search-section-close.active {
+	display: block;
+	position: fixed;
+	z-index: 99;
+}
+
 .mobile-nav-list,
 .search-result-list {
 	display: inline-block;
@@ -484,7 +516,7 @@ select {
 	top: 0;
 	margin-right: 20px;
 	position: absolute;
-	width: 25%;
+	width: 35%;
 	height: 100%;
 	z-index: 2;
 	background: #fff;
@@ -837,8 +869,8 @@ select {
 	.info-box {
 		width: 42vw;
 	} 
-
 }
+
 
 @media only screen and (max-device-width: 960px) {
 	.options .options-wrapper {
@@ -848,7 +880,6 @@ select {
 	.options .options-wrapper label {
 		font-size: 10px;
 	}
-
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -1315,6 +1346,7 @@ select {
 
 	.search-section-close {
 		margin-top: 30px;
+		display: none;
 	}
 
 	.info-section-close:after,
@@ -1387,4 +1419,16 @@ select {
 		width: 100%;
 	}
 
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+	.section .info-box {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1060px) {
+	.section .info-box {
+		width: 360px;
+	}
 }
