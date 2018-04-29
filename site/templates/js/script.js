@@ -737,6 +737,39 @@ function initMap() {
 		site:'https://www.facebook.com/dunkontmoeten/'
 	};
 
+	var flfl = {
+		info: '<strong>FLFL</strong><br>\r\
+				Oude Kijk in Het Jatstraat 44<br>Lunch & diner<br>\
+				Falafel, OPEN: di t/m zo 11:30-19uur<br>\
+				<a target="_blank" href="https://goo.gl/maps/zi74Hdh5wXB2">Bepaal Route</a>',
+		lat: 53.2197448,
+		long: 6.5614666,
+		breakfast: false,
+		lunch: true,
+		dinner: true,
+		coffee: false,
+		name: 'falafel',
+		s_name: 'FaLaFeL',
+		site:'http://falafel.nl/'
+	};
+
+	var vapiano = {
+		info: '<strong>Vapiano</strong><br>\r\
+				Poelestraat 16-18<br>Lunch & diner<br>\
+				Eén vegan pasta en één vegan dessert<br>\
+				<a target="_blank" href="https://goo.gl/maps/NmKDdyPZeMM2">Bepaal Route</a>',
+		lat: 53.2183766,
+		long: 6.5697484,
+		breakfast: false,
+		lunch: true,
+		dinner: true,
+		coffee: false,
+		name: 'vapiano',
+		s_name: 'Vapiano',
+		site:'https://nl.vapiano.com/nl/restaurants/detail/restaurant-details/-d1752928e2/'
+	};
+
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
@@ -782,6 +815,8 @@ function initMap() {
       [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, wereldburgers.s_name, wereldburgers.site, 41],
       [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, poeslief.s_name, poeslief.site, 42],
       [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, dunk.s_name, dunk.site, 43],
+      [flfl.info, flfl.lat, flfl.long, flfl.breakfast, flfl.lunch, flfl.dinner, flfl.coffee, flfl.name, flfl.s_name, flfl.site, 44],
+      [vapiano.info, vapiano.lat, vapiano.long, vapiano.breakfast, vapiano.lunch, vapiano.dinner, vapiano.coffee, vapiano.name, vapiano.s_name, vapiano.site, 44],
     ];
 
 
@@ -1251,7 +1286,9 @@ function initMap() {
 				locations[i][40],
 				locations[i][41],
 				locations[i][42],
-				locations[i][43]),
+				locations[i][43],
+				locations[i][44],
+				locations[i][45]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
