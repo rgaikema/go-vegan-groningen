@@ -692,7 +692,7 @@ function initMap() {
 	var wereldburgers = {
 		info: '<strong>Wereldburgers</strong><br>\r\
 				Akerkhof 43<br>Diner<br>\
-				Twee burgers en een taart. Ook vegan ijs<br>\
+				Drie burgers en een taart. Ook vegan ijs<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Wereldburgers,+Akerkhof+43,+9712+BC+Groningen/@53.2167865,6.5595674,17z/data=!4m15!1m6!3m5!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2sWereldburgers!8m2!3d53.2167865!4d6.5617614!4m7!1m0!1m5!1m1!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2m2!1d6.5617614!2d53.2167865">Bepaal Route</a>',
 		lat: 53.2167865,
 		long: 6.5617614,
@@ -724,7 +724,7 @@ function initMap() {
 	var dunk = {
 		info: '<strong>Dunk Ontmoet</strong><br>\r\
 				Oude Ebbingestraat 71<br>Lunch & taart<br>\
-				Sandwiches, smoothies & taart - OPEN: do t/m zo 12-16:30uur<br>\
+				Sandwiches, smoothies & taart<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Dunk,+Oude+Ebbingestraat+71,+9712+HE+Groningen/@53.2213177,6.564892,18z/data=!4m16!1m6!3m5!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2sDunk!8m2!3d53.2213177!4d6.5659862!4m8!1m0!1m5!1m1!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2m2!1d6.5659862!2d53.2213177!3e2">Bepaal Route</a>',
 		lat: 53.2213177,
 		long: 6.5659862,
@@ -740,7 +740,7 @@ function initMap() {
 	var flfl = {
 		info: '<strong>FLFL</strong><br>\r\
 				Oude Kijk in Het Jatstraat 44<br>Lunch & diner<br>\
-				Falafel, OPEN: di t/m zo 11:30-19uur<br>\
+				Falafel<br>\
 				<a target="_blank" href="https://goo.gl/maps/zi74Hdh5wXB2">Bepaal Route</a>',
 		lat: 53.2197448,
 		long: 6.5614666,
@@ -767,6 +767,56 @@ function initMap() {
 		name: 'vapiano',
 		s_name: 'Vapiano',
 		site:'https://nl.vapiano.com/nl/restaurants/detail/restaurant-details/-d1752928e2/'
+	};
+
+	var wadapartja = {
+		info: '<strong>Wadapartja</strong><br>\r\
+				Gedempte Zuiderdiep 39-41<br>Lunch & diner<br>\
+				Diverse opties waaronder een huisgemaakte vega(n) burger<br>\
+				<a target="_blank" href="https://goo.gl/maps/KfzSQ2Y9wwJ2">Bepaal Route</a>',
+		lat: 53.2151032,
+		long: 6.5671915,
+		breakfast: false,
+		lunch: true,
+		dinner: true,
+		coffee: false,
+		name: 'wadapartja',
+		s_name: 'Wadapartja',
+		site:'http://wadapartja.nl/'
+	};
+
+
+	var ra = {
+		info: '<strong>Rå</strong><br>\r\
+				Oude Kijk in Het Jatstraat 59<br>Lunch & diner<br>\
+				Diverse biologische salades<br>\
+				<a target="_blank" href="https://goo.gl/maps/g1ccYF8ipMq">Bepaal Route</a>',
+		lat: 53.2200029,
+		long: 6.5593044,
+		breakfast: false,
+		lunch: true,
+		dinner: true,
+		coffee: false,
+		name: 'ra',
+		s_name: 'Rå',
+		site:'https://www.rasalatbar.nl/'
+	};
+
+
+	var moflow = {
+		info: '<strong>Mo’Flow </strong><br>\r\
+				Rademarkt 10<br>Lunch & diner<br>\
+				Verschillende broodjes<br>\
+				<a target="_blank" href="https://goo.gl/maps/eSwb9KPAihP2">Bepaal Route</a>',
+		lat: 53.2157392,
+		long: 6.5696016,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: false,
+		name: 'moflow',
+		s_name: 'Mo’Flow ',
+		site:'http://www.gimmemoflow.nl/'
 	};
 
 
@@ -817,6 +867,9 @@ function initMap() {
       [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, dunk.s_name, dunk.site, 43],
       [flfl.info, flfl.lat, flfl.long, flfl.breakfast, flfl.lunch, flfl.dinner, flfl.coffee, flfl.name, flfl.s_name, flfl.site, 44],
       [vapiano.info, vapiano.lat, vapiano.long, vapiano.breakfast, vapiano.lunch, vapiano.dinner, vapiano.coffee, vapiano.name, vapiano.s_name, vapiano.site, 44],
+      [wadapartja.info, wadapartja.lat, wadapartja.long, wadapartja.breakfast, wadapartja.lunch, wadapartja.dinner, wadapartja.coffee, wadapartja.name, wadapartja.s_name, wadapartja.site, 45],
+      [ra.info, ra.lat, ra.long, ra.breakfast, ra.lunch, ra.dinner, ra.coffee, ra.name, ra.s_name, ra.site, 46],
+      [moflow.info, moflow.lat, moflow.long, moflow.breakfast, moflow.lunch, moflow.dinner, moflow.coffee, moflow.name, moflow.s_name, moflow.site, 47],
     ];
 
 
@@ -1288,7 +1341,10 @@ function initMap() {
 				locations[i][42],
 				locations[i][43],
 				locations[i][44],
-				locations[i][45]),
+				locations[i][45],
+				locations[i][46],
+				locations[i][47],
+				locations[i][48]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
