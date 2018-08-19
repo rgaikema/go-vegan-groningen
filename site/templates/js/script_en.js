@@ -482,15 +482,15 @@ function initMap() {
 
 	var holtbar = {
 		info: '<strong>Holtbar</strong><br>\r\
-				Oude Kijk in Het Jatstraat 20<br>Breakfast<br>\
-				Smoothie bowl + energybars<br>\
+				Oude Kijk in Het Jatstraat 20<br>Breakfast & cake<br>\
+				Two options for breakfast, cake and energybars<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//HOLTBAR+concept+store,+Oude+Kijk+in+Het+Jatstraat+20,+9712+EH+Groningen/@53.2188287,6.5599752,17z/data=!4m15!1m6!3m5!1s0x47c9cd5028444acf:0x389d31d2a40a712a!2sHOLTBAR+concept+store!8m2!3d53.2188287!4d6.5621692!4m7!1m0!1m5!1m1!1s0x47c9cd5028444acf:0x389d31d2a40a712a!2m2!1d6.5621692!2d53.2188287">Get Directions</a>',
 		lat: 53.2188287,
 		long: 6.5621692,
 		breakfast: true,
 		lunch: false,
 		dinner: false,
-		coffee: false,
+		coffee: true,
 		name: 'holtbar',
 		s_name: 'Holtbar',
 		site: 'https://holtbar.nl/'
