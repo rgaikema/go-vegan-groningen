@@ -97,7 +97,16 @@ input[type="radio"]:checked + label {
 }
 
 .options-wrapper label:hover{
-	background: #eee;
+	background: #33ab33;
+}
+
+.options-wrapper label:hover .filter-icon path, 
+.options-wrapper label:hover .filter-icon {
+	fill: #fff;
+}
+
+.options-wrapper label:hover .filter_icon_title {
+	color: #fff;
 }
 
 input[type="radio"]:checked + label:before {
@@ -615,10 +624,14 @@ select {
     transition: .2s all ease-in-out;
 }
 
-.route-holder a:hover,
+.route-holder a,
 .website-holder a:hover {
 	color: #fff;
 	background: #33ab33;
+}
+
+.route-holder a:hover {
+	background: #288e28;
 }
 
 .route-holder a {
