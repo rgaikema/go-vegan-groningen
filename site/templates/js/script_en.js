@@ -739,7 +739,7 @@ function initMap() {
 
 	var flfl = {
 		info: '<strong>FLFL</strong><br>\r\
-				Oude Kijk in Het Jatstraat 44<br>Lunch & diner<br>\
+				Oude Kijk in Het Jatstraat 44<br>Lunch & dinner<br>\
 				Falafel<br>\
 				<a target="_blank" href="https://goo.gl/maps/zi74Hdh5wXB2">Get Directions</a>',
 		lat: 53.2197448,
@@ -755,7 +755,7 @@ function initMap() {
 
 	var vapiano = {
 		info: '<strong>Vapiano</strong><br>\r\
-				Poelestraat 16-18<br>Lunch & diner<br>\
+				Poelestraat 16-18<br>Lunch & dinner<br>\
 				One vegan pasta & one vegan dessert<br>\
 				<a target="_blank" href="https://goo.gl/maps/NmKDdyPZeMM2">Get Directions</a>',
 		lat: 53.2183766,
@@ -772,7 +772,7 @@ function initMap() {
 
 	var wadapartja = {
 		info: '<strong>Wadapartja</strong><br>\r\
-				Gedempte Zuiderdiep 39-41<br>Lunch & diner<br>\
+				Gedempte Zuiderdiep 39-41<br>Lunch & dinner<br>\
 				Several vegan options, for example a burger<br>\
 				<a target="_blank" href="https://goo.gl/maps/KfzSQ2Y9wwJ2">Get Directions</a>',
 		lat: 53.2151,
@@ -789,7 +789,7 @@ function initMap() {
 
 	var ra = {
 		info: '<strong>Rå</strong><br>\r\
-				Oude Kijk in Het Jatstraat 59<br>Lunch & diner<br>\
+				Oude Kijk in Het Jatstraat 59<br>Lunch & dinner<br>\
 				Several organic salads<br>\
 				<a target="_blank" href="https://goo.gl/maps/g1ccYF8ipMq">Get Directions</a>',
 		lat: 53.2199997,
@@ -806,7 +806,7 @@ function initMap() {
 
 	var moflow = {
 		info: '<strong>Mo’Flow </strong><br>\r\
-				Rademarkt 10<br>Lunch & diner<br>\
+				Rademarkt 10<br>Lunch<br>\
 				Several sandwiches<br>\
 				<a target="_blank" href="https://goo.gl/maps/eSwb9KPAihP2">Get Directions</a>',
 		lat: 53.215736,
