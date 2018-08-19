@@ -769,13 +769,14 @@ function initMap() {
 		site:'https://nl.vapiano.com/nl/restaurants/detail/restaurant-details/-d1752928e2/'
 	};
 
+
 	var wadapartja = {
 		info: '<strong>Wadapartja</strong><br>\r\
 				Gedempte Zuiderdiep 39-41<br>Lunch & diner<br>\
 				Diverse opties waaronder een huisgemaakte vega(n) burger<br>\
 				<a target="_blank" href="https://goo.gl/maps/KfzSQ2Y9wwJ2">Bepaal Route</a>',
-		lat: 53.2151032,
-		long: 6.5671915,
+		lat: 53.2151,
+		long: 6.567744,
 		breakfast: false,
 		lunch: true,
 		dinner: true,
@@ -791,8 +792,8 @@ function initMap() {
 				Oude Kijk in Het Jatstraat 59<br>Lunch & diner<br>\
 				Diverse biologische salades<br>\
 				<a target="_blank" href="https://goo.gl/maps/g1ccYF8ipMq">Bepaal Route</a>',
-		lat: 53.2200029,
-		long: 6.5593044,
+		lat: 53.2199997,
+		long: 6.5614984,
 		breakfast: false,
 		lunch: true,
 		dinner: true,
@@ -803,13 +804,14 @@ function initMap() {
 	};
 
 
+
 	var moflow = {
 		info: '<strong>Mo’Flow </strong><br>\r\
 				Rademarkt 10<br>Lunch<br>\
 				Verschillende broodjes<br>\
 				<a target="_blank" href="https://goo.gl/maps/eSwb9KPAihP2">Bepaal Route</a>',
-		lat: 53.2157392,
-		long: 6.5696016,
+		lat: 53.215736,
+		long: 6.5717956,
 		breakfast: false,
 		lunch: true,
 		dinner: false,
@@ -818,7 +820,6 @@ function initMap() {
 		s_name: 'Mo’Flow ',
 		site:'http://www.gimmemoflow.nl/'
 	};
-
 
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],

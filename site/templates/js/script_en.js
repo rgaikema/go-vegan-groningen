@@ -775,8 +775,8 @@ function initMap() {
 				Gedempte Zuiderdiep 39-41<br>Lunch & diner<br>\
 				Several vegan options, for example a burger<br>\
 				<a target="_blank" href="https://goo.gl/maps/KfzSQ2Y9wwJ2">Get Directions</a>',
-		lat: 53.2151032,
-		long: 6.5671915,
+		lat: 53.2151,
+		long: 6.567744,
 		breakfast: false,
 		lunch: true,
 		dinner: true,
@@ -792,8 +792,8 @@ function initMap() {
 				Oude Kijk in Het Jatstraat 59<br>Lunch & diner<br>\
 				Several organic salads<br>\
 				<a target="_blank" href="https://goo.gl/maps/g1ccYF8ipMq">Get Directions</a>',
-		lat: 53.2200029,
-		long: 6.5593044,
+		lat: 53.2199997,
+		long: 6.5614984,
 		breakfast: false,
 		lunch: true,
 		dinner: true,
@@ -809,8 +809,8 @@ function initMap() {
 				Rademarkt 10<br>Lunch & diner<br>\
 				Several sandwiches<br>\
 				<a target="_blank" href="https://goo.gl/maps/eSwb9KPAihP2">Get Directions</a>',
-		lat: 53.2157392,
-		long: 6.5696016,
+		lat: 53.215736,
+		long: 6.5717956,
 		breakfast: false,
 		lunch: true,
 		dinner: false,

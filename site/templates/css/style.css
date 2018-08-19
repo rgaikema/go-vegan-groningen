@@ -43,6 +43,11 @@ a {
 	font-weight: bold;
 }
 
+.fb_like_icon {
+	fill: #4267b2;
+}
+
+
 textarea:focus, input:focus{
 	outline: none;
 }
