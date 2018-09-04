@@ -169,7 +169,7 @@ function initMap() {
 	var feelgood = {
 		info: '<strong>Feel Good</strong><br>\r\
 				Oude Kijk in Het Jatstraat 29<br>Ontbijt, lunch, taart & diner<br>\
-				Standaard vegan opties op de kaart. Bekijk hun <a href="https://www.facebook.com/feelgoodgroningen" target:"_blank">Facebook pagina</a> of de daghap vegan is.<br>\
+				Standaard vegan opties op de kaart. Bekijk hun Facebook pagina of de daghap vegan is.<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Feel+Good,+Oude+Kijk+in+Het+Jatstraat+29,+9712+EB+Groningen/@53.2191437,6.5599756,17z/data=!4m15!1m6!3m5!1s0x47c9cd4fd89a2d49:0x6c944d6249cc96fa!2sFeel+Good!8m2!3d53.2191437!4d6.5621696!4m7!1m0!1m5!1m1!1s0x47c9cd4fd89a2d49:0x6c944d6249cc96fa!2m2!1d6.5621696!2d53.2191437">Bepaal Route</a>',
 		lat: 53.2191437,
 		long: 6.5621696,
@@ -579,13 +579,13 @@ function initMap() {
 	var pannekoekschip = {
 		info: '<strong>Pannekoekschip</strong><br>\r\
 				Schuitendiep 1017<br>Lunch<br>\
-				Vegan pannenkoek op aanvraag, of eigen melk meebrengen<br>\
+				Beslag op waterbasis is mogelijk. Even aangeven.<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//\'t+Pannekoekschip,+Schuitendiep+1017,+9711+RB+Groningen\'/@53.217708,6.570957,17z/data=!4m15!1m6!3m5!1s0x47c9cd56528e13c9:0x7109ddf63bc75e93!2s\'t+Pannekoekschip!8m2!3d53.217708!4d6.573151!4m7!1m0!1m5!1m1!1s0x47c9cd56528e13c9:0x7109ddf63bc75e93!2m2!1d6.573151!2d53.217708">Bepaal Route</a>',
 		lat: 53.217708,
 		long: 6.573151,
 		breakfast: false,
 		lunch: true,
-		dinner: false,
+		dinner: true,
 		coffee: false,
 		name: 'pannekoekschip',
 		s_name: 'Pannekoekschip',
