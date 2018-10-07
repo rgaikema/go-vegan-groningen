@@ -721,20 +721,20 @@ function initMap() {
 		site:'https://kattencafepoeslief.nl/'
 	};
 
-	var dunk = {
-		info: '<strong>Dunk Ontmoet</strong><br>\r\
-				Oude Ebbingestraat 71<br>Lunch & cake<br>\
-				Lunch, smoothies & cake<br>\
-				<a target="_blank" href="https://www.google.nl/maps/dir//Dunk,+Oude+Ebbingestraat+71,+9712+HE+Groningen/@53.2213177,6.564892,18z/data=!4m16!1m6!3m5!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2sDunk!8m2!3d53.2213177!4d6.5659862!4m8!1m0!1m5!1m1!1s0x47c9cd5a8644f927:0xcc20a4112e18928f!2m2!1d6.5659862!2d53.2213177!3e2">Get Directions</a>',
-		lat: 53.2213177,
-		long: 6.5659862,
+	var chofah = {
+		info: '<strong>Cho Fah</strong><br>\r\
+				Gelkingestraat 5<br>Thaise keuken<br>\
+				Eén gele curry en diverse roerbak gerechten<br>\
+				<a target="_blank" href="https://www.google.nl/maps/dir//Cho+Fah+eathai,+Gelkingestraat+5,+9711+NA+Groningen/@53.2177932,6.565793,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c9cd51266f71f1:0x6299a0fe2db15f72!2m2!1d6.5679817!2d53.2177932!3e2">Bepaal Route</a>',
+		lat: 53.2177932,
+		long: 6.5679817,
 		breakfast: false,
-		lunch: true,
-		dinner: false,
-		coffee: true,
-		name: 'dunk-ontmoet',
-		s_name: 'Dunk Ontmoet',
-		site:'https://www.facebook.com/dunkontmoeten/'
+		lunch: false,
+		dinner: true,
+		coffee: false,
+		name: 'cho-fah',
+		s_name: 'Cho Fah',
+		site:'http://www.chofah.nl/home.html'
 	};
 
 	var flfl = {
@@ -865,7 +865,7 @@ function initMap() {
       [warung.info, warung.lat, warung.long, warung.breakfast, warung.lunch, warung.dinner, warung.coffee, warung.name, warung.s_name, warung.site, 40],
       [wereldburgers.info, wereldburgers.lat, wereldburgers.long, wereldburgers.breakfast, wereldburgers.lunch, wereldburgers.dinner, wereldburgers.coffee, wereldburgers.name, wereldburgers.s_name, wereldburgers.site, 41],
       [poeslief.info, poeslief.lat, poeslief.long, poeslief.breakfast, poeslief.lunch, poeslief.dinner, poeslief.coffee, poeslief.name, poeslief.s_name, poeslief.site, 42],
-      [dunk.info, dunk.lat, dunk.long, dunk.breakfast, dunk.lunch, dunk.dinner, dunk.coffee, dunk.name, dunk.s_name, dunk.site, 43],
+      [chofah.info, chofah.lat, chofah.long, chofah.breakfast, chofah.lunch, chofah.dinner, chofah.coffee, chofah.name, chofah.s_name, chofah.site, 43],
       [flfl.info, flfl.lat, flfl.long, flfl.breakfast, flfl.lunch, flfl.dinner, flfl.coffee, flfl.name, flfl.s_name, flfl.site, 44],
       [vapiano.info, vapiano.lat, vapiano.long, vapiano.breakfast, vapiano.lunch, vapiano.dinner, vapiano.coffee, vapiano.name, vapiano.s_name, vapiano.site, 44],
       [wadapartja.info, wadapartja.lat, wadapartja.long, wadapartja.breakfast, wadapartja.lunch, wadapartja.dinner, wadapartja.coffee, wadapartja.name, wadapartja.s_name, wadapartja.site, 45],
