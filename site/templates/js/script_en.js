@@ -691,15 +691,15 @@ function initMap() {
 
 	var wereldburgers = {
 		info: '<strong>Wereldburgers</strong><br>\r\
-				Akerkhof 43<br>Dinner<br>\
-				Three burgers and a vegan cake. Plus vegan icecream<br>\
+				Akerkhof 43<br>Lunch & Dinner<br>\
+				Three burgers and sometimes vegan cake.<br>\
 				<a target="_blank" href="https://www.google.nl/maps/dir//Wereldburgers,+Akerkhof+43,+9712+BC+Groningen/@53.2167865,6.5595674,17z/data=!4m15!1m6!3m5!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2sWereldburgers!8m2!3d53.2167865!4d6.5617614!4m7!1m0!1m5!1m1!1s0x47c9cd51e0363dd3:0x5e688b4c29d509cf!2m2!1d6.5617614!2d53.2167865">Get Directions</a>',
 		lat: 53.2167865,
 		long: 6.5617614,
 		breakfast: false,
-		lunch: false,
+		lunch: true,
 		dinner: true,
-		coffee: true,
+		coffee: false,
 		name: 'wereldburgers',
 		s_name: 'Wereldburgers',
 		site:'http://wereldburgersgroningen.nl/'
@@ -820,6 +820,22 @@ function initMap() {
 		site:'http://www.gimmemoflow.nl/'
 	};
 
+	var simonlevelt = {
+		info: '<strong>Simon Lévelt Café</strong><br>\r\
+				Oude Kijk in \'t Jatstraat 2<br>Cake<br>\
+				Vegan Cheesecake (2 flavours)<br>\
+				<a target="_blank" href="https://goo.gl/maps/BtCVS94A6pK2">Get Directions</a>',
+		lat: 53.218181,
+		long: 6.562812,
+		breakfast: false,
+		lunch: false,
+		dinner: false,
+		coffee: true,
+		name: 'simon-levelt',
+		s_name: 'Simon Lévelt Café',
+		site:'http://www.simonlevelt.nl/winkels/cafe-groningen'
+	};
+
 
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
@@ -871,6 +887,7 @@ function initMap() {
       [wadapartja.info, wadapartja.lat, wadapartja.long, wadapartja.breakfast, wadapartja.lunch, wadapartja.dinner, wadapartja.coffee, wadapartja.name, wadapartja.s_name, wadapartja.site, 45],
       [ra.info, ra.lat, ra.long, ra.breakfast, ra.lunch, ra.dinner, ra.coffee, ra.name, ra.s_name, ra.site, 46],
       [moflow.info, moflow.lat, moflow.long, moflow.breakfast, moflow.lunch, moflow.dinner, moflow.coffee, moflow.name, moflow.s_name, moflow.site, 47],
+      [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
     ];
 
 
@@ -1346,7 +1363,8 @@ function initMap() {
 				locations[i][45],
 				locations[i][46],
 				locations[i][47],
-				locations[i][48]),
+				locations[i][48],
+				locations[i][49]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
