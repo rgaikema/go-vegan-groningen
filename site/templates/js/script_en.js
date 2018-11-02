@@ -836,6 +836,21 @@ function initMap() {
 		site:'http://www.simonlevelt.nl/winkels/cafe-groningen'
 	};
 
+	var plat = {
+		info: '<strong>Plat</strong><br>\r\
+				Astraat 10<br>Snacks<br>\
+				Fries + vegan mayo & vegan bio kroket<br>\
+				<a target="_blank" href="https://goo.gl/maps/LbDnARPVwAp">Get Directions</a>',
+		lat: 53.2165707,
+		long: 6.5586438,
+		breakfast: false,
+		lunch: true,
+		dinner: true,
+		coffee: false,
+		name: 'plat',
+		s_name: 'Plat',
+		site:'http://www.platfrietzaakgroningen.nl/'
+	};
 
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
@@ -888,6 +903,7 @@ function initMap() {
       [ra.info, ra.lat, ra.long, ra.breakfast, ra.lunch, ra.dinner, ra.coffee, ra.name, ra.s_name, ra.site, 46],
       [moflow.info, moflow.lat, moflow.long, moflow.breakfast, moflow.lunch, moflow.dinner, moflow.coffee, moflow.name, moflow.s_name, moflow.site, 47],
       [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
+      [plat.info, plat.lat, plat.long, plat.breakfast, plat.lunch, plat.dinner, plat.coffee, plat.name, plat.s_name, plat.site, 49],
     ];
 
 
@@ -1364,7 +1380,8 @@ function initMap() {
 				locations[i][46],
 				locations[i][47],
 				locations[i][48],
-				locations[i][49]),
+				locations[i][49],
+				locations[i][50]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
