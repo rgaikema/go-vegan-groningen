@@ -853,6 +853,22 @@ function initMap() {
 		site:'http://www.platfrietzaakgroningen.nl/'
 	};
 
+	var lust = {
+		info: '<strong>Lust</strong><br>\r\
+				Oude Kijk in Het Jatstraat 58<br>Ontbijt, lunch & taart<br>\
+				Veel opties, o.a. porridge bowl, pasta & bananenbrood<br>\
+				<a target="_blank" href="https://goo.gl/maps/WwKX32kksT12">Bepaal Route</a>',
+		lat: 53.2201838,
+		long: 6.5611305,
+		breakfast: true,
+		lunch: true,
+		dinner: false,
+		coffee: true,
+		name: 'lust',
+		s_name: 'Lust',
+		site:'https://www.instagram.com/lustgroningen/'
+	};
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
@@ -905,6 +921,7 @@ function initMap() {
       [moflow.info, moflow.lat, moflow.long, moflow.breakfast, moflow.lunch, moflow.dinner, moflow.coffee, moflow.name, moflow.s_name, moflow.site, 47],
       [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
       [plat.info, plat.lat, plat.long, plat.breakfast, plat.lunch, plat.dinner, plat.coffee, plat.name, plat.s_name, plat.site, 49],
+      [lust.info, lust.lat, lust.long, lust.breakfast, lust.lunch, lust.dinner, lust.coffee, lust.name, lust.s_name, lust.site, 50],
 
     ];
 
@@ -1382,7 +1399,8 @@ function initMap() {
 				locations[i][47],
 				locations[i][48],
 				locations[i][49],
-				locations[i][50]),
+				locations[i][50],
+				locations[i][51]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
