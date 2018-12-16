@@ -869,6 +869,22 @@ function initMap() {
 		site:'https://www.instagram.com/lustgroningen/'
 	};
 
+	var coffeebreak = {
+		info: '<strong>Coffee Break</strong><br>\r\
+				Gedempte Zuiderdiep 22<br>Ontbijt, lunch & taart<br>\
+				Veel vegan opties zoals pannekoeken, wrap en taart. Ontbijt vanaf 11 uur.<br>\
+				<a target="_blank" href="https://goo.gl/maps/AofCg98NcPK2">Bepaal Route</a>',
+		lat: 53.2151743,
+		long: 6.5699151,
+		breakfast: true,
+		lunch: true,
+		dinner: false,
+		coffee: true,
+		name: 'coffeebreak',
+		s_name: 'Coffee Break',
+		site:'http://www.coffee-break.nl/'
+	};
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
@@ -922,7 +938,7 @@ function initMap() {
       [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
       [plat.info, plat.lat, plat.long, plat.breakfast, plat.lunch, plat.dinner, plat.coffee, plat.name, plat.s_name, plat.site, 49],
       [lust.info, lust.lat, lust.long, lust.breakfast, lust.lunch, lust.dinner, lust.coffee, lust.name, lust.s_name, lust.site, 50],
-
+      [coffeebreak.info, coffeebreak.lat, coffeebreak.long, coffeebreak.breakfast, coffeebreak.lunch, coffeebreak.dinner, coffeebreak.coffee, coffeebreak.name, coffeebreak.s_name, coffeebreak.site, 51],
     ];
 
 
@@ -1400,7 +1416,8 @@ function initMap() {
 				locations[i][48],
 				locations[i][49],
 				locations[i][50],
-				locations[i][51]),
+				locations[i][51],
+				locations[i][52]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,

@@ -307,7 +307,7 @@ function initMap() {
 	var kult = {
 		info: '<strong>Kult</strong><br>\r\
 				Steentilstraat 36-1<br>Dinner & snacks<br>\
-				Several choices i.e. the cheese fondue<br>\
+				Several choices e.g. the cheese fondue<br>\
 				<a href="https://www.google.nl/maps/dir//Kult,+Steentilstraat+36-1,+9711+GN+Groningen/@53.2166442,6.5706985,17.07z/data=!4m15!1m6!3m5!1s0x47c9cd565c0e3a2b:0x86963fc469d5818f!2sKult!8m2!3d53.2166302!4d6.5727019!4m7!1m0!1m5!1m1!1s0x47c9cd565c0e3a2b:0x86963fc469d5818f!2m2!1d6.5727019!2d53.2166302">Get Directions</a>',
 		lat: 53.2166302,
 		long: 6.5727019,
@@ -855,7 +855,7 @@ function initMap() {
 	var lust = {
 		info: '<strong>Lust</strong><br>\r\
 				Oude Kijk in Het Jatstraat 58<br>Breakfast, lunch & cake<br>\
-				Lots of options, i.e. porridge bowl, pasta & bananabread<br>\
+				Lots of options, e.g. porridge bowl, pasta & bananabread<br>\
 				<a target="_blank" href="https://goo.gl/maps/WwKX32kksT12">Get Directions</a>',
 		lat: 53.2201838,
 		long: 6.5611305,
@@ -866,6 +866,22 @@ function initMap() {
 		name: 'lust',
 		s_name: 'Lust',
 		site:'https://www.instagram.com/lustgroningen/'
+	};
+
+	var coffeebreak = {
+		info: '<strong>Coffee Break</strong><br>\r\
+				Gedempte Zuiderdiep 22<br>Breakfast, lunch & cake<br>\
+				Lots of options, e.g. pancakes, a wrap and cake. Breakfast from 11 AM.<br>\
+				<a target="_blank" href="https://goo.gl/maps/AofCg98NcPK2">Get Directions</a>',
+		lat: 53.2151743,
+		long: 6.5699151,
+		breakfast: true,
+		lunch: true,
+		dinner: false,
+		coffee: true,
+		name: 'coffeebreak',
+		s_name: 'Coffee Break',
+		site:'http://www.coffee-break.nl/'
 	};
 
     var locations = [
@@ -921,6 +937,7 @@ function initMap() {
       [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
       [plat.info, plat.lat, plat.long, plat.breakfast, plat.lunch, plat.dinner, plat.coffee, plat.name, plat.s_name, plat.site, 49],
       [lust.info, lust.lat, lust.long, lust.breakfast, lust.lunch, lust.dinner, lust.coffee, lust.name, lust.s_name, lust.site, 50],
+      [coffeebreak.info, coffeebreak.lat, coffeebreak.long, coffeebreak.breakfast, coffeebreak.lunch, coffeebreak.dinner, coffeebreak.coffee, coffeebreak.name, coffeebreak.s_name, coffeebreak.site, 51],
     ];
 
 
@@ -1399,7 +1416,8 @@ function initMap() {
 				locations[i][48],
 				locations[i][49],
 				locations[i][50],
-				locations[i][51]),
+				locations[i][51],
+				locations[i][52]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
