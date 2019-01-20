@@ -37,6 +37,9 @@
 		<meta property="og:description" content="Alle locaties op één site." />
 		<meta itemprop="name" content="Go-vegan-Groningen.nl">
     	<meta itemprop="headline" content="Vegan uit eten in Groningen">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-title" content="Go Vegan Groningen">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link href="<?php echo $config->urls->templates?>css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="shortcut icon" href="https://go-vegan-groningen.nl/favicon.ico">

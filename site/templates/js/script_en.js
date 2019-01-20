@@ -89,7 +89,7 @@ function initMap() {
 	var buurman = {
 		info: '<strong>Buurman & Buurman</strong><br>\r\
 				Rodeweg 6<br> Pizza <br>\r\
-				Choose one of the two veggie pizza\'s and ask to veganize it</br>\
+				Three vegan pizza\'s</br>\
 				<a href="https://www.google.nl/maps/dir//Eetwinkel+Buurman+%26+Buurman+Groningen,+Rodeweg+6,+9715+AW+Groningen/@53.2273517,6.5592295,17z/data=!4m15!1m6!3m5!1s0x47c9cd43713cee77:0x1f057e46b756b4db!2sEetwinkel+Buurman+%26+Buurman+Groningen!8m2!3d53.2273517!4d6.5614235!4m7!1m0!1m5!1m1!1s0x47c9cd43713cee77:0x1f057e46b756b4db!2m2!1d6.5614235!2d53.2273517">Get Directions</a>',
 		lat:53.2273517,
 		long:6.5614235,
@@ -881,7 +881,39 @@ function initMap() {
 		coffee: true,
 		name: 'coffeebreak',
 		s_name: 'Coffee Break',
-		site:'http://www.coffee-break.nl/'
+		site:'https://www.instagram.com/coffeebreak22/'
+	};
+
+	var hartendief = {
+		info: '<strong>Hartendief</strong><br>\r\
+				Oosterstraat 8<br>Cake<br>\
+				Sugarfree cakes from SUE<br>\
+				<a target="_blank" href="https://goo.gl/maps/oydFAJnpKdM2">Get Directions</a>',
+		lat: 53.2180568,
+		long: 6.5693446,
+		breakfast: false,
+		lunch: false,
+		dinner: false,
+		coffee: true,
+		name: 'hartendief',
+		s_name: 'Hartendief',
+		site:'https://www.hartendiefgroningen.nl/'
+	};
+
+	var buurmanwestend = {
+		info: '<strong>Buurman & Buurman (Westend)</strong><br>\r\
+				Friesestraatweg 41<br> Pizza <br>\r\
+				Three vegan pizza\'s</br>\
+				<a target="_blank" href="https://goo.gl/maps/wBmLrDYML8k">Get Directions</a>',
+		lat:53.2163435,
+		long:6.5477968,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false,
+		name:'buurman-buurman-westend',
+		s_name:'Buurman & Buurman (Westend)',
+		site: 'http://buurman-groningen.nl/'
 	};
 
     var locations = [
@@ -937,7 +969,9 @@ function initMap() {
       [simonlevelt.info, simonlevelt.lat, simonlevelt.long, simonlevelt.breakfast, simonlevelt.lunch, simonlevelt.dinner, simonlevelt.coffee, simonlevelt.name, simonlevelt.s_name, simonlevelt.site, 48],
       [plat.info, plat.lat, plat.long, plat.breakfast, plat.lunch, plat.dinner, plat.coffee, plat.name, plat.s_name, plat.site, 49],
       [lust.info, lust.lat, lust.long, lust.breakfast, lust.lunch, lust.dinner, lust.coffee, lust.name, lust.s_name, lust.site, 50],
-      [coffeebreak.info, coffeebreak.lat, coffeebreak.long, coffeebreak.breakfast, coffeebreak.lunch, coffeebreak.dinner, coffeebreak.coffee, coffeebreak.name, coffeebreak.s_name, coffeebreak.site, 51],
+	  [coffeebreak.info, coffeebreak.lat, coffeebreak.long, coffeebreak.breakfast, coffeebreak.lunch, coffeebreak.dinner, coffeebreak.coffee, coffeebreak.name, coffeebreak.s_name, coffeebreak.site, 51],
+	  [hartendief.info, hartendief.lat, hartendief.long, hartendief.breakfast, hartendief.lunch, hartendief.dinner, hartendief.coffee, hartendief.name, hartendief.s_name, hartendief.site, 52],
+	  [buurmanwestend.info, buurmanwestend.lat, buurmanwestend.long, buurmanwestend.breakfast, buurmanwestend.lunch, buurmanwestend.dinner, buurmanwestend.coffee, buurmanwestend.name, buurmanwestend.s_name, buurmanwestend.site, 53],
     ];
 
 
@@ -1417,7 +1451,9 @@ function initMap() {
 				locations[i][49],
 				locations[i][50],
 				locations[i][51],
-				locations[i][52]),
+				locations[i][52],
+				locations[i][53],
+				locations[i][54]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
