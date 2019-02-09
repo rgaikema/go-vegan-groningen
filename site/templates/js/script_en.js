@@ -916,6 +916,22 @@ function initMap() {
 		site: 'http://buurman-groningen.nl/'
 	};
 
+	var lui = {
+		info: '<strong>Lui</strong><br>\r\
+				Oude Ebbingestraat 71<br> Cake & lunch <br>\r\
+				Several vegan cakes & vegan sandwiches</br>\
+				<a target="_blank" href="https://goo.gl/maps/19KidvQRpKM2">Get Directions</a>',
+		lat:53.2212683,
+		long:6.5659708,
+		breakfast: false,
+		lunch: true,
+		dinner: false,
+		coffee: true,
+		name:'lui',
+		s_name:'Lui',
+		site: 'https://www.facebook.com/LUI.cafe'
+	};
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
@@ -972,6 +988,7 @@ function initMap() {
 	  [coffeebreak.info, coffeebreak.lat, coffeebreak.long, coffeebreak.breakfast, coffeebreak.lunch, coffeebreak.dinner, coffeebreak.coffee, coffeebreak.name, coffeebreak.s_name, coffeebreak.site, 51],
 	  [hartendief.info, hartendief.lat, hartendief.long, hartendief.breakfast, hartendief.lunch, hartendief.dinner, hartendief.coffee, hartendief.name, hartendief.s_name, hartendief.site, 52],
 	  [buurmanwestend.info, buurmanwestend.lat, buurmanwestend.long, buurmanwestend.breakfast, buurmanwestend.lunch, buurmanwestend.dinner, buurmanwestend.coffee, buurmanwestend.name, buurmanwestend.s_name, buurmanwestend.site, 53],
+	  [lui.info, lui.lat, lui.long, lui.breakfast, lui.lunch, lui.dinner, lui.coffee, lui.name, lui.s_name, lui.site, 54],
     ];
 
 
@@ -1453,7 +1470,8 @@ function initMap() {
 				locations[i][51],
 				locations[i][52],
 				locations[i][53],
-				locations[i][54]),
+				locations[i][54],
+				locations[i][55]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
