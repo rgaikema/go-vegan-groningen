@@ -932,6 +932,22 @@ function initMap() {
 		site: 'https://www.facebook.com/LUI.cafe'
 	};
 
+	var omhelzing = {
+		info: '<strong>De Omhelzing</strong><br>\r\
+				Jacob van Ruysdaelstraat 2<br> Dinner<br>\r\
+				One vegan starter and two main courses + vegan rijsttafel (varied dishes)</br>\
+				<a target="_blank" href="https://goo.gl/maps/J3NBnxtvDAq">Bepaal Route</a>',
+		lat:53.2156702,
+		long:6.5449342,
+		breakfast: false,
+		lunch: false,
+		dinner: true,
+		coffee: false,
+		name:'de-omhelzing',
+		s_name:'De Omhelzing',
+		site: 'https://www.de-omhelzing.nl/'
+	};
+
     var locations = [
       [herbivoor.info, herbivoor.lat, herbivoor.long, herbivoor.breakfast, herbivoor.lunch, herbivoor.dinner, herbivoor.coffee, herbivoor.name, herbivoor.s_name, herbivoor.site,0],
       [anat.info, anat.lat, anat.long, anat.breakfast, anat.lunch, anat.dinner, anat.coffee, anat.name, anat.s_name, anat.site, 1],
@@ -989,6 +1005,7 @@ function initMap() {
 	  [hartendief.info, hartendief.lat, hartendief.long, hartendief.breakfast, hartendief.lunch, hartendief.dinner, hartendief.coffee, hartendief.name, hartendief.s_name, hartendief.site, 52],
 	  [buurmanwestend.info, buurmanwestend.lat, buurmanwestend.long, buurmanwestend.breakfast, buurmanwestend.lunch, buurmanwestend.dinner, buurmanwestend.coffee, buurmanwestend.name, buurmanwestend.s_name, buurmanwestend.site, 53],
 	  [lui.info, lui.lat, lui.long, lui.breakfast, lui.lunch, lui.dinner, lui.coffee, lui.name, lui.s_name, lui.site, 54],
+	  [omhelzing.info, omhelzing.lat, omhelzing.long, omhelzing.breakfast, omhelzing.lunch, omhelzing.dinner, omhelzing.coffee, omhelzing.name, omhelzing.s_name, omhelzing.site, 55],
     ];
 
 
@@ -1471,7 +1488,8 @@ function initMap() {
 				locations[i][52],
 				locations[i][53],
 				locations[i][54],
-				locations[i][55]),
+				locations[i][55],
+				locations[i][56]),
 			icon: normalIcon,
 			map: map,
 			breakfast: breakfastCheck,
